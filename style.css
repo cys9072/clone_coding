@@ -1,0 +1,1245 @@
+/*깔끔 한글 폰트   font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+/* 고오급 영어 폰트  font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: px solid green;
+}
+
+img {
+  width: 100px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+  background: white;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid white;
+  transition: 0.7s;
+}
+
+button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작(0~690px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (min-width:0px) and (max-width:690px) {
+  body {
+    padding-top: 2rem;
+  }
+
+  .top_banner {
+    width: 100%;
+    height: 40px;
+    background: #2971a4;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  /* 메인 */
+  main {
+    width: 100%;
+    height: 300px;
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/51ede99afa8d38a1e04ae1121e32f7bc_91058.jpg') no-repeat;
+    background-size: cover;
+    background-position: left top;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    padding: 1rem 0;
+    background: white;
+  }
+
+  header nav {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav> :first-child {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header nav> :first-child i {
+    cursor: pointer;
+    font-size: 1rem;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  header nav> :first-child> :first-child {
+    align-items: center;
+  }
+
+  header nav> :first-child img {
+    width: 100px;
+    margin-left: 2rem;
+  }
+
+  header nav> :first-child> :last-child a {
+    display: none;
+  }
+
+  header nav> :last-child>a {
+    margin-left: 0.4rem;
+    font-size: 0.5rem;
+  }
+
+  /*아티클 1 */
+  .arti_one,
+  .arti_two,
+  .arti_three {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .arti_one img,
+  .arti_two img,
+  .arti_three img {
+    width: 100%;
+    height: 40%;
+  }
+
+  .arti_one> :last-child,
+  .arti_two> :last-child,
+  .arti_three> :last-child {
+    padding: 3% 5%;
+  }
+
+  .arti_one h2,
+  .arti_two h2,
+  .arti_three h2 {
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .arti_one p,
+  .arti_two p,
+  .arti_three p {
+    font-size: 0.5rem;
+    font-weight: 200;
+  }
+
+  .arti_one button,
+  .arti_two button,
+  .arti_three button {
+    margin-top: 1rem;
+  }
+
+  /* 프로덕트 텍스트 */
+  .pro_text {
+    width: 100%;
+    align-items: center;
+    padding: 0 5%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pro_text img {
+    width: 40px;
+  }
+
+  .pro__ {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+  }
+
+  .pro__ section {
+    width: 47%;
+  }
+
+  .pro__> :nth-child(3) {
+    display: none;
+  }
+
+  .pro__ section h4 {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .pro__ section> :nth-child(1) {
+    width: 100%;
+  }
+
+  .pro__ section> :nth-child(3) {
+    color: #aaaaaa;
+    text-decoration: line-through;
+  }
+
+  .pro__ section> :nth-child(5) {
+    width: 20px;
+  }
+
+  /*배너 */
+  .bottom_banner {
+    width: 100%;
+    height: 100%;
+    background: #d1eff0;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .bottom_banner> :first-child> :first-child h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .bottom_banner> :first-child> :first-child p {
+    font-weight: 100;
+  }
+
+  .bottom_banner> :first-child> :last-child {
+    text-align: right;
+    font-size: 0.5rem;
+  }
+
+  .bottom_banner> :nth-child(2),
+  .bottom_banner> :nth-child(3) {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bottom_banner> :nth-child(2) div,
+  .bottom_banner> :nth-child(3) div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our_text {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .our_text h2 {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  /*our 컨텐츠 */
+  .our_ {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .our_> :first-child {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .our_> :first-child iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .our_> :last-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .our_> :last-child div {
+    width: 31%;
+  }
+
+  .our_> :last-child div img {
+    width: 100%;
+  }
+
+  .our_> :last-child div p {
+    display: none;
+  }
+
+  /* 푸터 */
+  footer {
+    width: 100%;
+    height: 100%;
+    background: #ebebeb;
+  }
+
+  .pc_fot,
+  .pc_fot_two {
+    display: none;
+  }
+
+  footer> :first-child {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  footer> :first-child div {
+    margin-bottom: 1rem;
+  }
+
+  footer> :first-child div h5 {
+    margin-bottom: 0.5rem;
+    color: black;
+    font-size: 0.9rem;
+  }
+
+  footer> :first-child div h4 {
+    font-weight: 400;
+  }
+
+  footer> :first-child div span {
+    color: #5e5c5c;
+    font-size: 0.6rem;
+  }
+
+  footer> :first-child div p {
+    color: #5e5c5c;
+    font-size: 0.6rem;
+  }
+
+  footer> :first-child button {
+    width: 120px;
+    padding: 0.3rem 0;
+    margin: 0.2rem auto;
+  }
+
+  footer> :first-child> :nth-child(5)>div {
+    display: inherit;
+    flex-flow: row;
+  }
+
+  footer> :first-child> :nth-child(5) i {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
+
+  footer> :last-child {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #c8c8c8;
+  }
+
+  footer> :last-child> :first-child {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .mobile_ft i {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+  }
+
+  .mobile_ft_two {
+    margin: 0.5rem 0;
+  }
+
+  .mobile_ft_two span {
+    margin: 0 0.5rem;
+  }
+
+  footer> :last-child span {
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+
+  footer> :last-child p {
+    margin: 1rem 0;
+    font-weight: 100;
+    color: #6c6c6c;
+  }
+
+  footer> :last-child img {
+    width: 50px;
+  }
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ태블릿 시작(691 ~ 1000 px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (min-width:691px) and (max-width:1000px) {
+  body {
+    padding-top: 2rem;
+  }
+
+  .top_banner {
+    width: 100%;
+    height: 40px;
+    background: #2971a4;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  /* 메인 */
+  main {
+    width: 100%;
+    height: 500px;
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/51ede99afa8d38a1e04ae1121e32f7bc_91058.jpg') no-repeat;
+    background-size: cover;
+    background-position: left top;
+  }
+
+  header {
+    width: 100%;
+    height: 40px;
+    padding: 3rem 0;
+  }
+
+  header nav {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav> :first-child {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header nav> :first-child i {
+    cursor: pointer;
+    line-height: -2rem;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  header nav> :first-child> :first-child {
+    align-items: center;
+  }
+
+  header nav> :first-child img {
+    width: 130px;
+    margin-left: 2rem;
+  }
+
+  header nav> :first-child> :last-child a {
+    display: none;
+  }
+
+  header nav> :last-child>a {
+    margin-left: 2rem;
+  }
+
+  /*아티클 1 */
+  .arti_one,
+  .arti_two,
+  .arti_three {
+    width: 100%;
+    height: 400px;
+    margin-top: 2rem;
+    display: flex;
+  }
+
+  .arti_one> :first-child,
+  .arti_two> :first-child,
+  .arti_three> :first-child {
+    width: 48%;
+    height: 100%;
+  }
+
+  .arti_one> :first-child {
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/e7f5c99e9c5cbb818f94a88e34144f40_81544.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .arti_two> :first-child {
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/7cf39ebd7ed6dcb7786bc5cdf8f2b0ac_82316.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    order: 2;
+  }
+
+  .arti_two> :last-child {
+    order: 1;
+  }
+
+  .arti_three> :first-child {
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/e13a34fdbb3c4f0c865af62bc30ca918_18213.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .arti_one> :last-child,
+  .arti_two> :last-child,
+  .arti_three> :last-child {
+    width: 52%;
+    height: 100%;
+  }
+
+  .arti_one img,
+  .arti_two img,
+  .arti_three img {
+    display: none;
+  }
+
+  .arti_one> :last-child,
+  .arti_two> :last-child,
+  .arti_three> :last-child {
+    padding: 150px 5%;
+  }
+
+  .arti_one h2,
+  .arti_two h2,
+  .arti_three h2 {
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .arti_one p,
+  .arti_two p,
+  .arti_three p {
+    font-size: 0.5rem;
+    font-weight: 200;
+  }
+
+  .arti_one button,
+  .arti_two button,
+  .arti_three button {
+    margin-top: 1rem;
+  }
+
+  /* 프로덕트 텍스트 */
+  .pro_text {
+    width: 100%;
+    align-items: center;
+    padding: 0 5%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pro_text img {
+    width: 40px;
+  }
+
+  .pro__ {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+  }
+
+  .pro__ section {
+    width: 30%;
+  }
+
+  .pro__ section h4 {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .pro__ section> :nth-child(1) {
+    width: 100%;
+  }
+
+  .pro__ section> :nth-child(3) {
+    color: #aaaaaa;
+    text-decoration: line-through;
+  }
+
+  .pro__ section> :nth-child(5) {
+    width: 20px;
+  }
+
+  /*배너 */
+  .bottom_banner {
+    width: 100%;
+    height: 100%;
+    background: #d1eff0;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .bottom_banner> :first-child> :first-child h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .bottom_banner> :first-child> :first-child p {
+    font-weight: 100;
+  }
+
+  .bottom_banner> :first-child> :last-child {
+    text-align: right;
+    font-size: 0.5rem;
+  }
+
+  .bottom_banner> :nth-child(2),
+  .bottom_banner> :nth-child(3) {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bottom_banner> :nth-child(2) div,
+  .bottom_banner> :nth-child(3) div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our_text {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .our_text h2 {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  /*our 컨텐츠 */
+  .our_ {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .our_> :first-child {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .our_> :first-child iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .our_> :last-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .our_> :last-child div {
+    width: 31%;
+    position: relative;
+  }
+
+  .our_> :last-child div img {
+    width: 100%;
+  }
+
+  .our_> :last-child div p {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    color: white;
+  }
+
+  /* 푸터 */
+  footer {
+    width: 100%;
+    height: 100%;
+    background: #ebebeb;
+  }
+
+  .pc_fot,
+  .pc_fot_two {
+    display: none;
+  }
+
+  footer> :first-child {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  footer> :first-child div {
+    margin-bottom: 1rem;
+  }
+
+  footer> :first-child div h5 {
+    margin-bottom: 0.5rem;
+    color: black;
+    font-size: 0.9rem;
+  }
+
+  footer> :first-child div h4 {
+    font-weight: 400;
+  }
+
+  footer> :first-child div span {
+    color: #5e5c5c;
+    font-size: 0.6rem;
+  }
+
+  footer> :first-child div p {
+    color: #5e5c5c;
+    font-size: 0.6rem;
+  }
+
+  footer> :first-child button {
+    width: 120px;
+    padding: 0.3rem 0;
+    margin: 0.2rem auto;
+  }
+
+  footer> :first-child> :nth-child(5)>div {
+    display: inherit;
+    flex-flow: row;
+  }
+
+  footer> :first-child> :nth-child(5) i {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
+
+  footer> :last-child {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #c8c8c8;
+  }
+
+  footer> :last-child> :first-child {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .mobile_ft i {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+  }
+
+  .mobile_ft_two {
+    margin: 0.5rem 0;
+  }
+
+  .mobile_ft_two span {
+    margin: 0 0.5rem;
+  }
+
+  footer> :last-child span {
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+
+  footer> :last-child p {
+    margin: 1rem 0;
+    font-weight: 100;
+    color: #6c6c6c;
+  }
+
+  footer> :last-child img {
+    width: 50px;
+  }
+}
+
+/*---------------------- PC(1001~~px)-------------------------------- 시작 */
+@media (min-width:1001px) {
+  body {
+    padding-top: 2rem;
+  }
+
+  .top_banner {
+    width: 100%;
+    height: 40px;
+    background: #2971a4;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  /* 메인 */
+  main {
+    width: 100%;
+    height: 500px;
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/51ede99afa8d38a1e04ae1121e32f7bc_91058.jpg') no-repeat;
+    background-size: cover;
+    background-position: left center;
+  }
+
+  header {
+    width: 100%;
+    height: 40px;
+    padding: 3rem 0;
+  }
+
+  header nav {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav> :first-child {
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav> :first-child i {
+    cursor: pointer;
+    line-height: -2rem;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  header nav> :first-child> :first-child {
+    align-items: center;
+  }
+
+  header nav> :first-child img {
+    width: 130px;
+  }
+
+  header nav> :first-child> :last-child a {
+    margin-left: 0.5rem;
+  }
+
+  header nav> :last-child>a {
+    margin-left: 2rem;
+  }
+
+  /*아티클 1 */
+  .arti_one,
+  .arti_two,
+  .arti_three {
+    width: 100%;
+    height: 550px;
+    margin-top: 2rem;
+    display: flex;
+  }
+
+  .arti_one> :first-child,
+  .arti_two> :first-child,
+  .arti_three> :first-child {
+    width: 48%;
+    height: 100%;
+  }
+
+  .arti_one> :first-child {
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/e7f5c99e9c5cbb818f94a88e34144f40_81544.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .arti_two> :first-child {
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/7cf39ebd7ed6dcb7786bc5cdf8f2b0ac_82316.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    order: 2;
+  }
+
+  .arti_two> :last-child {
+    order: 1;
+  }
+
+  .arti_three> :first-child {
+    background: url('https://www.beplain.co.kr/data/skin/front/designwib/img/banner/e13a34fdbb3c4f0c865af62bc30ca918_18213.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .arti_one> :last-child,
+  .arti_two> :last-child,
+  .arti_three> :last-child {
+    width: 52%;
+    height: 100%;
+  }
+
+  .arti_one img,
+  .arti_two img,
+  .arti_three img {
+    display: none;
+  }
+
+  .arti_one> :last-child,
+  .arti_two> :last-child,
+  .arti_three> :last-child {
+    padding: 200px 5%;
+  }
+
+  .arti_one h2,
+  .arti_two h2,
+  .arti_three h2 {
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .arti_one p,
+  .arti_two p,
+  .arti_three p {
+    font-size: 0.5rem;
+    font-weight: 200;
+  }
+
+  .arti_one button,
+  .arti_two button,
+  .arti_three button {
+    margin-top: 1rem;
+  }
+
+  /* 프로덕트 텍스트 */
+  .pro_text {
+    width: 1000px;
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  .pro_text> :nth-child(1) {
+    display: none;
+  }
+
+  .pro_text> :nth-child(2) {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .pro_text> :nth-child(3) p {
+    text-align: right;
+    font-size: 1.2rem;
+  }
+
+  .pro_text img {
+    width: 40px;
+  }
+
+  /*프로덕트*/
+  .pro__ {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+  }
+
+  .pro__ section {
+    width: 30%;
+  }
+
+  .pro__ section {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .pro__ section h4 {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .pro__ section> :nth-child(1) {
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: 1s;
+  }
+
+  .pro__ section> :nth-child(1):hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(1.11);
+    opacity: 0.9;
+  }
+
+  .pro__ section> :nth-child(3) {
+    color: #aaaaaa;
+    text-decoration: line-through;
+  }
+
+  .pro__ section> :nth-child(5) {
+    width: 20px;
+  }
+
+  /*배너 */
+  .bottom_banner {
+    width: 100%;
+    height: 100%;
+    background: #d1eff0;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .bottom_banner section {
+    width: 1000px;
+    margin: 1rem auto;
+  }
+
+  .bottom_banner section img {
+    width: 200px;
+  }
+
+  .bottom_banner> :first-child> :first-child h4 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .bottom_banner> :first-child> :first-child p {
+    font-weight: 100;
+  }
+
+  .bottom_banner> :first-child> :last-child {
+    text-align: right;
+    font-size: 1rem;
+  }
+
+  .bottom_banner> :nth-child(2),
+  .bottom_banner> :nth-child(3) {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bottom_banner> :nth-child(2) div,
+  .bottom_banner> :nth-child(3) div {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .our_text {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .our_text h2 {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  /*our 컨텐츠 */
+  .our_ {
+    width: 1000px;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .our_> :first-child {
+    width: 710px;
+  }
+
+  .our_> :first-child iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .our_> :last-child {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .our_> :last-child div {
+    width: 250px;
+    position: relative;
+  }
+
+  .our_> :last-child div img {
+    width: 100%;
+  }
+
+  .our_> :last-child div p {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    color: white;
+  }
+
+  /* 푸터 */
+  footer {
+    width: 100%;
+    height: 100%;
+    background: #ebebeb;
+  }
+
+  footer> :first-child {
+    width: 1000px;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer> :first-child> :first-child p {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+
+  footer> :first-child div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer> :first-child div h5 {
+    color: black;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  footer> :first-child div h4 {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  footer> :first-child div span {
+    color: #5e5c5c;
+    font-size: 0.6rem;
+  }
+
+  footer> :first-child button {
+    width: 120px;
+    padding: 0.3rem 0;
+  }
+
+  footer> :first-child> :nth-child(5)>div {
+    display: inherit;
+    flex-flow: row;
+  }
+
+  footer> :first-child> :nth-child(5) i {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
+
+  footer> :last-child {
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid #c8c8c8;
+  }
+
+  footer> :last-child> :first-child {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer> :last-child span {
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+
+  footer> :last-child p {
+    margin-top: 1rem;
+    font-weight: 100;
+    color: #6c6c6c;
+  }
+
+  footer> :last-child img {
+    width: 50px;
+  }
+
+  .mobile_ft,
+  .mobile_ft_two {
+    display: none;
+  }
+}
