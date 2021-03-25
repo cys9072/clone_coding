@@ -116,7 +116,7 @@ ul li {
 @media (min-width:0px) and (max-width:999px) {
   body {
     padding-top: 80px;
-    overflow-x: ;
+    overflow-x: hidden;
     overflow-y: ;
     z-index: 0;
   }
