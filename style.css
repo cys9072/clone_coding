@@ -1,0 +1,973 @@
+/*깔끔 한글 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: px solid green;
+}
+
+img {
+  width: 100px;
+}
+
+body {
+  padding-top: 3rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  color: #000000;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 1rem;
+  border: 1px solid #000000;
+  background: none;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작(0~639px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (min-width:0px) and (max-width:639px) {
+  body {
+    position: relative;
+  }
+
+  header> :nth-child(1),
+  header> :nth-child(2) {
+    display: none;
+  }
+
+  .mobile_menu {
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0%;
+    z-index: 9999;
+  }
+
+  main {
+    width: 100%;
+    height: 300px;
+  }
+
+  main section {
+    width: 100%;
+    height: 300px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_visual_08.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  main section div {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+
+  main section img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  main section div button {
+    color: #000000;
+    border: 1px solid #000000;
+    background: none;
+  }
+
+  .mobile_main_bottom {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    background: #ededed;
+  }
+
+  .mobile_main_bottom section {
+    width: 25%;
+    text-align: center;
+  }
+
+  .mobile_main_bottom section img {
+    width: 40px;
+    margin-bottom: 0.4rem;
+  }
+
+  .mobile_main_bottom section h4 {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .quming_arti1 {
+    width: 100%;
+    height: 300px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_product_visual_02.jpg') no-repeat;
+    background-size: cover;
+    background-position: 90% 50%;
+    position: relative;
+  }
+
+  .quming_arti1 section> :first-child {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+  }
+
+  .quming_arti1 section> :first-child h4 {
+    font-weight: 500;
+  }
+
+  .quming_arti1 section> :first-child p {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+
+  .quming_arti1 section> :first-child button {
+    margin-top: 0.6rem;
+  }
+
+  .quming_arti1 section> :last-child {
+    width: 100%;
+    font-size: 2rem;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+  }
+
+  .quming_arti1 section> :last-child a {
+    color: #676767;
+  }
+
+  .quming_arti2 {
+    width: 100%;
+    height: 250px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/m-main_store_visual.jpg') no-repeat;
+    background-size: cover;
+    background-position: 90% 50%;
+    position: relative;
+  }
+
+  .quming_arti2 section> :first-child {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+
+  .quming_arti2 section> :first-child h4 {
+    color: #e4e4e4;
+    font-weight: 500;
+  }
+
+  .quming_arti2 section> :first-child p {
+    color: #e4e4e4;
+    margin: 0;
+  }
+
+  .quming_arti2 section> :first-child button {
+    margin-top: 0.6rem;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .quming_text {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .quming_text h3 {
+    line-height: 2rem;
+    font-weight: 500;
+  }
+
+  .quming_arti3 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .quming_arti3 section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .quming_arti3 section img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .quming_arti3 section h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  .quming_banner {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_last_visual-w.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .quming_banner section {
+    width: 100%;
+    height: 100%;
+  }
+
+  .quming_banner section div {
+    width: 60%;
+    height: 80%;
+    padding-right: 1rem;
+    text-align: right;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+  }
+
+  .quming_banner section div h4 {
+    color: white;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+
+  .quming_banner section div button {
+    padding: 0.4rem 0.6rem;
+    color: white;
+    border: 1px solid white;
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #343434;
+  }
+
+  footer> :nth-child(2) {
+    width: 100%;
+    font-size: 0.2rem;
+    color: #ababab;
+  }
+
+  footer> :nth-child(2) span {
+    color: #ababab;
+  }
+
+  .site_map {
+    background: black;
+    color: white;
+    border: 1px solid #696969;
+  }
+
+  footer> :nth-child(1),
+  footer> :nth-child(3) {
+    margin: 1rem 0;
+  }
+
+  footer> :nth-child(3) button {
+    width: 140px;
+    height: 20px;
+    margin: 0 0 0 0.6rem;
+    padding: 0;
+    font-size: 0.7rem;
+    color: #a4a4a4;
+    border: 1px solid #a4a4a4;
+  }
+
+  footer> :nth-child(4) span {
+    color: #ababab;
+    font-size: 0.2rem;
+  }
+
+  footer> :nth-child(4) p {
+    color: #cccccc;
+    margin-top: 1rem;
+  }
+
+  .follow_bar {
+    position: relative;
+  }
+
+  .follow_bar div {
+    position: fixed;
+    bottom: 3%;
+    right: 4%;
+  }
+
+  .follow_bar div img {
+    width: 30px;
+    cursor: pointer;
+  }
+}
+
+/*---------------------- 태블릿(640~989px)-------------------------------- 시작 */
+@media (min-width:640px) and (max-width:989px) {
+  body {}
+
+  header> :nth-child(1),
+  header> :nth-child(2) {
+    display: none;
+  }
+
+  .mobile_menu {
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0%;
+    z-index: 9999;
+  }
+
+  main {
+    width: 100%;
+    height: 500px;
+  }
+
+  main section {
+    width: 100%;
+    height: 500px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_visual_08.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  main section div {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+
+  main section img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  main section div button {
+    color: #000000;
+    border: 1px solid #000000;
+    background: none;
+  }
+
+  .mobile_main_bottom {
+    display: none;
+  }
+
+  .quming_arti1 {
+    width: 100%;
+    height: 450px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_product_visual_02.jpg') no-repeat;
+    background-size: cover;
+    background-position: 90% 50%;
+    position: relative;
+  }
+
+  .quming_arti1 section> :first-child {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+  .quming_arti1 section> :first-child h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .quming_arti1 section> :first-child p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .quming_arti1 section> :first-child button {
+    margin-top: 0.6rem;
+  }
+
+  .quming_arti1 section> :last-child {
+    width: 100%;
+    font-size: 2rem;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+  }
+
+  .quming_arti1 section> :last-child a {
+    color: #676767;
+  }
+
+  .quming_arti2 {
+    width: 100%;
+    height: 300px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/m-main_store_visual.jpg') no-repeat;
+    background-size: cover;
+    background-position: 90% 50%;
+    position: relative;
+  }
+
+  .quming_arti2 section> :first-child {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+
+  .quming_arti2 section> :first-child h4 {
+    color: #e4e4e4;
+    font-weight: 500;
+  }
+
+  .quming_arti2 section> :first-child p {
+    color: #e4e4e4;
+    margin: 0;
+  }
+
+  .quming_arti2 section> :first-child button {
+    margin-top: 0.6rem;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .quming_text {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 2rem 0;
+  }
+
+  .quming_text h3 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+
+  .quming_arti3 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .quming_arti3 section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8rem;
+  }
+
+  .quming_arti3 section img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .quming_arti3 section h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .quming_arti3 section p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .quming_banner {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_last_visual-w.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .quming_banner section {
+    width: 100%;
+    height: 100%;
+  }
+
+  .quming_banner section div {
+    width: 60%;
+    height: 80%;
+    text-align: right;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+  }
+
+  .quming_banner section div h4 {
+    color: white;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+
+  .quming_banner section div button {
+    font-size: 1rem;
+    padding: 1.2rem 1.2rem;
+    color: white;
+    border: 1px solid white;
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #343434;
+  }
+
+  footer> :nth-child(2) {
+    width: 100%;
+    font-size: 0.2rem;
+    color: #ababab;
+  }
+
+  footer> :nth-child(2) span {
+    color: #ababab;
+  }
+
+  .site_map {
+    background: black;
+    color: white;
+    border: 1px solid #696969;
+  }
+
+  footer> :nth-child(1),
+  footer> :nth-child(3) {
+    margin: 1rem 0;
+  }
+
+  footer> :nth-child(3) button {
+    width: 140px;
+    height: 20px;
+    margin: 0 0 0 0.6rem;
+    padding: 0;
+    font-size: 0.7rem;
+    color: #a4a4a4;
+    border: 1px solid #a4a4a4;
+  }
+
+  footer> :nth-child(4) span {
+    color: #ababab;
+    font-size: 0.2rem;
+  }
+
+  footer> :nth-child(4) p {
+    color: #cccccc;
+    margin-top: 1rem;
+  }
+
+  .follow_bar {
+    position: relative;
+  }
+
+  .follow_bar div {
+    position: fixed;
+    bottom: 3%;
+    right: 4%;
+  }
+
+  .follow_bar div img {
+    width: 30px;
+    cursor: pointer;
+  }
+}
+
+/*---------------------- PC(989~px)-------------------------------- 시작 */
+@media (min-width:990px) {
+  body {
+    padding-top: 5.1rem;
+  }
+
+  header {
+    width: 100%;
+    height: 10%;
+    padding: 0 1rem;
+    background: white;
+    position: fixed;
+    top: 0%;
+    z-index: 9999;
+  }
+
+  .sns_icons {
+    width: 100%;
+    height: 50%;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.7rem;
+    text-align: right;
+  }
+
+  .sns_icons i {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo__ img {
+    width: 200px;
+  }
+
+  .menu_nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+  }
+
+  .login_sign {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .login_sign p {
+    margin: 0 0.8rem;
+  }
+
+  .login_sign p,
+  .login_sign i,
+  .login_sign span {
+    line-height: 2.4rem;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    height: 700px;
+  }
+
+  main section {
+    width: 100%;
+    height: 700px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_visual_08.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  main section div {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+
+  main section img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  main section div button {
+    color: #000000;
+    border: 1px solid #000000;
+    background: none;
+  }
+
+  .mobile_main_bottom {
+    display: none;
+  }
+
+  .quming_arti1 {
+    width: 100%;
+    height: 600px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_product_visual_02.jpg') no-repeat;
+    background-size: cover;
+    background-position: 65% 50%;
+    position: relative;
+  }
+
+  .quming_arti1 section> :first-child {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+  }
+
+  .quming_arti1 section> :first-child h4 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+  }
+
+  .quming_arti1 section> :first-child p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin: 0;
+  }
+
+  .quming_arti1 section> :first-child button {
+    margin-top: 0.6rem;
+  }
+
+  .quming_arti1 section> :last-child {
+    width: 100%;
+    font-size: 2rem;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+  }
+
+  .quming_arti1 section> :last-child a {
+    color: #676767;
+  }
+
+  .quming_arti2 {
+    width: 100%;
+    height: 400px;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/m-main_store_visual.jpg') no-repeat;
+    background-size: cover;
+    background-position: 90% 50%;
+    position: relative;
+  }
+
+  .quming_arti2 section> :first-child {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+
+  .quming_arti2 section> :first-child h4 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    font-weight: 700;
+  }
+
+  .quming_arti2 section> :first-child p {
+    font-weight: 500;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+  }
+
+  .quming_arti2 section> :first-child button {
+    margin-top: 0.6rem;
+    border: 1px solid #4a4a4a;
+    color: #4a4a4a;
+  }
+
+  .quming_text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 2rem 0;
+  }
+
+  .quming_text h3 {
+    font-weight: 400;
+  }
+
+  .quming_arti3 {
+    width: 100%;
+    height: 300px;
+    padding: 0 1rem;
+    margin: 3rem 0 2rem;
+    text-align: center;
+    display: flex;
+  }
+
+  .quming_arti3 section {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .quming_arti3 section img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .quming_arti3 section h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .quming_arti3 section p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .quming_banner {
+    width: 100%;
+    height: 340px;
+    position: relative;
+    background: url('http://www.hyundairentalcare.co.kr/HTML/images/background/main_last_visual-w.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .quming_banner section {
+    width: 100%;
+    height: 100%;
+  }
+
+  .quming_banner section div {
+    width: 60%;
+    height: 80%;
+    text-align: right;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+  }
+
+  .quming_banner section div h4 {
+    color: white;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+
+  .quming_banner section div button {
+    font-size: 1rem;
+    padding: 1.2rem 1.2rem;
+    color: white;
+    border: 1px solid white;
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #343434;
+  }
+
+  footer> :nth-child(2) {
+    width: 100%;
+    font-size: 0.2rem;
+    color: #ababab;
+  }
+
+  footer> :nth-child(2) span {
+    color: #ababab;
+  }
+
+  .site_map {
+    background: black;
+    color: white;
+    border: 1px solid #696969;
+  }
+
+  footer> :nth-child(1),
+  footer> :nth-child(3) {
+    margin: 1rem 0;
+  }
+
+  footer> :nth-child(3) button {
+    width: 140px;
+    height: 20px;
+    margin: 0 0 0 0.6rem;
+    padding: 0;
+    font-size: 0.7rem;
+    color: #a4a4a4;
+    border: 1px solid #a4a4a4;
+  }
+
+  footer> :nth-child(4) span {
+    color: #ababab;
+    font-size: 0.2rem;
+  }
+
+  footer> :nth-child(4) p {
+    color: #cccccc;
+    margin-top: 1rem;
+  }
+
+  .follow_bar {
+    position: relative;
+  }
+
+  .follow_bar div {
+    position: fixed;
+    bottom: 3%;
+    right: 4%;
+  }
+
+  .follow_bar div img {
+    width: 30px;
+    cursor: pointer;
+  }
+}
