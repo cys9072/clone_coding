@@ -1,0 +1,1916 @@
+/*깔끔 한글 폰트   font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+/* 고오급 영어 폰트  font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+/* 각진 영어 폰트  font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*필기체 영어 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  /* transition: 0.7s; */
+
+
+}
+
+img {
+  width:100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+ 
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-weight: 300;
+  line-height: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: powderblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  padding: 6px;
+  border:1px solid silver;
+  border-radius: 20px;
+  transition: 0.7s;
+  color:black;
+  background: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-: black;
+  color: white;
+  
+}
+
+ul li {
+  list-style: none;
+}
+
+#all_bodyy {
+  width:100%;
+  height: 100%;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작(0~639px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (min-width:0px) and (max-width:999px) {
+  body {
+    padding-top: 80px;
+    overflow-x: hidden;
+    overflow-y: ;
+    z-index: 0;
+  }
+
+  /* 헤더 */
+  header {
+    width:100%;
+    height: 80px;
+    margin-bottom: 30px;
+    padding:1.2rem 5%;
+    border-bottom: 1px solid powderblue;
+    background: white;
+    transition: 0.7s;
+    position:fixed;
+    top:0;
+    z-index: 9999;
+    
+  }
+
+  header> :first-child{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .pc_navi {
+    display: none;
+  }
+
+  .mobile_navi {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile_logo_imgs {
+    width: 87px;
+    height: 28px;
+  }
+
+  #mobile_serching_> :nth-child(1) i,
+  .mobile_ham> :nth-child(1) i {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color:#159cfd;
+  }
+
+  /* 검색창열리기 */
+  #open_serch_menu_ {
+    transition: 0.7s;
+    width:100%;
+    height: 300px;
+    border-top: 1px solid powderblue;
+    background-color: white;
+    padding:1rem;
+    position: absolute;
+    left:-100%; 
+    top:100%;
+    z-index: 10;
+  }
+
+  #open_serch i,
+  #close_serch i,
+  .mobile_ham i {
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  #open_serch i:hover,
+  .mobile_ham i:hover {
+   color: #765afd;
+  }
+
+
+  .ser_inp {
+    width:100%;
+    margin:0 auto;
+  }
+
+  .ser_inp input {
+    width:90%;
+    padding:8px;
+    border:none;
+    border-bottom:1px solid #aba9a9;
+  }
+
+  .ser_inp input:focus {
+    outline: none;
+  }
+
+  .ser_inp i {
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  #close_serch{
+    font-size: 2rem;
+    color:#159cfd;
+    display: none;
+  }
+
+
+  .recomend_keyword> :first-child {
+    width:100%;
+    padding:1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recomend_keyword> :first-child> :first-child {
+    width:30%;
+  }
+
+  .recomend_keyword> :first-child> :first-child p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .recomend_keyword> :first-child> :last-child {
+    width:70%;
+  }
+
+  .recomend_keyword button {
+    margin:0.2rem 0;
+    font-weight: 500;
+    background: #e5e5e5;
+    border:1px solid #e5e5e5;
+    }
+
+  /* 햄버거 열기 닫기 */
+  #open_ham_menu_ {
+    width:300px;
+    height: 100vh;
+    border-left: 1px solid #159cfd;
+    background-color: #f5f3f3;
+    padding:1rem 1rem 0 1rem;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    right:-300px;
+    transition: 0.7s;
+    
+  }
+
+  .ham_top {
+    padding:1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ham_top button {
+    padding:5px 15px;
+    background:white;
+    border:1px solid #159cfd;
+  }
+
+  .ham_top button:hover {
+    background:#159cfd;
+    border:1px solid #159cfd;
+    color:white;
+  }
+
+  .ham_top i {
+    color:#159cfd;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .ham_top i:hover {
+    color:white;
+  }
+
+
+  .title_ {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accrdian_wrap {
+    position: relative;
+  }
+
+  .accrdian_wrap h3 {
+    width:100%;
+    font-size: 1.1rem;
+    padding:1rem 0 1rem 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom:1px solid #159cfd;
+        transition: -0.3s;
+
+  }
+
+  .accrdian_wrap h3::after {
+    content: "\f0da";
+    font-size: 1.2rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+    position: absolute;
+    right:5%;
+  }
+
+  .accrdian_wrap h3:hover {
+    background:#156095;
+    color:white;
+  }
+
+  .title_ i {
+    font-size: 1.3rem;
+    color:black;
+  }
+
+  .title_contens p {
+    font-weight: 500;
+    padding:0.5rem 0 0.5rem 0.5rem;
+    cursor: pointer;
+    transition: -0.3s;
+  }
+
+  .title_contens p:hover {
+   color:#156095;
+  }
+
+  .minus_icons {
+    display: none;
+  }
+
+
+  .title_contens{
+    display: none;
+  }
+
+  /* 햄버거 바텀 메뉴 */
+  #ham_bottom {
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom: -28.5vw;
+    transition: 0.7s;
+  }
+
+  .sns_social {
+    width:70%;
+    margin:0 auto 1rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sns_social i {
+    font-size: 2.4rem;
+    color:black;
+    transition: 0.7s;
+    cursor: pointer;
+  }
+  .sns_social i:hover {
+    color:#159cfd;
+  }
+
+  .lang_serch {
+    width:100%;
+    background-color: #676767;
+    color:#ffffff;
+    font-weight: 500;
+
+  }
+
+  .langg_s {
+    width:100%;
+   display: flex;
+    justify-content: space-between;
+    transition: 0.7s;
+
+  }
+
+  .langg_s> :last-child {
+    border-left: 1px solid white;;
+  }
+
+  .langg_s p {
+    width:50%;
+    padding:0.5rem 0;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  .langg_s p:hover {
+    color:#8aceff;
+  }
+
+
+  #togle_menu {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgb(211, 211, 211);
+    padding:1rem 0.4rem;
+    transition: 0.7s;
+  }
+
+  #open_bottom_about_ham::after {
+      content: "\f078";
+      font-size: 0.8rem;
+      font-family: "Font Awesome 5 Free";
+      font-weight:900;
+      margin-left: 0.5rem;
+    }
+  
+
+  #togle_menu p {
+    margin: 0.9rem 0;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  #togle_menu p:hover {
+    color:#159cfd;
+  }
+
+  #close_bottom_about_ham {
+    text-align: right;
+    margin-right: 1rem;
+  }
+
+  #close_bottom_about_ham i{
+    text-align: right;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  #close_bottom_about_ham i:hover{
+    color:#159cfd;
+  }
+
+  /* 메인 슬라이더 */
+  .main_bg_1 {
+    width:100%;
+    height: 100%;
+    position: relative;
+  }
+  .pc_main_img_1,
+  .pc_main_img_2,
+  .pc_main_img_3,
+  .pc_main_img_4,
+  .pc_main_img_5 {
+    display: none;
+  }
+
+  .main_text,
+  .main_text_2,
+  .main_text_3,
+  .main_text_4,
+  .main_text_5 {
+    width:100%;
+    padding:0 1rem;
+    margin:0 auto;
+    position: absolute;
+    bottom:8.5vw;
+  }
+
+  /* 텍스트 검정 */
+  .main_text h3,
+  .main_text_4 h3,
+  .main_text_5 h3 {
+    font-size: 4.5vw;
+    line-height: 3vw;
+    padding-bottom: 4vw;
+    border-bottom: 1px solid black;
+  }
+
+  .main_text h4 {
+    font-size: 6.5vw;
+    line-height: 2rem;
+    padding:6vw 0;  
+    border-bottom: 1px solid black;
+  }
+
+
+  .main_text_4> :nth-child(2),
+  .main_text_5> :nth-child(2)  {
+  margin-top: 1rem;
+  font-size: 6.5vw;
+  line-height: 5vw;
+  padding: 1.5vw 0 1vw 0;
+  }
+
+  .main_text_4> :nth-child(3),
+  .main_text_5> :nth-child(3) {
+    font-size: 6.5vw;
+    line-height: 5vw;
+  border-bottom:1px solid black;
+  padding: 2vw 0 6vw 0;
+  }
+
+
+  .main_text> :nth-child(3),
+  .main_text_4> :nth-child(4),
+  .main_text_5> :nth-child(4) {
+    margin:5vw 0;
+    padding:3vw 8vw;
+    border:1px solid black;
+    color:black;
+    font-size: 3vw;
+  }
+  .main_text> :nth-child(3):hover,
+  .main_text_4> :nth-child(4):hover,
+  .main_text_5> :nth-child(4):hover {
+    background:#159cfd;
+    color:white;
+    border:1px solid #159cfd;
+  }
+
+  /* 텍스트 흰색 */
+  .main_text_2 h3,
+  .main_text_3 h3 {
+    font-size: 4.5vw;
+    padding-bottom: 4vw;
+    border-bottom: 1px solid white;
+    color:white;
+  }
+  .main_text_2 h4,
+  .main_text_3 h4 {
+    font-size: 6.5vw;
+    line-height: 5vw;
+    color:white;
+  }
+
+  .main_text_2> :nth-child(2),
+  .main_text_3> :nth-child(2) {
+  margin-top: 1rem;
+  font-size: 6.5vw;
+  line-height: rem;
+  padding: 1.5vw 0 1vw 0;
+  color:white;
+  }
+
+  .main_text_2> :nth-child(3),
+  .main_text_3> :nth-child(3) {
+  border-bottom:1px solid white;
+  padding: 2vw 0 6vw 0;
+  }
+
+  .main_text_2> :nth-child(4),
+  .main_text_3> :nth-child(4) {
+    margin:5vw 0;
+    padding:3vw 8vw;
+    border:1px solid white;
+    color:white;
+    font-size: 3vw;
+  }
+
+  .main_text_2> :nth-child(4):hover,
+  .main_text_3> :nth-child(4):hover {
+    background: white;
+    color:#159cfd;
+  }
+
+  /* 이미지 애니메이션*/
+  .main_bg_animation {
+    animation: zoom-a 5s linear infinite alternate;
+  }
+  @keyframes zoom-a {
+    0% {
+      transform: scale(1, 1) translateZ(1px);
+    }
+    100% {
+      transform: scale(1.1, 1.2) translateZ(1px);
+    }
+  }
+
+
+
+  /* 재생 정지 버튼 */
+  #start_stop_button {
+    position: absolute;
+    bottom:1vw;
+    left: 30vw;
+    display: none;
+  }
+
+  #start_stop_button button {
+    border:none;
+    color:#159cfd;
+  }
+
+
+  #main_bg_start_bt::after {
+    content: "\f04b";
+    font-size: 2vw;
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+  }
+
+
+  #main_bg_stop_bt::after {
+    content: "\f04c";
+    font-size: 2vw;
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+  }
+
+  
+
+  /* 이전 다음 버튼 자리이동 */ 
+  .swiper-container {
+    position:relative;
+  }
+    .swiper-button-prev,
+    .swiper-button-next{
+      top:45%;
+      color:#159cfd;
+    }
+
+    
+
+    .swiper-pagination-prev-active {
+      background-color: red;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 6.75vw;
+      color:#159cfd;
+
+    }
+
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+      right: 2vw;
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+      right: auto;
+      left: 2vw;
+    }
+
+    /* 페이지네이션 설정 */
+    .swiper-pagination-bullet {
+      width: 11vw;
+      height: 13px;
+      fill:white;
+      display: inline-block;
+      background:#545454;
+      border-radius: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: white;
+    }   
+
+    /* 제품 슬라이더 */ 
+    .best_s {
+      margin:3rem 0;
+    }
+
+    .best_s_text {
+      padding:2rem 0.5rem 1rem 0.5rem;
+    }
+
+    .best_s_text h4 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 5vw;
+      line-height: 5vw;
+      color:#0368ce;
+      margin-bottom: 1rem;
+    }
+
+    .best_s_text h2 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 8vw;
+      line-height: 8vw;
+      color:#4a4a4a;
+      margin-bottom: 1rem;
+    }
+
+    /* 제품 이미지 */
+    .best_bg {
+      width:100%;
+      text-align: center;
+    }
+
+    .best_bg img {
+      width:80%;
+    }
+
+    /* 제품 이미지 텍스트 */
+    .best_inside_text {
+      padding:1rem 0;
+      text-align: center;
+    }
+
+    .best_inside_text h3 {
+      padding:1rem 0;
+      font-size: 6vw;
+      line-height: 6vw;
+      font-weight: 500;
+    }
+
+    .star_ {
+      display: flex;
+      justify-content: center;
+    }
+
+    .stars_ {
+      display: flex;
+    }
+
+    .star_full i{
+      color:#159cfd;
+      line-height: 4vw;
+    }
+    .star_empty i{
+      line-height: 4vw;
+    }
+
+    .stars_full,
+    .review_ {
+      display: block;
+      line-height: 4vw;
+    }
+
+    .review_ {
+      margin-left: 1rem;
+      line-height: 4vw;
+    }
+
+    /* 스와이퍼 페이지네이션 위치이동*/
+    .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+      top:99%;
+    }
+
+    /* 배너 1번 */
+    .banner_1 {
+      width:100%;
+      height: 400px;
+      background:url('https://www.iope.com/kr/ko/resource/img/renew/main/bg-iopelab_m.jpg') no-repeat;
+      background-size: cover;
+      background-position:center center ;
+      margin:5rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .banner_1 section {
+      width:100%;
+      position: absolute;
+      bottom:13%;
+    }
+
+    .banner_1 section h3 {
+      font-size: 4.5vw;
+      line-height: 2rem;
+      color:white;
+      margin: 1rem 0;
+      text-shadow: 2px 2px 2px rgb(154, 154, 154);
+    }
+
+    .banner_1 section button {
+      padding:3vw 5vw;
+      font-size: 4vw;
+      color:white;
+      font-weight: 600;
+      border:1.5px solid white;
+    }
+
+    /* 배너2 리뷰 */
+    .banner_2 {
+      width:200%;
+      height: 100%;
+      padding:1rem 0;
+      background: linear-gradient(to bottom,
+      white 40%, #ebebeb 100%);
+      margin-bottom: 3rem;
+      position: relative;
+      transition: 0.7s;
+    }
+
+    .banner_2 section {
+      width:100%;
+    }
+
+    .fir_review,
+    .sec_review {
+      width:100%;
+      text-align: center;
+    }
+
+
+    #steb_wrap {
+      width:100%;
+      display: flex;
+      justify-content: space-around;
+      transition: 0.7s;
+
+    }
+
+    .steb_imgg {
+      padding:0 0.5rem 1rem 0.5rem;
+    }
+
+
+    .steb_text i {
+      color:#159cfd;
+      margin:1rem 0; 
+      font-size: 6vw;  
+      line-height: 6vw;       
+    }
+
+    .steb_text h3 {
+      font-size: 5vw;
+      font-weight: 500;
+      line-height: 6vw;
+      margin-bottom: 1rem;
+    }
+
+    .steb_text p {
+      font-size: 4vw;
+      line-height: 4vw;
+      color:#aba9a9;
+      margin-bottom: 1rem;
+    }
+
+    .steb_text button {
+      padding:3vw 6vw;
+      font-size:3.5vw;
+      line-height: 4vw;
+      border:1px solid rgb(146, 146, 146);
+      margin: 5vw 0;
+    }
+
+    .steb_text button:hover {
+      background-color: #8e8e8e;
+      color:white;
+      border:1px solid #8e8e8e;
+    }
+
+    .banner_2> :nth-child(2){
+      text-align: center;
+      position: absolute;
+      bottom:1.5vw;
+      left: -47.4vw;
+    }
+
+    .banner_2> :nth-child(2) button {
+      width:10vw;
+      height: 1vw;
+      padding:0;
+      background-color: #8e8e8e;
+      border-radius: 0%;
+    }
+    /* sns insta 연동 */
+    .sns_insta {
+      width:100%;
+      margin-bottom: 3rem;
+      transition: 0.7s;
+    }
+
+
+    .sns_insta_text {
+      padding:2rem 0;
+      text-align: center;
+    }
+
+    .sns_insta_text h3 {
+      font-size: 9vw;
+      font-weight: 600;
+      line-height: 10vw;
+      color:#159cfd;
+      margin-bottom: 0.5rem;
+    }
+
+    
+    .sns_insta_text h4 {
+      font-size: 5vw;
+      line-height: 6vw;
+      font-weight: 500;
+      color:#9a9a9a;
+    }
+
+    .img_sec {
+      position: relative;
+    }
+
+    .img_sec i {
+      position: absolute;
+      right:4%;
+      top:4%;
+      font-size: 2.5rem;
+      line-height: 6vw;
+    }
+
+    .wrap_1_text {
+      position: absolute;
+      right:-100vw;
+      bottom:0%;
+      width:100vw;
+      height: 30vw;
+      text-align: center;
+      padding:2rem 1rem;
+      background: rgba(255, 255, 255, 0.853);
+      cursor: pointer;
+      transition: 0.7s;
+      overflow-y: hidden;
+    }
+
+    .swiper-slide {
+      transition: 0.7s;
+
+    }
+    .swiper-slide:hover .wrap_1_text{
+      right:0vw;
+      cursor: pointer;
+    }
+
+    .wrap_1_text h5 {
+      margin-bottom: 1rem;
+      font-size: 6vw;
+      line-height: 7vw;
+    }
+
+    .wrap_1_text p {
+      font-size: 3vw;
+      line-height: 6vw;
+    }
+
+    
+    /* 배너 3번 */
+    .banner_3 {
+      width:100%;
+      height: 400px;
+      background:url('https://www.iope.com/kr/ko/resource/img/renew/main/bg-brandstory_m.jpg') no-repeat;
+      background-size: cover;
+      background-position:center center ;
+      margin:5rem 0 5rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .banner_3 section {
+      width:100%;
+      position: absolute;
+      bottom:20%;
+    }
+
+    .banner_3 section h3 {
+      font-size: 4.5vw;
+      line-height: 5vw;
+      color:white;
+      margin-bottom: 1.5rem;
+    }
+
+    .banner_3 section button {
+      padding:3vw 5vw;
+      font-size: 4vw;
+      line-height: 5vw;
+      color:white;
+      font-weight: 600;
+      border:1.5px solid white;
+    }
+
+    .asdasd {
+      position: relative;
+    }
+    footer {
+      width:100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .foo_btn {
+      width:100%;
+      color:silver;
+      border:none;
+    }
+
+    .foo_btn button {
+      width:100%;
+      padding:1rem 0.5rem;
+      text-align: left;
+      color:silver;
+      border:none;
+      border-top: 1px solid silver;
+      border-radius: 0;
+    }
+
+    .foo_btn button:hover {
+      color:silver;
+    }
+
+    .foo_btn button::after {
+      content: "\f078";
+      font-size: 2vw;
+      font-family: "Font Awesome 5 Free";
+      font-weight:900;
+      position:absolute;
+      right: 10px;
+    }
+
+    .foo_open_sec {
+      padding:1.5rem 0.5rem;
+
+    }
+
+    .foo_open_sec> :first-child {
+      margin-bottom: 1rem;
+    }
+    .foo_open_sec span {
+      display: inline-block;
+      color:silver;
+      margin-bottom: 0.5rem;
+    }
+
+    .foo_open_sec span a {
+      color:#8d8d8d;
+    }
+
+    .foo_open_sec> :last-child {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .foo_open_sec> :last-child> :last-child {
+      width:70px;
+    }
+
+    .foo_open_sec> :last-child> :first-child span {
+      color:#605f5f;
+    }
+
+
+
+
+    
+
+  }
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------- PC(989~px)-------------------------------- 시작 */
+@media (min-width:1000px) {
+  body {
+    padding-top: 80px;
+    overflow-x: ;
+    overflow-y: ;
+    z-index: 0;
+  }
+
+  /* 헤더 */
+  header {
+    width:100%;
+    height: 80px;
+    margin-bottom: 30px;
+    padding:1.2rem 5%;
+    border-bottom: 1px solid powderblue;
+    background: white;
+    transition: 0.7s;
+    position:fixed;
+    top:0;
+    z-index: 9999;
+    
+  }
+
+  header> :first-child{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+
+  }
+
+  .mobile_navi,
+  #close_pc_navi_serch {
+    display: none;
+  }
+  .mobile_logo_imgs {
+    width: 87px;
+    height: 28px;
+  }
+
+  .pc_navi {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pc_navi div i {
+    font-size: 2rem;
+    margin-left: 1rem;
+    color:#0063aa;
+  }
+
+  .pc_navi div i:hover {
+    color:#050505;
+  }
+
+  /* 검색창열리기 */
+  #open_serch_menu_ {
+    transition: 0.7s;
+    width:100%;
+    height: 300px;
+    border-top: 1px solid powderblue;
+    background-color: white;
+    padding:1rem;
+    position: absolute;
+    left:-100%; 
+    top:100%;
+    z-index: 10;
+  }
+
+  #open_serch i,
+  #close_serch i,
+  .mobile_ham i {
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  #open_serch i:hover,
+  .mobile_ham i:hover {
+   color: #765afd;
+  }
+
+
+  .ser_inp {
+    width:100%;
+    margin:0 auto;
+  }
+
+  .ser_inp input {
+    width:90%;
+    padding:8px;
+    border:none;
+    border-bottom:1px solid #aba9a9;
+  }
+
+  .ser_inp input:focus {
+    outline: none;
+  }
+
+  .ser_inp i {
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  #close_serch{
+    font-size: 2rem;
+    color:#159cfd;
+    display: none;
+  }
+
+
+  .recomend_keyword> :first-child {
+    width:100%;
+    padding:1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recomend_keyword> :first-child> :first-child {
+    width:30%;
+  }
+
+  .recomend_keyword> :first-child> :first-child p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .recomend_keyword> :first-child> :last-child {
+    width:70%;
+  }
+
+  .recomend_keyword button {
+    margin:0.2rem 0;
+    font-weight: 500;
+    background: #e5e5e5;
+    border:1px solid #e5e5e5;
+    }
+
+  /* 햄버거 열기 닫기 */
+  #open_ham_menu_ {
+    width:55%;
+    height: 45px;
+    align-items: center;
+    transition: 0.7s;
+    position: absolute;
+    top:40%;
+    left: 20%;
+    
+  }
+
+  .ham_top {
+    display: none;
+  }
+
+
+
+  .title_,
+  .pc_title {
+    margin:0 1rem;
+  }
+
+  .accrdian_wrap {
+    position: relative;
+    display: flex;
+  }
+
+  .accrdian_wrap h3 {
+    width:100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+        transition: 0.7s;
+
+  }
+
+
+  .accrdian_wrap h3:hover {
+    color:#159cfd;
+  }
+
+  .title_contens{
+    text-align: center;
+    width:120vw;
+    padding:0.7rem 0;
+    background:white;
+    position: absolute;
+    border-top: 1px solid #159cfd;
+    top: 250%;
+    left: -50%;
+    display: none;
+  }
+
+  .title_contens p {
+    display: inline-block;
+    font-weight: 500;
+    padding:0.5rem 1rem;
+    cursor: pointer;
+    transition: -0.3s;
+  }
+
+  .title_contens p:hover {
+   color:#156095;
+  }
+
+
+  /* 햄버거 바텀 메뉴 */
+  #ham_bottom {
+   display: none;
+  }
+
+
+  /* 메인슬라이더 */
+ 
+  .mobile_main_img_1,
+  .mobile_main_img_2,
+  .mobile_main_img_3,
+  .mobile_main_img_4,
+  .mobile_main_img_5 {
+    display: none;
+  }
+
+  .pc_main_img_1,
+  .pc_main_img_2,
+  .pc_main_img_3,
+  .pc_main_img_4,
+  .pc_main_img_5 {
+    width:100%;
+    height: 500px;
+  }
+
+  .main_bg_1 {
+    width:100%;
+    height: 100%;
+    position: relative;
+  }
+  
+
+  .main_text,
+  .main_text_2,
+  .main_text_3,
+  .main_text_4,
+  .main_text_5 {
+    width:50%;
+    padding:0 1rem;
+    margin:0 auto;
+    position: absolute;
+    bottom:1vw;
+    right: 5%;
+  }
+
+  /* 텍스트 검정 */
+  .main_text h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+  }
+  .main_text h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+  }
+
+  .main_text_4 h3,
+  .main_text_5 h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+  }
+
+
+
+  .main_text_4> :nth-child(2),
+  .main_text_5> :nth-child(2)  {
+     font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  }
+
+  .main_text_4> :nth-child(3),
+  .main_text_5> :nth-child(3) {
+    font-size: 1.5rem;
+        line-height: 2rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  border-bottom:1px solid black;
+  }
+
+
+  .main_text> :nth-child(3),
+  .main_text_4> :nth-child(4),
+  .main_text_5> :nth-child(4) {
+    margin:1rem 0 2rem 0;
+    padding:0.7rem 1.2rem;
+    border:1px solid black;
+    color:black;
+    font-size: 0.7rem;
+  }
+  .main_text> :nth-child(3):hover,
+  .main_text_4> :nth-child(4):hover,
+  .main_text_5> :nth-child(4):hover {
+    background:#159cfd;
+    color:white;
+    border:1px solid #159cfd;
+  }
+
+  /* 텍스트 흰색 */
+  .main_text_2 h3,
+  .main_text_3 h3 {
+    font-size: 1.4rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid white;
+    color:white;
+  }
+  .main_text_2 h4,
+  .main_text_3 h4 {
+    font-size: 3rem;
+    line-height: 3rem;
+    color:white;
+  }
+
+  .main_text_2> :nth-child(2),
+  .main_text_3> :nth-child(2) {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+
+  .main_text_2> :nth-child(3),
+  .main_text_3> :nth-child(3) {
+    font-size: 1.5rem;
+        line-height: 2rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  border-bottom:1px solid rgb(255, 255, 255);
+  }
+
+  .main_text_2> :nth-child(4),
+  .main_text_3> :nth-child(4) {
+    margin:1rem 0 2rem 0;
+    padding:0.7rem 1.2rem;
+    border:1px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    font-size: 0.7rem;
+  }
+
+  .main_text_2> :nth-child(4):hover,
+  .main_text_3> :nth-child(4):hover {
+    background: white;
+    color:#159cfd;
+  }
+
+  /* 이미지 애니메이션*/
+  .main_bg_animation {
+    animation: zoom-a 5s linear infinite alternate;
+  }
+  @keyframes zoom-a {
+    0% {
+      transform: scale(1, 1) translateZ(1px);
+    }
+    100% {
+      transform: scale(1.03, 1.05) translateZ(1px);
+    }
+  }
+
+
+
+  /* 재생 정지 버튼 */
+  #start_stop_button {
+    position: absolute;
+    bottom:1vw;
+    left: 30vw;
+    display: none;
+  }
+
+  #start_stop_button button {
+    border:none;
+    color:#159cfd;
+  }
+
+
+  #main_bg_start_bt::after {
+    content: "\f04b";
+    font-size: 2vw;
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+  }
+
+
+  #main_bg_stop_bt::after {
+    content: "\f04c";
+    font-size: 2vw;
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+  }
+
+  
+
+  /* 이전 다음 버튼 자리이동 */ 
+  .swiper-container {
+    position:relative;
+  }
+    .swiper-button-prev,
+    .swiper-button-next{
+      top:45%;
+      color:#159cfd;
+    }
+
+    
+
+    .swiper-pagination-prev-active {
+      background-color: red;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 2rem;
+      color:#159cfd;
+
+    }
+
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+      right: 2vw;
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+      right: auto;
+      left: 2vw;
+    }
+
+    /* 페이지네이션 설정 */
+    .swiper-pagination-bullet {
+      width: 3rem;
+      height: 13px;
+      fill:white;
+      display: inline-block;
+      background:#545454;
+      border-radius: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: white;
+    }
+    
+    
+    /* 제품 슬라이더 */ 
+    .best_s {
+      margin:3rem 0;
+    }
+
+    .best_s_text {
+      padding:2rem 0.5rem 1rem 0.5rem;
+    }
+
+    .best_s_text h4 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 3.5rem;
+      line-height: 4rem;
+      color:#0368ce;
+      margin-bottom: 1rem;
+    }
+
+    .best_s_text h2 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 4.5rem;
+      line-height: 5rem;
+      color:#4a4a4a;
+      margin-bottom: 1rem;
+    }
+
+    /* 제품 이미지 */
+    .best_bg {
+      width:100%;
+      text-align: center;
+    }
+
+    .best_bg img {
+      width:60%;
+    }
+
+    /* 제품 이미지 텍스트 */
+    .best_inside_text {
+      padding:1rem 0;
+      text-align: center;
+    }
+
+    .best_inside_text h3 {
+      padding:1rem 0;
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 500;
+    }
+
+    .star_ {
+      display: flex;
+      justify-content: center;
+    }
+
+    .stars_ {
+      display: flex;
+    }
+
+    .star_full i{
+      color:#159cfd;
+      line-height: 4vw;
+    }
+    .star_empty i{
+      line-height: 4vw;
+    }
+
+    .stars_full,
+    .review_ {
+      display: block;
+      line-height: 4vw;
+    }
+
+    .review_ {
+      margin-left: 1rem;
+      line-height: 4vw;
+    }
+
+    /* 스와이퍼 페이지네이션 위치이동*/
+    .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+      top:99%;
+    }
+
+    
+    /* 배너 1번 */
+    .banner_1 {
+      width:100%;
+      height: 550px;
+      background:url('https://www.iope.com/kr/ko/resource/img/renew/main/bg-iopelab_m.jpg') no-repeat;
+      background-size: cover;
+      background-position:center center ;
+      margin:5rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .banner_1 section {
+      width:100%;
+      position: absolute;
+      bottom:13%;
+    }
+
+    .banner_1 section h3 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      color:white;
+      margin: 1rem 0;
+      text-shadow: 2px 2px 2px rgb(154, 154, 154);
+    }
+
+    .banner_1 section button {
+      padding:1rem 2rem;
+      font-size: 1.5rem;
+      color:white;
+      font-weight: 600;
+      border:1.5px solid white;
+    }
+
+    /* 배너2 리뷰 */
+    .banner_2 {
+      width:200%;
+      height: 100%;
+      padding:1rem 0;
+      background: linear-gradient(to bottom,
+      white 40%, #ebebeb 100%);
+      margin-bottom: 3rem;
+      position: relative;
+      transition: 0.7s;
+    }
+
+    .banner_2 section {
+      width:100%;
+    }
+
+    .fir_review,
+    .sec_review {
+      width:100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .fir_review img,
+    .sec_review img{
+      width:70%;
+    }
+
+
+    #steb_wrap {
+      width:100%;
+      display: flex;
+      justify-content: space-around;
+      transition: 0.7s;
+
+    }
+
+    .steb_imgg {
+      padding:0 0.5rem 1rem 0.5rem;
+    }
+
+
+    .steb_text i {
+      color:#159cfd;
+      margin:1rem 0; 
+      font-size: 6vw;  
+      line-height: 6vw;       
+    }
+
+    .steb_text h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 6vw;
+      margin-bottom: 1rem;
+    }
+
+    .steb_text p {
+      font-size: 1.2rem;
+      line-height: 4vw;
+      color:#aba9a9;
+      margin-bottom: 1rem;
+    }
+
+    .steb_text button {
+      padding:0.5rem 3rem;
+      font-size:1rem;
+      line-height: 4vw;
+      border:1px solid rgb(146, 146, 146);
+      margin: 5vw 0;
+    }
+
+    .steb_text button:hover {
+      background-color: #8e8e8e;
+      color:white;
+      border:1px solid #8e8e8e;
+    }
+
+    .banner_2> :nth-child(2){
+      text-align: center;
+      position: absolute;
+      bottom:1.5vw;
+      left: -47.4vw;
+    }
+
+    .banner_2> :nth-child(2) button {
+      width:10vw;
+      height: 1vw;
+      padding:0;
+      background-color: #8e8e8e;
+      border-radius: 0%;
+    }
+
+          /* sns insta 연동 */
+
+    .sns_insta {
+      width:80%;
+      margin: 3rem auto;
+      transition: 0.7s;
+    }
+
+
+    .sns_insta_text {
+      padding:2rem 0;
+      text-align: center;
+    }
+
+    .sns_insta_text h3 {
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 3rem;
+      color:#159cfd;
+      margin-bottom: 0.5rem;
+    }
+
+    
+    .sns_insta_text h4 {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      font-weight: 500;
+      color:#9a9a9a;
+    }
+
+    .img_sec {
+      position: relative;
+    }
+
+    .img_sec i {
+      position: absolute;
+      right:4%;
+      top:4%;
+      font-size: 2rem;
+      line-height: 6vw;
+    }
+
+    .wrap_1_text {
+      position: absolute;
+      right:-100vw;
+      bottom:0%;
+      width:100%;
+      height: 30%;
+      text-align: center;
+      padding:2rem 1rem;
+      background: rgba(255, 255, 255, 0.853);
+      cursor: pointer;
+      transition: 0.7s;
+      overflow-y: hidden;
+    }
+
+    .swiper-slide {
+      transition: 0.7s;
+
+    }
+    .swiper-slide:hover .wrap_1_text{
+      right:0vw;
+      cursor: pointer;
+    }
+
+    .wrap_1_text h5 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+    .wrap_1_text p {
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+
+    
+    /* 배너 3번 */
+    .banner_3 {
+      width:100%;
+      height: 700px;
+      background:url('https://www.iope.com/kr/ko/resource/img/renew/main/bg-brandstory_m.jpg') no-repeat;
+      background-size: cover;
+      background-position:center center ;
+      margin:5rem 0 5rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .banner_3 section {
+      width:100%;
+      position: absolute;
+      bottom:20%;
+    }
+
+    .banner_3 section h3 {
+      font-size: 2.5rem;
+      line-height: 5rem;
+      color:white;
+      margin-bottom: 1.5rem;
+    }
+
+    .banner_3 section button {
+      padding:1rem 2rem;
+      font-size: 2rem;
+      line-height: 2rem;
+      color:white;
+      font-weight: 600;
+      border:1.5px solid white;
+    }
+
+    .asdasd {
+      position: relative;
+    }
+    footer {
+      width:100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .foo_btn {
+      width:100%;
+      color:silver;
+      border:none;
+    }
+
+    .foo_btn button {
+      width:100%;
+      padding:1rem 0.5rem;
+      text-align: left;
+      color:silver;
+      border:none;
+      border-top: 1px solid silver;
+      border-radius: 0;
+    }
+
+    .foo_btn button:hover {
+      color:silver;
+    }
+
+    .foo_btn button::after {
+      content: "\f078";
+      font-size: 2vw;
+      font-family: "Font Awesome 5 Free";
+      font-weight:900;
+      position:absolute;
+      right: 10px;
+    }
+
+    .foo_open_sec {
+      padding:1.5rem 0.5rem;
+
+    }
+
+    .foo_open_sec> :first-child {
+      margin-bottom: 1rem;
+    }
+    .foo_open_sec span {
+      display: inline-block;
+      color:silver;
+      margin-bottom: 0.5rem;
+    }
+
+    .foo_open_sec span a {
+      color:#8d8d8d;
+    }
+
+    .foo_open_sec> :last-child {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .foo_open_sec> :last-child> :last-child {
+      width:70px;
+    }
+
+    .foo_open_sec> :last-child> :first-child span {
+      color:#605f5f;
+    }
+
+
+}
