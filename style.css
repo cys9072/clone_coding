@@ -1,0 +1,1063 @@
+/*깔끔 한글 폰트   font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+/* 고오급 영어 폰트  font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+/* 각진 영어 폰트  font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*필기체 영어 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: px solid green;
+}
+
+img {
+  width:100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+ 
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: #9e5c5c;
+}
+
+button {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid white;
+  transition: 0.7s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color:black;
+}
+
+ul li {
+  list-style: none;
+}
+/*메인 버튼 통합 */
+.stop,
+.start {
+  padding:10px;
+  display: inline-block;
+}
+
+.start {
+
+}
+
+
+.stop {
+  
+}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작(0~639px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (min-width:0px) and (max-width:414px) {
+  body {}
+
+  header {
+    width:100%;
+    background-color: white;
+    margin:0 auto;
+  }
+
+  .pc_top_login {
+    display: none;
+  }
+
+  header nav {
+    width:100%;
+    padding:0.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+  }
+
+  .mob_menu img{
+    width:30px;
+    height:30px;
+    filter: invert(100);
+  }
+
+  .mob_menu i {
+    font-size: 1.4rem;
+  }
+
+  .pc_menu {
+    display: none;
+  }
+
+  /*main slide*/
+.swiper-container img {
+  width:100%;
+}
+.swiper-pagination-bullet {
+  width: 2rem;
+  height: 4px;
+  margin:0 2px;
+  display: inline-block;
+  border-radius: 0%;
+  background: #000;
+  opacity: 0.2;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff7b7b;
+}
+/* 아티클 2 사진 */
+
+.pics_2 {
+  width:100%;
+  height: 100%;
+  margin:3rem auto 0 auto;
+  line-height: 0;
+}
+
+.pics_2 section {
+  width:100%;
+  border-bottom: 5px solid black;
+
+}
+
+.pics_2> :last-child {
+  margin-top: 2rem;
+}
+
+.pics_2 section img {
+  width:100%;
+}
+
+.pics_2 section> :last-child {
+  padding:1.4rem;
+  background-color: #e0e0e0;
+}
+
+.pics_2 p{
+  font-size: 0.6rem;
+  line-height: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.pics_2 span {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.stop,
+.start {
+  display: none;
+}
+
+/* 아트킬 3사진*/
+.pics_3 {
+  width:100%;
+  height: 300%;
+  margin:3rem auto 530px auto;
+  position: relative;
+  line-height: 0;
+}
+
+.pics_3 section {
+  width:100%;
+}
+
+.pics_3 p{
+  font-size: 0.6rem;
+  line-height: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.pics_3 span {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+
+.pics_3> :first-child{
+  height: 350px;
+  padding:1.4rem;
+  background-color: #e9cd2e;
+
+}
+
+.pics_3> :first-child> :nth-child(1),
+.pics_3> :first-child> :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+.pics_3> :first-child> :nth-child(2) {
+  font-weight: 600;
+  }
+
+  .pics_3> :last-child {
+    width:90%;
+    position: absolute;
+    top:50%;
+    transform: translate(5%);
+  }
+
+  .pics_3> :last-child> section {
+    width:100%;
+    border-bottom: 5px solid black;
+        margin-bottom: 1rem;
+  }
+
+  
+  .pics_3 section img {
+    width:100%;
+  }
+  
+  .pics_3> :last-child section> :last-child {
+    padding:1.4rem;
+    background-color: #e0e0e0;
+  }
+
+/*배너 */
+  .banner_ {
+    width:100%;
+    height: 450px;
+    background:url('https://www.hsd.co.kr/assets/images/main/main_visual_02.jpg') no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  .banner_ p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+
+  .banner_ section {
+    width:95%;
+    height: 92%;
+    padding:1.5rem 1rem;
+    color:white;
+    background-color: rgba(52, 52, 52, 0.9);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+
+  .banner_ section> :nth-child(1) {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+
+  .banner_ section> :nth-child(2) {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+
+  .banner_ section button {
+    margin-top: 3rem;
+    font-size: 1rem;
+    background:none;
+    border:2px solid white;
+    color:white;
+  }
+
+  /*배너 */
+  .banner_2 {
+    width:100%;
+    height: 100%;
+    line-height: 0;
+    margin-top:3rem;
+    border-bottom: 5px solid black;
+
+  }
+
+  .banner_2 p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1rem;
+  }
+
+  .banner_2 section {
+    width:100%;
+    height: 92%;
+  }
+  
+  .banner_2 section> div {
+    padding:1.5rem 1rem;
+    background-color: #e4e4e4;
+  }
+
+  .banner_2> div> section> div> :nth-child(1),
+  .banner_2> div> section> div> :nth-child(2) {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+  }
+
+  .banner_2> div> section> div i,
+  .banner_2> div> section> div span {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+          /* 모바일 푸터 */
+  footer {
+    display: none;
+  }
+
+  .mo_foo {
+    width:100%;
+    height: 100%;
+    padding:1.5rem 2rem;
+    background-color: #e9cd2e;
+    text-align: center;
+  }
+
+  .mo_foo section {
+    width:100%;
+  }
+
+  .mo_foo section> :nth-child(1) {
+    margin-bottom: 1rem;
+  }
+
+  .mo_foo section> :nth-child(2) {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .mo_foo section> :nth-child(3) {
+    width:150px;
+    margin:0 auto 1rem auto;
+  }
+
+  .mo_foo section> :nth-child(5) {
+    font-weight: 600;
+  }
+
+  .mo_foo button {
+    margin-bottom: 1rem;
+    width:100%;
+    background:none;
+    color:black;
+    border:none;
+    border-bottom: 1px solid silver;
+
+  }
+  
+}
+
+/*---------------------- 태블릿(640~989px)-------------------------------- 시작 */
+@media (min-width:414px) and (max-width:1023px) {
+  body {}
+
+  header {
+    width:100%;
+    background-color: white;
+  }
+
+  .pc_top_login {
+    display: none;
+  }
+
+  header nav {
+    width:100%;
+    padding:0.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+  }
+
+  .mob_menu img{
+    width:30px;
+    height:30px;
+    filter: invert(100);
+  }
+
+  .mob_menu i {
+    font-size: 1.4rem;
+  }
+
+  .pc_menu {
+    display: none;
+  }
+  /*main slide*/
+.swiper-pagination-bullet {
+  width: 5rem;
+  height: 8px;
+  margin:0 2px;
+  display: inline-block;
+  border-radius: 0%;
+  background: #000;
+  opacity: 0.2;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff7b7b;
+}
+
+/* 아티클 2 사진 */
+
+.pics_2 {
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin:3rem auto 0 auto;
+  line-height: 0;
+}
+
+.pics_2 section {
+  width:48%;
+  border-bottom: 5px solid black;
+
+}
+
+.pics_2 section img {
+  width:100%;
+}
+.pics_2> :first-child > :last-child {
+  background-color: #e0e0e0;
+  padding:1.5rem;
+}
+
+.pics_2 section> :last-child {
+  background-color: #e0e0e0;
+  padding:1.5rem;
+}
+
+.pics_2 p{
+  font-size: 0.6rem;
+  line-height: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.pics_2 span {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.stop,
+.start {
+  display: none;
+}
+
+/* 아트킬 3사진*/
+.pics_3 {
+  width:100%;
+  margin:3rem auto;
+  line-height: 0;
+}
+
+.pics_3 section {
+  width:100%;
+}
+
+.pics_3 p{
+  font-size: 0.6rem;
+  line-height: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.pics_3 span {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+
+.pics_3> :first-child{
+  height: 200px;
+  padding:1.4rem;
+  margin-bottom: 0.5rem;
+  background-color: #e9cd2e;
+
+}
+
+.pics_3> :first-child> :nth-child(1),
+.pics_3> :first-child> :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+.pics_3> :first-child> :nth-child(2) {
+  font-weight: 600;
+  }
+
+  .pics_3> :last-child {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pics_3> :last-child> section {
+    width:100%;
+    border-bottom: 5px solid black;
+  }
+
+  .pics_3> :last-child> :first-child {
+    margin-right: 8px;
+  }
+
+  
+  .pics_3 section img {
+    width:100%;
+  }
+  
+  .pics_3> :last-child section> :last-child {
+    padding:1.4rem;
+    background-color: #e0e0e0;
+  }
+  
+
+  .pics_3> :last-child section> :last-child p {
+    font-size: 0.6rem;
+    line-height: ;
+  }
+
+  .pics_3> :last-child section> :last-child p {
+    font-size: 0.6rem;
+  }
+
+  .banner_ {
+    width:100%;
+    height: 450px;
+    background:url('https://www.hsd.co.kr/assets/images/main/main_visual_02.jpg') no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  .banner_ p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+
+  .banner_ section {
+    width:50%;
+    height: 100%;
+    padding:3rem 1.5rem;
+    color:white;
+    background-color: rgba(52, 52, 52, 0.9);
+    position: absolute;
+    top:0%;
+    left:0%;
+  }
+
+  .banner_ section> :nth-child(1) {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+
+  .banner_ section> :nth-child(2) {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+
+  .banner_ section button {
+    margin-top: 3rem;
+    font-size: 1rem;
+    background:none;
+    border:2px solid white;
+    color:white;
+  }
+
+    /*배너 */
+    .banner_2 {
+      width:100%;
+      height: 100%;
+      line-height: 0;
+      margin-top:3rem;
+      border-bottom: 5px solid black;
+  
+    }
+  
+    .banner_2 p {
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1rem;
+    }
+  
+    .banner_2 section {
+      width:100%;
+      height: 92%;
+    }
+    
+    .banner_2 section> div {
+      padding:1.5rem 1rem;
+      background-color: #e4e4e4;
+    }
+  
+    .banner_2 section> div> :nth-child(1),
+    .banner_2 section> div> :nth-child(2) {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      font-weight: 600;
+    }
+  
+    .banner_2 section> div i,
+    .banner_2 section> div span {
+      font-size: 0.8rem;
+      line-height: 1rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+
+          /* 모바일 푸터 */
+          footer {
+            display: none;
+          }
+        
+          .mo_foo {
+            width:100%;
+            padding:1.5rem 2rem;
+            background-color: #e9cd2e;
+            text-align: center;
+          }
+        
+          .mo_foo section {
+            width:100%;
+          }
+        
+          .mo_foo section> :nth-child(1) {
+            margin-bottom: 1rem;
+          }
+        
+          .mo_foo section> :nth-child(2) {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+          }
+        
+          .mo_foo section> :nth-child(3) {
+            width:150px;
+            margin:0 auto 1rem auto;
+          }
+        
+          .mo_foo section> :nth-child(5) {
+            font-weight: 600;
+          }
+        
+          .mo_foo button {
+            margin-bottom: 1rem;
+            width:100%;
+            background:none;
+            color:black;
+            border:none;
+            border-bottom: 1px solid silver;
+        
+          }
+
+
+}
+/*---------------------- PC(989~px)-------------------------------- 시작 */
+@media (min-width:1024px) {
+  body {}
+/*헤더*/
+  header {
+    width:100%;
+    background-color: white;
+    padding-top: 1rem;
+  }
+
+  .pc_top_login {
+    width:100%;
+    background-color: none;
+  }
+
+  .pc_top_login ul {
+    width:1000px;
+    display: flex;
+    justify-content:flex-end;
+    margin:0 auto;
+    
+  }
+  .pc_top_login ul li {
+    margin-left: 0.5rem;
+    color:#8b8b8b;
+
+  }
+
+  .pc_top_login ul li a {
+    color:#8b8b8b;
+  }
+
+  header nav {
+    width:1000px;
+    padding:1rem;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+  }
+
+  header nav img {
+    width:120px;
+    height: 60px;
+  } 
+
+  .pc_menu ul {
+    display: flex;
+  }
+  .pc_menu ul li{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+.mob_menu {
+  display: none;
+}
+
+/*main slide*/
+.swiper-pagination-bullet {
+  width: 5rem;
+  height: 8px;
+  margin:0 2px;
+  display: inline-block;
+  border-radius: 0%;
+  background: #000;
+  opacity: 0.2;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff9797;
+}
+/* 아티클 2 사진 */
+
+.pics_2 {
+  width:1000px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin:3rem auto 0 auto;
+  line-height: 0;
+}
+
+.pics_2 section {
+  width:492px;
+  border-bottom: 8px solid black;
+}
+
+.pics_2 section img {
+  width:100%;
+}
+
+.pics_2 section> :last-child {
+  padding:1.4rem;
+  background-color: #e0e0e0;
+}
+
+.pics_2 p{
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.pics_2 span {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+/* 아트킬 3사진*/
+.pics_3 {
+  width:1000px;
+  margin:3rem auto;
+  line-height: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pics_3 p{
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.pics_3 span {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+
+.pics_3> :first-child{
+  width:323px;
+  height: 350px;
+  padding:1.4rem;
+  margin-bottom: 0.5rem;
+  background-color: #e9cd2e;
+
+}
+
+.pics_3> :first-child> :nth-child(1),
+.pics_3> :first-child> :nth-child(2) {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.pics_3> :first-child> :nth-child(2) {
+  font-weight: 600;
+  }
+
+  .pics_3> :last-child {
+    width:661px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pics_3> :last-child> section {
+    width:323px;
+    height: 350px;
+    border-bottom: 5px solid black;
+  }
+
+  
+  .pics_3> :last-child section> :last-child {
+    padding:1.4rem;
+    background-color: #e0e0e0;
+  }
+  
+
+  .pics_3> :last-child section> :last-child p {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+  }
+
+  
+  .pics_3> :last-child section> :last-child span {
+    font-size: 0.9rem;
+    line-height: 2.4rem;
+  }
+
+  .banner_ {
+    width:100%;
+    height: 600px;
+    background:url('https://www.hsd.co.kr/assets/images/main/main_visual_02.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin:0 auto;
+  }
+
+  .banner_ p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    
+  }
+
+  .banner_ div {
+    width:1000px;
+    height: 100%;
+    margin:0 auto;
+  }
+
+  .banner_ section {
+    width:500px;
+    height: 100%;
+    padding:4rem 1.3rem;
+    color:white;
+    background-color: rgba(52, 52, 52, 0.9);
+  }
+
+  .banner_ section> :nth-child(1) {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+
+  .banner_ section> :nth-child(2) {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 600;
+  }
+
+  .banner_ section button {
+    margin-top: 3rem;
+    font-size: 1rem;
+    background:none;
+    border:2px solid white;
+    color:white;
+  }
+
+  .banner_ button:hover {
+    pointer: cursor;
+    background-color: black;
+    color:white;
+  }
+    /*배너 */
+    .banner_2 {
+      width:1000px;
+      height: 500px;
+      line-height: 0;
+      margin:3rem auto 0 auto;
+    }
+  
+    .banner_2 p {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+    }
+  
+    .banner_2 section {
+      width:100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .banner_2 section img {
+      width:90%;
+      height: 500px;
+    }
+    
+    .banner_2 section> div {
+      width:380px;
+      height: 500px;
+      padding:3rem 1rem;
+      background-color: rgb(228, 228, 228, 0.85);
+      position: absolute;
+      right:10%;
+      top:0%;
+    }
+  
+    .banner_2 section> div> :nth-child(1),
+    .banner_2 section> div> :nth-child(2) {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      font-weight: 600;
+    }
+  
+    .banner_2 section> div i,
+    .banner_2 section> div span {
+      font-size: 1.4rem;
+      line-height: 1rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    /*푸터 */
+    footer {
+      width:100%;
+      background-color: #e9cd2e;
+      padding:2rem 0;
+      margin-top: 3rem;
+    }
+
+    footer> :nth-child(1) {
+      width:1000px;
+      margin:0 auto;
+
+    }
+
+    footer> div> :nth-child(1) {
+      width:1000px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom:1px solid silver;
+    }
+
+    footer> div> :nth-child(1)> :nth-child(2) ul  {
+      display: flex;
+      
+    }
+
+    footer> div> :nth-child(1)> :nth-child(2) ul li  {
+      margin:0 0.2rem;
+      
+    }
+
+    .foo_mo_icon,
+    .foo_mo_btn {
+      display: none;
+    }
+    
+    footer img {
+      width:100px;
+    }
+
+    footer> div> :nth-child(2)  {
+      width:1000px;
+      padding:1rem 2rem;
+      text-align: center;
+
+    }
+
+    
+    footer> div> :nth-child(2)> :nth-child(2) {
+      font-weight: 600;
+      margin: 1rem 0;
+
+    }
+
+    .foo_pc_icon {
+      font-size: 2rem;
+    }
+    .mo_foo {
+      display: none;
+    }
+
+}
+

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <meta charset="utf-8">
+  <title>Yoon_HellCoding_default</title>
+
+  <!--스와이퍼, css 파일-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+  <!--
+    슬릭 css파일 + 제이쿼리+js 파일
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  -->
+
+  <!--일반 내 css파일-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--폰트어썸-->
+  <script src="https://kit.fontawesome.com/684e97b7f2.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<!--아이콘 모음
+sns:
+유튜브:<i class="fab fa-youtube"></i>
+인스타:<i class="fab fa-instagram"></i>
+페이스북:<i class="fab fa-facebook"></i>
+카카오톡:
+
+화살표 인디케이터
+좌:<i class="fas fa-angle-left"></i>
+우:<i class="fas fa-angle-right"></i>
+
+화살표 인디케이터(백그라운드 원형)
+좌:<i class="fas fa-chevron-circle-left"></i>
+우:<i class="fas fa-chevron-circle-right"></i>
+
+햄버거 메뉴:<i class="fas fa-bars"></i>
+돋보기:<i class="fas fa-search"></i>
+눈깔:<i class="fas fa-eye"></i>
+카트:<i class="fas fa-shopping-cart"></i>
+위치:<i class="fas fa-location-arrow"></i>
+장바구니:<i class="fas fa-shopping-bag"></i>
+상반신모양: <i class="far fa-user"></i>
+z-index 안될때 부모 요소에 포지션 릴레티브 주면됨 -->
+
+
+<body>
+  <!--\\\\\\\\\\\\\\\\\\\\ start\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <!--헤더-->
+  <header>
+    <div class="pc_top_login">
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li>|</li>
+        <li><a href="#">회원가입</a></li>
+        <li>|</li>
+        <li><a href="#"><i class="fab fa-instagram"></a></i></li>
+        <li><a href="#"><i class="fab fa-facebook"></a></i></li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="pc_menu">
+        <a href="#"><img src="https://www.hsd.co.kr/assets/images/common/h1_logo.png" alt="logo_"></a>
+      </div>
+
+      <div class="mob_menu">
+        <a href="#"><img src="https://www.hsd.co.kr/assets/images/common/bg_w_h1_logo.png" alt="logo_"></a>
+      </div>
+
+      <div class="pc_menu">
+        <ul>
+          <li><a href="#">BRADN</a></li>
+          <li><a href="#">ESG</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">STORE</a></li>
+          <li><a href="#">EVENT</a></li>
+          <li><a href="#">FRANCHISE</a></li>
+          <li><a href="#">HANSOT</a></li>
+        </ul>
+      </div>
+
+      <div class="mob_menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+  <!-- 메인-->
+  <main>
+
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://www.hsd.co.kr/images/0413c417113f4692b7efd3375c9c811220210129071134.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.hsd.co.kr/images/093ec593980f4141ae77ef0c4c8fbb8e20210205065414.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.hsd.co.kr/images/6af770f939044cadb7b52f9f2ab1faf920201203011519.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.hsd.co.kr/images/71224adb3b404c26a2ccd3ed00de574120210205065239.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.hsd.co.kr/images/d07d2c00451045a789b86da57c66888620201231080117.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="btn_s">
+        <button class="start"><i class="fas fa-play"></i></button>
+        <button class="stop"><i class="fas fa-pause"></i></button>
+      </div>
+    </div>
+  </main>
+  <!-- 아티클 2 사진-->
+  <article class="pics_2">
+
+    <section>
+      <img src="https://www.hsd.co.kr/assets/images/main/main_img_01.jpg" alt="">
+      <div>
+        <p>가격 이상의 가치가 담긴 다양한 메뉴를 확인해 보세요</p>
+        <i class="fas fa-play"></i>
+        <span><a href="#">한솥 메뉴</a></span>
+      </div>
+    </section>
+
+    <section>
+      <img src="https://www.hsd.co.kr/assets/images/main/main_img_02.jpg" alt="">
+      <div>
+        <p>갓 지은 한끼가 기다리고 있는
+          가까운 한솥 매장을 찾아보세요</p>
+        <i class="fas fa-play"></i>
+        <span><a href="#">한솥 메뉴</a></span>
+      </div>
+    </section>
+
+  </article>
+
+  <!-- 아티클 3 사진-->
+  <article class="pics_3">
+
+    <section>
+      <p>가맹점주에게도<br> 든든한 한솥입니다</p>
+      <span>―</span>
+      <p>점주님들의 꿈을 실현 시켜 드리기 위해</p>
+      <p>가맹점주와 성공까지 동행하는 한솥!</p>
+      <p>상담부터 개업까지 모든 희로애락을 함께 합니다.</p>
+    </section>
+
+    <div>
+      <section>
+        <img src="https://www.hsd.co.kr/assets/images/main/main_img_03.jpg" alt="">
+        <div>
+          <p>한솥은 언제나 고객과 점주님들의</p>
+          <P>이익을 먼저 생각합니다</P>
+
+          <i class="fas fa-play"></i>
+          <span><a href="#">why한솥 메뉴</a></span>
+        </div>
+      </section>
+
+      <section>
+        <img src="https://www.hsd.co.kr/assets/images/main/main_img_04.jpg" alt="">
+        <div>
+          <p>한솥과 함께하는 가맹점주들의</p>
+          <p>성공스토리 입니다</p>
+
+          <i class="fas fa-play"></i>
+          <span><a href="#">성공수기</a></span>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <!-- 아티클 든든한 밥솥-->
+  <article class="banner_">
+    <div>
+      <section>
+        <p>든든한 솥밥을 위해<br>한솥이 지키고,<br>키워가는 것들</p>
+        <span>―</span>
+        <p>한솥은 '따끈한 도시락으로 지역사회에 공헌한다' 라는</p>
+        <p>기업이념 아래, 고객 이익을 최우선으로 하며 엄선된</p>
+        <p>좋은 식재료만 사용하는 대한민국 외식종합기업 시장을</p>
+        <p>리드하는 글로벌 종합외식기업 입니다.</p>
+
+        <button>브랜드 철학</button>
+      </section>
+    </div>
+  </article>
+
+  <!-- 아티클 배추사진-->
+  <article class="banner_2">
+    <div>
+      <section>
+        <img src="https://www.hsd.co.kr/assets/images/main/main_img_05.jpg" alt="">
+        <div>
+          <p>식재료 앞에서는<br>한없이<br>까탈스럽습니다</p>
+          <span>―</span>
+          <p>맑고 깨끗한 자연 환경속에서 재배된 식재료가</p>
+          <p>아니면 한솥이 될 수 없습니다.</p>
+          <p>모든 식재료는 고객분들이 안심하고 드실수 있도록</p>
+          <p>엄격한 기준 아래 선별됩니다</p>
+          <i class="fas fa-play"></i>
+          <span><a href="#">식재료이야기</a></span>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <!-- 푸터-->
+  <footer>
+    <div>
+      <section>
+        <div></div>
+        <div>
+          <ul>
+            <li><a href="#">인재채용</a></li>
+            <li>|</li>
+            <li><a href="#">협력업체등록</a></li>
+            <li>|</li>
+            <li><a href="#">공지사항</a></li>
+            <li>|</li>
+            <li><a href="#">고객센터</a></li>
+            <li>|</li>
+            <li><strong><a href="#">개인정보취급방침</a></strong></li>
+            <li>|</li>
+            <li><a href="#">이용약관</a></li>
+          </ul>
+        </div>
+        <div class="foo_mo_icon">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div>
+          <img src="https://www.hsd.co.kr/assets/images/common/logo_webaward2017.png" alt="">
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div class="foo_mo_btn">
+            <button>한솥 사업자 정보^</button>
+          </div>
+          <div>
+            <span>대표이사 000</span>
+            <span>|</span>
+            <span>사업자등록번호 000-00-00000</span>
+            <span>|</span>
+            <span>서울시 강남구 000 000 000</span>
+            <span>|</span>
+            <span>T.02-000-0000</span>
+            <span>|</span>
+            <span>F.02-000-0000</span><br>
+            <span>E.abcd@hsd.co.kr</span>
+            <span>|</span>
+            <span>한솥 도시락 고객센터 02-000-0000</span>
+            <span>|</span>
+            <span>전국창업 설명회 1811-0000</span>
+            <span>|</span>
+            <span>단체주문 1644-0000</span>
+          </div>
+        </div>
+        <div>
+          <span>COPYRIGHT©㈜한솥. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div>
+          <div class="foo_pc_icon">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </footer>
+  <!--모바일  푸터-->
+  <article class="mo_foo">
+    <section>
+      <div>
+        <span>공지사항</span>
+        <span>고객센터</span>
+        <span><strong>개인정보취급방침</strong></span>
+        <span>이용약관</span>
+      </div>
+
+      <div>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+      </div>
+
+      <div>
+        <img src="https://www.hsd.co.kr/assets/images/common/logo_webaward2017.png" alt="">
+      </div>
+
+      <button>한솥 사업자 정보 ^</button>
+
+      <span>COPYRIGHT©㈜한솥. ALL RIGHTS RESERVED.</span>
+    </section>
+  </article>
+
+
+
+  <script src="script_auto_slide.js"></script>
+</body>
+
+</html>
