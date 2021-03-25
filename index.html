@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <meta charset="utf-8">
+  <title>Yoon_HellCoding_default</title>
+
+  <!--스와이퍼, css 파일-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+  <!--
+    슬릭 css파일 + 제이쿼리+js 파일
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  -->
+
+  <!--일반 내 css파일-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--폰트어썸-->
+  <script src="https://kit.fontawesome.com/684e97b7f2.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<!--아이콘 모음
+sns:
+유튜브:<i class="fab fa-youtube"></i>
+인스타:<i class="fab fa-instagram"></i>
+페이스북:<i class="fab fa-facebook"></i>
+카카오톡:
+
+화살표 인디케이터
+좌:<i class="fas fa-angle-left"></i>
+우:<i class="fas fa-angle-right"></i>
+
+화살표 인디케이터(백그라운드 원형)
+좌:<i class="fas fa-chevron-circle-left"></i>
+우:<i class="fas fa-chevron-circle-right"></i>
+
+햄버거 메뉴:<i class="fas fa-bars"></i>
+돋보기:<i class="fas fa-search"></i>
+눈깔:<i class="fas fa-eye"></i>
+카트:<i class="fas fa-shopping-cart"></i>
+위치:<i class="fas fa-location-arrow"></i>
+장바구니:<i class="fas fa-shopping-bag"></i>
+상반신모양: <i class="far fa-user"></i>
+z-index 안될때 부모 요소에 포지션 릴레티브 주면됨 -->
+
+
+<body>
+  <!--\\\\\\\\\\\\\\\\\\\\ start\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <!--헤더-->
+  <header>
+    <nav>
+      <div class="ham_">
+        <i class="fas fa-bars"></i>
+        <span>메뉴</span>
+      </div>
+
+      <div class="pc_nav_bar">
+        <ul>
+          <li><a href="#">A3</a></li>
+          <li><a href="#">A4</a></li>
+          <li><a href="#">A5</a></li>
+          <li><a href="#">A6</a></li>
+          <li><a href="#">A7</a></li>
+          <li><a href="#">A8</a></li>
+          <li><a href="#">Q2</a></li>
+          <li><a href="#">Q3</a></li>
+          <li><a href="#">Q5</a></li>
+          <li><a href="#">Q7</a></li>
+          <li><a href="#">Q8</a></li>
+          <li><a href="#"><span class="red_squ"></span>R8</a></li>
+          <li><a href="#">e-tron</a></li>
+          <li><a href="#">e-tron GT</a></li>
+        </ul>
+      </div>
+      <div class="serch_nav_bar">
+        <i class="fas fa-search"></i>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!--메인-->
+  <main>
+    <section>
+      <h1>
+        미래, 아이디어로부터 시작되다
+      </h1>
+      <h4>The new fully electric Audi e-tron GT.</h4>
+      <button>자세히보기</button>
+    </section>
+  </main>
+  <!--제품 슬라이더-->
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/genbae/2019.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi e-tron</span>
+      </div>
+
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/f83rj7/2022.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi e-tron GT</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/8vm/2019.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi A3</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/8wc/2020.png	?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi A4</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/f5f/2020.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi A5</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/4a2/2019.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi A6</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/4ka/2019.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi A7</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/4n8/2019.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi A8</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/gab/2019.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi Q2</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/f3b/2019.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi Q3</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/fyb/2019.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi Q5</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/4mg/2020.png	?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi Q7</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/4mn0g/2021.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi Q8</span>
+      </div>
+      <div class="swiper-slide"><img
+          src="https://mediaservice.audi.com/media/live/50900/fly1400x601n8/4s3/2018.png?wid=291&mimetype=image/jpeg"
+          alt="">
+        <span>Audi R8</span>
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next">
+      <i class="fas fa-angle-right"></i>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="fas fa-angle-left"></i>
+    </div>
+  </div>
+
+  <!--제품 섹션-->
+  <article class="product_1">
+    <section>
+      <div>
+        <img src="https://www.audi.co.kr/dam/nemo/kr/Model/rs-e-tron-gt/730x730.jpg?output-format=webp&downsize=730px:*"
+          alt="">
+      </div>
+      <div class="pro_text">
+        <h2>The new Audi RS e-tron GT</h2>
+        <h5>전기 모빌리티의 새로운 차원</h5>
+        <button>자세히 보기</button>
+      </div>
+    </section>
+  </article>
+
+  <article class="product_2">
+    <section>
+      <div>
+        <img src="https://www.audi.co.kr/dam/nemo/kr/main/2018/730x730%20(2).jpg?output-format=webp&downsize=730px:*"
+          alt="">
+      </div>
+      <div class="pro_text">
+        <h2>The new Audi R8</h2>
+        <h5>Performance is an attitude.</h5>
+        <button>자세히 보기</button>
+      </div>
+    </section>
+  </article>
+
+  <article class="product_3">
+    <section>
+      <div>
+        <img src="https://www.audi.co.kr/dam/nemo/kr/main/2021/AQ8_730x730.jpg?output-format=webp&downsize=730px:*"
+          alt="">
+      </div>
+      <div class="pro_text">
+        <h2>The new Audi Q8</h2>
+        <h5>Welcome to the 8th dimension</h5>
+        <button>자세히 보기</button>
+      </div>
+    </section>
+  </article>
+
+  <article class="product_4">
+    <section>
+      <div>
+        <img src="https://www.audi.co.kr/dam/nemo/kr/main/2021/AQ7_730x730.jpg?output-format=webp&downsize=730px:*"
+          alt="">
+      </div>
+      <div class="pro_text">
+        <h2>The new Audi Q7</h2>
+        <h5>더 새로워진 여유로움을 만나다</h5>
+        <button>자세히 보기</button>
+      </div>
+    </section>
+  </article>
+
+  <article class="product_5">
+    <section>
+      <div>
+        <img src="https://www.audi.co.kr/dam/nemo/kr/main/2021/Audi_SQ8_730x730.jpg?output-format=webp&downsize=706px:*"
+          alt="">
+      </div>
+      <div class="pro_text">
+        <h2>The new Audi SQ8</h2>
+        <h5>스포츠카, 쿠페, 그리고 SUV</h5>
+        <button>자세히 보기</button>
+      </div>
+    </section>
+  </article>
+  <!--sns 텍스트-->
+
+  <article class="sns_text">
+    <h2>
+      SNS @Audikorea
+    </h2>
+  </article>
+
+  <!--sns 아우디 코리아-->
+  <article class="sns_audi">
+    <section>
+      <div>
+        <img
+          src="https://www.audi.co.kr/content/dam/nemo/kr/Model/rs-e-tron-gt/%EC%9D%B8%EC%8A%A4%ED%83%80%EA%B7%B8%EB%9E%A8_20210222.jpg?output-format=webp&downsize=585px:*"
+          alt="">
+      </div>
+
+      <div>
+        <div>
+          <h3>The new Audi Q8</h3>
+          <h3>비교 불가한 역동적인 비주얼</h3>
+        </div>
+        <div>
+          <span>#Audi #아우디 #Q8</span>
+        </div>
+        <div class="sns_iconn">
+          <i class="fab fa-instagram"></i>
+          <span>22.02.2021</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <img
+          src="https://www.audi.co.kr/content/dam/nemo/kr/Model/rs-e-tron-gt/%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%B6%81_20210222.jpg?output-format=webp&downsize=585px:*"
+          alt="">
+      </div>
+
+      <div>
+        <div>
+          <h3>The new Audi A6</h3>
+          <h3>시간을 멈추게 하는 디자인</h3>
+        </div>
+        <div></div>
+        <div class="sns_iconn">
+          <i class="fab fa-facebook"></i>
+          <span>22.02.2021</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <img
+          src="https://www.audi.co.kr/content/dam/nemo/kr/Model/rs-e-tron-gt/%EC%9C%A0%ED%8A%9C%EB%B8%8C_20210222.jpg?output-format=webp&downsize=585px:*"
+          alt="">
+      </div>
+
+      <div>
+        <div>
+          <h3>The highlights of the</h3>
+          <h3>E-tron GT world premiere</h3>
+        </div>
+        <span>아우디는 순수 전기차 e-트론 GT를 처음으로 선보이는 월드 프리미어를 진행했습니다.
+          프리미엄 전기 모빌리티의 시작을 영상으로 확인해 보세요
+        </span>
+        <div class="sns_iconn">
+          <i class="fab fa-youtube"></i>
+          <span>22.02.2021</span>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <!--사이트맵-->
+  <article class="site_map">
+    <section>
+      <div>
+        <p>Models</p>
+        <ul>
+          <li><a href="#">All models</li>
+        </ul>
+      </div>
+
+      <div>
+        <p>Company</p>
+        <ul>
+          <li><a href="#">아우디코리아 소개</a></li>
+          <li><a href="#">아우디코리아 소식</a></li>
+          <li><a href="#">고객안내</a></li>
+          <li><a href="#">아우디 공식 인증 중고차</a></li>
+          <li><a href="#">전시장 찾기</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p>Audi Service</p>
+        <ul>
+          <li><a href="#">아우디 서비스</a></li>
+          <li><a href="#">서비스 프로그램</a></li>
+          <li><a href="#">서비스 센터</a></li>
+          <li><a href="#">고객지원센터</a></li>
+          <li><a href="#">아우디 순정부품</a></li>
+          <li><a href="#">아우디 순정 액세서리</a></li>
+          <li><a href="#">부품가격정보</a></li>
+          <li><a href="#">사설수리업체를 위한 권고사항</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p>Audi Experience</p>
+        <ul>
+          <li><a href="#">아우디 브랜드 히스토리</a></li>
+          <li><a href="#">Quattro 시스템</a></li>
+          <li><a href="#">Audi Connert</a></li>
+          <li><a href="#">More possibilities</a></li>
+          <li><a href="#">Future is n attitude</a></li>
+          <li><a href="#">아우디 매거진</a></li>
+          <li><a href="#">my Audi world</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p>Audi Sustainability</p>
+        <ul>
+          <li><a href="#">전기 모빌리티</a></li>
+          <li><a href="#">플러그인 하이브리드</a></li>
+        </ul>
+      </div>
+    </section>
+  </article>
+  <!--푸터-->
+  <footer>
+    <div>
+      <section>
+        <div>
+          <i class="fas fa-car"></i>
+          <p>시승신청</p>
+        </div>
+
+        <div>
+          <i class="fas fa-map-marker-alt"></i>
+          <p>전시장 찾기</p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <span><a href="#">개인정보 처리 방침</a></span>
+          <span><a href="#">부제정보</a></span>
+          <span><a href="#">타이어 에너지 소비 효율 등급 정보 조회</a></span>
+          <span><a href="#">스마트키 KC인증 정보조회</a></span>
+          <span><a href="#">AUDI AG의 개인정보처리에 관한 정보</a></span>
+        </div>
+      </section>
+
+      <section>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </section>
+
+      <section>
+        <p>© 2021 Audi Korea. All rights reserved</p>
+        <p>본 웹사이트에서 제공되는 정보는 실제 판매 차량과 다를 수 있습니다</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="script_auto_slide.js"></script>
+</body>
+
+</html>

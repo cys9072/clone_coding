@@ -1,0 +1,972 @@
+/*깔끔 한글 폰트   font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+/* 고오급 영어 폰트  font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+/* 각진 영어 폰트  font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*필기체 영어 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: px solid green;
+}
+
+img {
+  width:100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+ 
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid white;
+  transition: 0.7s;
+}
+
+button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+/*메인 버튼 통합 */
+.stop,
+.start {
+  padding:10px;
+}
+
+.start {
+
+}
+
+
+.stop {
+  
+}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작(0~639px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (min-width:0px) and (max-width:426px) {
+  body {}
+
+  header {
+    width:100%;
+    background-color: white;
+  }
+
+  header nav {
+    width:100%;
+    padding:1rem 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+  }
+
+
+  .pc_nav_bar  {
+    display: none;
+  }
+  .serch_nav_bar {
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .serch_nav_bar i {
+    font-size: 1rem;
+  }
+
+  .serch_nav_bar i::after {
+    content: "검색";
+    font-size: 0.5rem;
+    margin-left: 0.4rem;
+    font-weight: 400;
+  }
+
+  .serch_nav_bar span {
+    display: block;
+    width:85px;
+    height: 30px;
+    background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzUuNiA2MiI+PHBhdGggZD0iTTE0NC4yIDBjLTcgMC0xMy41IDIuMy0xOC44IDYuMi01LjMtMy45LTExLjgtNi4yLTE4LjgtNi4yUzkzLjEgMi4zIDg3LjggNi4yQzgyLjUgMi4zIDc2LjEgMCA2OSAwYy03IDAtMTMuNSAyLjMtMTguOCA2LjJDNDUgMi4zIDM4LjUgMCAzMS40IDAgMTQuMSAwIDAgMTMuOSAwIDMxczE0LjEgMzEgMzEuNCAzMWM3IDAgMTMuNS0yLjMgMTguOC02LjJDNTUuNSA1OS43IDYyIDYyIDY5IDYyczEzLjUtMi4zIDE4LjgtNi4yQzkzIDU5LjcgOTkuNSA2MiAxMDYuNiA2MmM3IDAgMTMuNS0yLjMgMTguOC02LjIgNS4yIDMuOSAxMS43IDYuMiAxOC44IDYuMiAxNy4zIDAgMzEuNC0xMy45IDMxLjQtMzFTMTYxLjUgMCAxNDQuMiAwem0tMTguOCA0N2MtMy44LTQuMy02LjEtOS45LTYuMS0xNnMyLjMtMTEuNyA2LjEtMTZjMy44IDQuMyA2LjEgOS45IDYuMSAxNnMtMi4zIDExLjctNi4xIDE2em0tMzcuNiAwYy0zLjgtNC4zLTYuMS05LjktNi4xLTE2czIuMy0xMS43IDYuMS0xNmMzLjggNC4zIDYuMSA5LjkgNi4xIDE2cy0yLjMgMTEuNy02LjEgMTZ6bS0zNy42IDBjLTMuOC00LjMtNi4xLTkuOS02LjEtMTZzMi4zLTExLjcgNi4xLTE2YzMuOCA0LjMgNi4xIDkuOSA2LjEgMTYgLjEgNi4xLTIuMyAxMS43LTYuMSAxNnpNNi41IDMxYzAtMTMuNSAxMS4yLTI0LjUgMjQuOS0yNC41IDUuMSAwIDkuOSAxLjUgMTMuOSA0LjItNC44IDUuNC03LjcgMTIuNS03LjcgMjAuMyAwIDcuOCAyLjkgMTQuOSA3LjcgMjAuMy00IDIuNi04LjcgNC4yLTEzLjkgNC4yLTEzLjcgMC0yNC45LTExLTI0LjktMjQuNXptNDguNiAyMC4zYzQuOC01LjQgNy43LTEyLjUgNy43LTIwLjMgMC03LjgtMi45LTE0LjktNy43LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMnM5LjkgMS41IDEzLjkgNC4yYy00LjggNS40LTcuOCAxMi41LTcuOCAyMC4zIDAgNy44IDIuOSAxNC45IDcuOCAyMC4zLTQgMi42LTguNyA0LjItMTMuOSA0LjItNS4xIDAtOS45LTEuNi0xMy45LTQuMnptMzcuNiAwYzQuOC01LjQgNy44LTEyLjUgNy44LTIwLjMgMC03LjgtMi45LTE0LjktNy44LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMnM5LjkgMS41IDEzLjkgNC4yYy00LjggNS40LTcuOCAxMi41LTcuOCAyMC4zIDAgNy44IDIuOSAxNC45IDcuOCAyMC4zLTQgMi42LTguNyA0LjItMTMuOSA0LjJzLTkuOS0xLjYtMTMuOS00LjJ6bTUxLjUgNC4yYy01LjEgMC05LjktMS41LTEzLjktNC4yIDQuOC01LjQgNy44LTEyLjUgNy44LTIwLjMgMC03LjgtMi45LTE0LjktNy44LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMiAxMy43IDAgMjQuOSAxMSAyNC45IDI0LjVzLTExLjIgMjQuNS0yNC45IDI0LjV6Ii8+PC9zdmc+"); no-repeat;
+    background-position: 0 0;
+    background-size: 85px 30px;
+  }
+
+    /*메인*/
+    main {
+      width:100%;
+      height: 300px;
+      padding:1.5rem 0;
+      background:url('https://www.audi.co.kr/content/dam/nemo/kr/main/2018/210203_Audi_Angola_MainstageTeaser_1920x1920_Final_CLEAN.jpg?output-format=webp&downsize=1920px:*') no-repeat;
+      background-size: cover;
+      background-position: 0 35%;
+      position: relative;
+    }
+
+    main section {
+      width:95%;
+      margin:0 auto;
+      
+    }
+  
+    main section h1{
+      font-size: 1rem;
+      color:#525151;
+      line-height: 1rem;
+    }
+  
+    main section h4{
+      font-size: 0.8rem;
+      color:#525151;
+      line-height: 2.3rem;
+    }
+  
+    main section button {
+      width:90%;
+      color:white;
+      background: #595858;
+      border:none;
+      position: absolute;
+      bottom:5%;
+      left: 5%;
+    }
+      /*제품 슬라이더 */
+  .swiper-slide> span {
+    display: inline-block;
+    width:100%;
+    text-align: center;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top:78%;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 0;
+  }
+
+  .swiper-button-next i,
+  .swiper-button-prev i {
+    font-size: 2rem;
+    color:#8e8e8e;
+}
+
+/*프로덕트 섹션 */
+.product_1,
+.product_2,
+.product_3,
+.product_4,
+.product_5 {
+  width:95%;
+  height: 100%;
+  margin:3rem auto;
+  vertical-align:text-bottom;
+}
+
+.product_1 section,
+.product_2 section,
+.product_3 section,
+.product_4 section, 
+.product_5 section {
+}
+
+.product_1 section> :nth-child(1),
+.product_2 section> :nth-child(1),
+.product_3 section> :nth-child(1),
+.product_4 section> :nth-child(1),
+.product_5 section> :nth-child(1){
+  width:100%;
+  height: 80%;
+}
+
+.pro_text {
+  width:100%;
+  height:100%;
+  margin:15% 0;
+  text-align: center;
+}
+
+.pro_text h2  {
+  margin:2rem 0;
+  line-height: 2rem;
+}
+
+.pro_text h5{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+  /*sns text*/
+
+.sns_text {
+  text-align: center;
+}
+
+/*sns 아우디 */
+
+.sns_audi {
+  width:100%;
+  margin:2rem auto;
+}
+
+.sns_audi section {
+  width:100%;
+  margin:1.5rem 0;
+}
+
+.sns_audi section div img {
+  width:100%;
+}
+.sns_audi section> :first-child {
+  line-height: 0;
+}
+
+.sns_audi section> :last-child {
+  width:100%;
+  height: 250px;
+  padding:1rem 2rem;
+  background-color: #dddddd;
+  position: relative;
+}
+
+.sns_audi section> :last-child h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sns_iconn {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom:10%;
+}
+
+/*사이트맵 */
+.site_map {
+  width:100%;
+  background-color: #f0efef;
+  padding:1rem;
+}
+
+.site_map section div p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding:0.5rem 0;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid silver;
+}
+
+.site_map section div ul {
+  display: none;
+}
+
+.site_map section div p:hover>.site_map section div ul {
+  display: block;
+}
+
+/*푸터*/
+
+  footer {
+    width:100%;
+    padding:1rem;
+    background-color: #8e8e8e;
+  }
+
+  footer> div> :nth-child(1) {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:#e7e7e7;
+    margin:1rem 0;
+  }
+
+  footer> div> :nth-child(1)> :nth-child(1) {
+    border-right: 1px solid #e7e7e7;
+  }
+
+  footer> div> :nth-child(1)> div {
+    width:50%;
+  }
+  footer> div> :nth-child(1) i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  footer> div> :nth-child(2) {
+    text-align: center;
+  } 
+
+   footer> div> :nth-child(2) div span{
+     display: inline-block;
+     margin: 0.3rem;
+   } 
+
+   footer> div> :nth-child(2) div span a{
+    color:#e7e7e7;
+  } 
+
+  footer> div> :nth-child(3){
+    margin:1em 0;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  footer> div> :nth-child(3) i {
+    font-size: 2rem;
+    margin:1rem 0.3rem;
+    color:#e7e7e7;
+  }
+
+  footer> div> :nth-child(4)  {
+    margin:0.5rem 0;
+    color:#e7e7e7;
+}
+}
+
+/*---------------------- 태블릿(640~989px)-------------------------------- 시작 */
+@media (min-width:426px) and (max-width:1109px) {
+  body {}
+  header {
+    width:100%;
+    background-color: white;
+  }
+
+  header nav {
+    width:100%;
+    padding:1rem 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+  }
+
+  .pc_nav_bar  {
+    display: none;
+  }
+  .serch_nav_bar {
+    width:85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .serch_nav_bar i {
+    font-size: 1rem;
+  }
+
+  .serch_nav_bar i::after {
+    content: "검색";
+    font-size: 0.5rem;
+    margin-left: 0.4rem;
+    font-weight: 400;
+  }
+
+  .serch_nav_bar span {
+    display: block;
+    width:85px;
+    height: 30px;
+    background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzUuNiA2MiI+PHBhdGggZD0iTTE0NC4yIDBjLTcgMC0xMy41IDIuMy0xOC44IDYuMi01LjMtMy45LTExLjgtNi4yLTE4LjgtNi4yUzkzLjEgMi4zIDg3LjggNi4yQzgyLjUgMi4zIDc2LjEgMCA2OSAwYy03IDAtMTMuNSAyLjMtMTguOCA2LjJDNDUgMi4zIDM4LjUgMCAzMS40IDAgMTQuMSAwIDAgMTMuOSAwIDMxczE0LjEgMzEgMzEuNCAzMWM3IDAgMTMuNS0yLjMgMTguOC02LjJDNTUuNSA1OS43IDYyIDYyIDY5IDYyczEzLjUtMi4zIDE4LjgtNi4yQzkzIDU5LjcgOTkuNSA2MiAxMDYuNiA2MmM3IDAgMTMuNS0yLjMgMTguOC02LjIgNS4yIDMuOSAxMS43IDYuMiAxOC44IDYuMiAxNy4zIDAgMzEuNC0xMy45IDMxLjQtMzFTMTYxLjUgMCAxNDQuMiAwem0tMTguOCA0N2MtMy44LTQuMy02LjEtOS45LTYuMS0xNnMyLjMtMTEuNyA2LjEtMTZjMy44IDQuMyA2LjEgOS45IDYuMSAxNnMtMi4zIDExLjctNi4xIDE2em0tMzcuNiAwYy0zLjgtNC4zLTYuMS05LjktNi4xLTE2czIuMy0xMS43IDYuMS0xNmMzLjggNC4zIDYuMSA5LjkgNi4xIDE2cy0yLjMgMTEuNy02LjEgMTZ6bS0zNy42IDBjLTMuOC00LjMtNi4xLTkuOS02LjEtMTZzMi4zLTExLjcgNi4xLTE2YzMuOCA0LjMgNi4xIDkuOSA2LjEgMTYgLjEgNi4xLTIuMyAxMS43LTYuMSAxNnpNNi41IDMxYzAtMTMuNSAxMS4yLTI0LjUgMjQuOS0yNC41IDUuMSAwIDkuOSAxLjUgMTMuOSA0LjItNC44IDUuNC03LjcgMTIuNS03LjcgMjAuMyAwIDcuOCAyLjkgMTQuOSA3LjcgMjAuMy00IDIuNi04LjcgNC4yLTEzLjkgNC4yLTEzLjcgMC0yNC45LTExLTI0LjktMjQuNXptNDguNiAyMC4zYzQuOC01LjQgNy43LTEyLjUgNy43LTIwLjMgMC03LjgtMi45LTE0LjktNy43LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMnM5LjkgMS41IDEzLjkgNC4yYy00LjggNS40LTcuOCAxMi41LTcuOCAyMC4zIDAgNy44IDIuOSAxNC45IDcuOCAyMC4zLTQgMi42LTguNyA0LjItMTMuOSA0LjItNS4xIDAtOS45LTEuNi0xMy45LTQuMnptMzcuNiAwYzQuOC01LjQgNy44LTEyLjUgNy44LTIwLjMgMC03LjgtMi45LTE0LjktNy44LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMnM5LjkgMS41IDEzLjkgNC4yYy00LjggNS40LTcuOCAxMi41LTcuOCAyMC4zIDAgNy44IDIuOSAxNC45IDcuOCAyMC4zLTQgMi42LTguNyA0LjItMTMuOSA0LjJzLTkuOS0xLjYtMTMuOS00LjJ6bTUxLjUgNC4yYy01LjEgMC05LjktMS41LTEzLjktNC4yIDQuOC01LjQgNy44LTEyLjUgNy44LTIwLjMgMC03LjgtMi45LTE0LjktNy44LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMiAxMy43IDAgMjQuOSAxMSAyNC45IDI0LjVzLTExLjIgMjQuNS0yNC45IDI0LjV6Ii8+PC9zdmc+"); no-repeat;
+    background-position: 0 0;
+    background-size: 85px 30px;
+  }
+    /*메인*/
+    main {
+      width:100%;
+      height: 600px;
+      padding:4rem;
+      background:url('https://www.audi.co.kr/content/dam/nemo/kr/main/2018/210203_Audi_Angola_MainstageTeaser_1920x1920_Final_CLEAN.jpg?output-format=webp&downsize=1920px:*') no-repeat;
+      background-size: cover;
+      background-position: 0 35%;
+    }
+  
+    main section h1{
+      font-size: 2rem;
+      color:#525151;
+      line-height: 2.3rem;
+    }
+  
+    main section h4{
+      color:#525151;
+      line-height: 2.3rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    main section button {
+      width:200px;
+      color:white;
+      background: #595858;
+      border:none;
+    }
+      /*제품 슬라이더 */
+  .swiper-slide> span {
+    display: inline-block;
+    width:100%;
+    text-align: center;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top:90%;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 0;
+  }
+
+  .swiper-button-next i,
+  .swiper-button-prev i {
+    font-size: 1.8rem;
+    color:#433737;
+
+}
+
+/*프로덕트 섹션 */
+.product_1,
+.product_2,
+.product_3,
+.product_4,
+.product_5 {
+  width:95%;
+  height: 100%;
+  margin:3rem auto;
+  vertical-align:text-bottom;
+}
+
+.product_1 section,
+.product_2 section,
+.product_3 section,
+.product_4 section, 
+.product_5 section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_1 section> :nth-child(1),
+.product_2 section> :nth-child(1),
+.product_3 section> :nth-child(1),
+.product_4 section> :nth-child(1),
+.product_5 section> :nth-child(1){
+  width:49%;
+  height: 80%;
+}
+
+.pro_text {
+  width:49%;
+  height: 200px;
+  margin:15% 0;
+}
+
+.pro_text h2  {
+  margin:2rem 0;
+  line-height: 2rem;
+}
+
+.pro_text h5{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.product_2 section> :first-child,
+.product_4 section> :first-child {
+  order:2;
+}
+
+.product_2 section> :last-child,
+.product_4 section> :last-child {
+  order:1;
+}
+
+  /*sns text*/
+
+  .sns_text {
+    text-align: center;
+  }
+  
+  /*sns 아우디 */
+  
+  .sns_audi {
+    width:95%;
+    margin:2rem auto;
+  }
+  
+  .sns_audi section {
+    width:100%;
+    margin:1.5rem 0;
+  }
+  
+  .sns_audi section div img {
+    width:100%;
+  }
+  .sns_audi section> :first-child {
+    line-height: 0;
+  }
+  
+  .sns_audi section> :last-child {
+    width:100%;
+    height: 250px;
+    padding:1rem 2rem;
+    background-color: #dddddd;
+    position: relative;
+  }
+  
+  .sns_audi section> :last-child h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .sns_iconn {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom:10%;
+  }
+
+  /*사이트맵 */
+.site_map {
+  width:1000px;
+  margin:0 auto;
+  background-color: #f0efef;
+  padding:2.5rem;
+}
+
+.site_map section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site_map section div p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.site_map section div ul li {
+  margin-bottom: 0.7rem;
+}
+
+/*푸터*/
+
+footer {
+  width:100%;
+  padding:1rem;
+  background-color: #8e8e8e;
+  text-align: center;
+}
+
+footer> div> :nth-child(1) {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:#e7e7e7;
+  margin:1rem 0;
+}
+
+footer> div> :nth-child(1)> :nth-child(1) {
+  border-right: 1px solid #e7e7e7;
+}
+
+footer> div> :nth-child(1)> div {
+  width:50%;
+}
+footer> div> :nth-child(1) i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer> div> :nth-child(2) {
+  text-align: center;
+} 
+
+ footer> div> :nth-child(2) div span{
+   display: inline-block;
+   margin: 0.3rem;
+ } 
+
+ footer> div> :nth-child(2) div span a{
+  color:#e7e7e7;
+} 
+
+footer> div> :nth-child(3){
+  margin:1em 0;
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+}
+footer> div> :nth-child(3) i {
+  font-size: 2rem;
+  margin:1rem 0.3rem;
+  color:#e7e7e7;
+}
+
+footer> div> :nth-child(4)  {
+  margin:0.5rem 0;
+  color:#e7e7e7;
+}
+  
+
+}
+/*---------------------- PC(989~px)-------------------------------- 시작 */
+@media (min-width:1110px) {
+  body {}
+
+  header {
+    width:100%;
+    background-color: white;
+  }
+
+  header nav {
+    width:1000px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    padding:1rem 0;
+    align-items: center;
+  }
+
+  .pc_nav_bar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pc_nav_bar ul li {
+   margin:0 0.3rem;
+  }
+
+  .red_squ {
+    display: inline-block;
+    background:red;
+    margin-right: 0.3rem;
+    width:10px;
+    height: 10px;
+    transform: skew(-30deg);
+
+  }
+
+  .serch_nav_bar {
+    width:250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .serch_nav_bar i {
+    font-size: 1.2rem;
+  }
+
+  .serch_nav_bar span {
+    display: block;
+    width:85px;
+    height: 30px;
+    background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzUuNiA2MiI+PHBhdGggZD0iTTE0NC4yIDBjLTcgMC0xMy41IDIuMy0xOC44IDYuMi01LjMtMy45LTExLjgtNi4yLTE4LjgtNi4yUzkzLjEgMi4zIDg3LjggNi4yQzgyLjUgMi4zIDc2LjEgMCA2OSAwYy03IDAtMTMuNSAyLjMtMTguOCA2LjJDNDUgMi4zIDM4LjUgMCAzMS40IDAgMTQuMSAwIDAgMTMuOSAwIDMxczE0LjEgMzEgMzEuNCAzMWM3IDAgMTMuNS0yLjMgMTguOC02LjJDNTUuNSA1OS43IDYyIDYyIDY5IDYyczEzLjUtMi4zIDE4LjgtNi4yQzkzIDU5LjcgOTkuNSA2MiAxMDYuNiA2MmM3IDAgMTMuNS0yLjMgMTguOC02LjIgNS4yIDMuOSAxMS43IDYuMiAxOC44IDYuMiAxNy4zIDAgMzEuNC0xMy45IDMxLjQtMzFTMTYxLjUgMCAxNDQuMiAwem0tMTguOCA0N2MtMy44LTQuMy02LjEtOS45LTYuMS0xNnMyLjMtMTEuNyA2LjEtMTZjMy44IDQuMyA2LjEgOS45IDYuMSAxNnMtMi4zIDExLjctNi4xIDE2em0tMzcuNiAwYy0zLjgtNC4zLTYuMS05LjktNi4xLTE2czIuMy0xMS43IDYuMS0xNmMzLjggNC4zIDYuMSA5LjkgNi4xIDE2cy0yLjMgMTEuNy02LjEgMTZ6bS0zNy42IDBjLTMuOC00LjMtNi4xLTkuOS02LjEtMTZzMi4zLTExLjcgNi4xLTE2YzMuOCA0LjMgNi4xIDkuOSA2LjEgMTYgLjEgNi4xLTIuMyAxMS43LTYuMSAxNnpNNi41IDMxYzAtMTMuNSAxMS4yLTI0LjUgMjQuOS0yNC41IDUuMSAwIDkuOSAxLjUgMTMuOSA0LjItNC44IDUuNC03LjcgMTIuNS03LjcgMjAuMyAwIDcuOCAyLjkgMTQuOSA3LjcgMjAuMy00IDIuNi04LjcgNC4yLTEzLjkgNC4yLTEzLjcgMC0yNC45LTExLTI0LjktMjQuNXptNDguNiAyMC4zYzQuOC01LjQgNy43LTEyLjUgNy43LTIwLjMgMC03LjgtMi45LTE0LjktNy43LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMnM5LjkgMS41IDEzLjkgNC4yYy00LjggNS40LTcuOCAxMi41LTcuOCAyMC4zIDAgNy44IDIuOSAxNC45IDcuOCAyMC4zLTQgMi42LTguNyA0LjItMTMuOSA0LjItNS4xIDAtOS45LTEuNi0xMy45LTQuMnptMzcuNiAwYzQuOC01LjQgNy44LTEyLjUgNy44LTIwLjMgMC03LjgtMi45LTE0LjktNy44LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMnM5LjkgMS41IDEzLjkgNC4yYy00LjggNS40LTcuOCAxMi41LTcuOCAyMC4zIDAgNy44IDIuOSAxNC45IDcuOCAyMC4zLTQgMi42LTguNyA0LjItMTMuOSA0LjJzLTkuOS0xLjYtMTMuOS00LjJ6bTUxLjUgNC4yYy01LjEgMC05LjktMS41LTEzLjktNC4yIDQuOC01LjQgNy44LTEyLjUgNy44LTIwLjMgMC03LjgtMi45LTE0LjktNy44LTIwLjMgNC0yLjYgOC43LTQuMiAxMy45LTQuMiAxMy43IDAgMjQuOSAxMSAyNC45IDI0LjVzLTExLjIgMjQuNS0yNC45IDI0LjV6Ii8+PC9zdmc+"); no-repeat;
+    background-position: 0 0;
+    background-size: 85px 30px;
+  }
+
+  /*메인*/
+  main {
+    width:100%;
+    height: 600px;
+    padding:4rem;
+    background:url('https://www.audi.co.kr/content/dam/nemo/kr/main/2018/210203_Audi_Angola_MainstageTeaser_1920x1920_Final_CLEAN.jpg?output-format=webp&downsize=1920px:*') no-repeat;
+    background-size: cover;
+    background-position: 0 35%;
+  }
+
+  main section h1{
+    font-size: 2rem;
+    color:#525151;
+    line-height: 2.3rem;
+  }
+
+  main section h4{
+    color:#525151;
+    line-height: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  main section button {
+    width:200px;
+    color:white;
+    background: #595858;
+    border:none;
+  }
+
+  /*제품 슬라이더 */
+  .swiper-slide> span {
+    display: inline-block;
+    width:100%;
+    text-align: center;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 0;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top:82%;
+  }
+
+  .swiper-button-next i,
+  .swiper-button-prev i {
+    font-size: 4rem;
+    color:#656464;
+
+}
+
+/*프로덕트 섹션 */
+.product_1,
+.product_2,
+.product_3,
+.product_4,
+.product_5 {
+  width:1000px;
+  height: 100%;
+  margin:3rem auto;
+  vertical-align:text-bottom;
+}
+
+.product_1 section,
+.product_2 section,
+.product_3 section,
+.product_4 section, 
+.product_5 section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_1 section> :nth-child(1),
+.product_2 section> :nth-child(1),
+.product_3 section> :nth-child(1),
+.product_4 section> :nth-child(1),
+.product_5 section> :nth-child(1){
+  width:490px;
+  height: 500px;
+}
+
+.pro_text {
+  width:490px;
+  height: 200px;
+  margin:150px 0;
+}
+
+.pro_text h2  {
+  margin:2rem 0;
+  line-height: 2rem;
+}
+
+.pro_text h5{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.product_2 section> :first-child,
+.product_4 section> :first-child {
+  order:2;
+}
+
+.product_2 section> :last-child,
+.product_4 section> :last-child {
+  order:1;
+}
+
+
+/*sns text*/
+.sns_text {
+  width:1000px;
+  margin:0 auto;
+}
+/*sns 아우디 */
+
+.sns_audi {
+  width:1000px;
+  margin:3rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns_audi section {
+  width:33%;
+}
+
+.sns_audi section div img {
+  width:100%;
+}
+.sns_audi section> :first-child {
+  line-height: 0;
+}
+
+.sns_audi section> :last-child {
+  width:100%;
+  height: 250px;
+  padding:1rem 2rem;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.sns_audi section> :last-child h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sns_iconn {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom:10%;
+}
+
+/*사이트맵 */
+.site_map {
+  width:1000px;
+  margin:0 auto;
+  background-color: #f0efef;
+  padding:2.5rem;
+}
+
+.site_map section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site_map section div p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.site_map section div ul li {
+  margin-bottom: 0.7rem;
+}
+
+/*푸터*/
+
+footer {
+  width:100%;
+  padding:1rem;
+  background-color: #8e8e8e;
+  text-align: center;
+}
+footer> div {
+  width:1000px;
+  margin:0 auto;
+}
+
+footer> div> :nth-child(1) {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:#e7e7e7;
+  margin:1rem 0;
+}
+
+footer> div> :nth-child(1)> :nth-child(1) {
+  border-right: 1px solid #e7e7e7;
+}
+
+footer> div> :nth-child(1)> div {
+  width:50%;
+}
+footer> div> :nth-child(1) i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer> div> :nth-child(2) {
+  text-align: center;
+} 
+
+ footer> div> :nth-child(2) div span{
+   display: inline-block;
+   margin: 0.3rem;
+ } 
+
+ footer> div> :nth-child(2) div span a{
+  color:#e7e7e7;
+} 
+
+footer> div> :nth-child(3){
+  margin:1em 0;
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+}
+footer> div> :nth-child(3) i {
+  font-size: 2rem;
+  margin:1rem 0.3rem;
+  color:#e7e7e7;
+}
+
+footer> div> :nth-child(4)  {
+  margin:0.5rem 0;
+  color:#e7e7e7;
+}
