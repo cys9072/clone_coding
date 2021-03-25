@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: px solid green;
+}
+
+img {
+  width: 100px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #4d2e03;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  color: #4d2e03;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  background: none;
+  border: 6px solid #dea63f;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media screen and (max-width:765px) {
+  header {
+    width: 100%;
+    padding: 2rem 1rem 1rem 1rem;
+    position: relative;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav span {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #dea63f;
+  }
+
+  .menu_bar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu_bar img {
+    width: 150px;
+  }
+
+  .menu_bar p {
+    display: none;
+  }
+
+  .sns_icons {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main section {
+    width: 100%;
+    height: 400px;
+    padding: 9rem 0 0 9rem;
+    background: url('https://www.thehersheycompany.com/is/image/content/dam/corporate-us/Corporate_international/ko_kr/images/home/home_KV_hershey.jpg?hei=640&wid=1140&fmt=jpg') no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+
+  main div {
+    display: none;
+  }
+
+  .moba__il {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    background: #ececec;
+  }
+
+  .moba__il h1,
+  .moba__il h3 {
+    color: #4d2e03;
+    margin-bottom: 2rem;
+  }
+
+  .moba__il h3 {
+    line-height: 2rem;
+    font-weight: 800;
+  }
+
+  .moba__il button {
+    color: #4d2e03;
+  }
+
+  .intro_text {
+    width: 100%;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .intro_text h2 {
+    color: #4d2e03;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+  }
+
+  .intro_text span {
+    color: #dea63f;
+    font-size: 1.8rem;
+  }
+
+  /* 제품2개 1번쩨*/
+  .con_1,
+  .con_2,
+  .con_3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .con_1 section,
+  .con_2 section,
+  .con_3 section {
+    width: 100%;
+  }
+
+  .con_1 section img,
+  .con_2 section img,
+  .con_3 section img {
+    width: 100%;
+  }
+
+  .con_1 section div,
+  .con_2 section div,
+  .con_3 section div {
+    padding: 4rem 0 6rem 0;
+  }
+
+  .con_1 section h3,
+  .con_2 section h3,
+  .con_3 section h3 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+  }
+
+  /* 하단 배너*/
+  .banner {
+    width: 100%;
+  }
+
+  .banner> :first-child {
+    width: 100%;
+    height: 500px;
+  }
+
+  .banner> :first-child section {
+    width: 100%;
+    height: 250px;
+    position: relative;
+  }
+
+  .banner> :first-child> :first-child {
+    background: url('https://www.thehersheycompany.com/is/image/content/dam/corporate-us/Corporate_international/ko_kr/images/common/banner_recipes.jpg?hei=455&wid=960&fmt=jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .banner> :first-child> :last-child {
+    background: url('https://www.thehersheycompany.com/is/image/content/dam/corporate-us/Corporate_international/ko_kr/images/common/banner_event.jpg?hei=455&wid=960&fmt=jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .banner> :first-child section div {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 38%;
+  }
+
+  .banner> :first-child> :first-child h2,
+  .banner> :first-child> :first-child h3 {
+    color: white;
+    margin: 1rem;
+  }
+
+  .banner> :first-child> :first-child h2 {
+    font-size: 1.7rem;
+  }
+
+  .banner> :first-child> :last-child h2 {
+    color: #4d2e03;
+  }
+
+  .banner> :first-child> :last-child h3 {
+    color: white;
+    margin: 1rem;
+  }
+
+  .banner> :first-child> :first-child span {
+    color: #dea63f;
+  }
+
+  .banner> :first-child> :last-child span {
+    color: #fe7e3a;
+  }
+
+  .brown_banner {
+    width: 100%;
+    height: 50px;
+    background: #4d2e03;
+    padding: 1rem 0;
+  }
+
+  .brown_banner h3 {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    font-size: 2.8rem;
+    line-height: 1.6rem;
+  }
+
+  /* 푸터 */
+  footer {
+    width: 100%;
+    padding: 3rem;
+    background: #e7e7e7;
+  }
+
+  footer> :nth-child(1) {
+    width: 100%;
+  }
+
+  footer> :nth-child(1)> :nth-child(1) {
+    width: 100%;
+  }
+
+  footer> :nth-child(1)> :nth-child(2) {
+    width: 100%;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #838383;
+  }
+
+  footer> :nth-child(1)> :nth-child(1) p {
+    margin-bottom: 1.2rem;
+    color: #838383;
+  }
+
+  footer> :nth-child(1)> :nth-child(1) p {
+    transition: 0.5s;
+  }
+
+  footer> :nth-child(1)> :nth-child(1) p:hover {
+    color: black;
+  }
+
+  footer> :nth-child(1)> :nth-child(2) p {
+    color: #838383;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+
+  footer> :nth-child(2) {
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  footer> :nth-child(2) div {
+    width: 60px;
+    height: 60px;
+    margin-left: 0.7rem;
+    background: #e7e1e1;
+    position: relative;
+  }
+
+  footer> :nth-child(2) i {
+    font-size: 2.4rem;
+    color: #7d7d7d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer> :nth-child(2) i:hover {
+    color: black;
+  }
+}
+
+/*---------------------- PC-------------------------------- 시작 */
+@media screen and (min-width:766px) {
+
+  /*헤더 + 네비게이션*/
+  header nav span {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    padding: 2rem 1rem 1rem 1rem;
+    position: relative;
+  }
+
+  header nav {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu_bar {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+
+  .menu_bar a {
+    color: #9c9c9c;
+  }
+
+  .sns_icons {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+
+  .sns_icons i {
+    font-size: 1.5rem;
+    color: #c1bdbd;
+    margin-left: 0.4rem;
+  }
+
+  /*메인*/
+  main {
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+
+  main section {
+    width: 100%;
+    height: 600px;
+    padding: 9rem 0 0 9rem;
+    background: url('https://www.thehersheycompany.com/is/image/content/dam/corporate-us/Corporate_international/ko_kr/images/home/home_KV_hershey.jpg?hei=640&wid=1140&fmt=jpg') no-repeat;
+    background-size: cover;
+  }
+
+  main section> :first-child {
+    width: 400px;
+    color: white;
+  }
+
+  main section> :first-child h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  main section> :first-child p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+  }
+
+  main section> :first-child button {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem 1.5rem;
+    background: none;
+    border: 6px solid white;
+  }
+
+  .indicator__ {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+  }
+
+  .indicator__ i {
+    font-size: 4rem;
+  }
+
+  /* 허쉬 브랜드 text*/
+  .moba__il {
+    display: none;
+  }
+
+  .intro_text {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding: 3.5rem 1rem;
+  }
+
+  .intro_text h2 {
+    color: #4d2e03;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+  }
+
+  .intro_text span {
+    color: #dea63f;
+    font-size: 1.8rem;
+  }
+
+  /* 제품2개 1번쩨*/
+  .con_1,
+  .con_2,
+  .con_3 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .con_1 section,
+  .con_2 section,
+  .con_3 section {
+    width: 50%;
+  }
+
+  .con_1 section img,
+  .con_2 section img,
+  .con_3 section img {
+    width: 100%;
+  }
+
+  .con_1 section div,
+  .con_2 section div,
+  .con_3 section div {
+    padding: 4rem 0 4rem 0;
+  }
+
+  .con_1 section h3,
+  .con_2 section h3,
+  .con_3 section h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  /* 하단 배너*/
+  .banner {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 3.1rem;
+  }
+
+  .banner> :first-child {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner> :first-child section {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .banner> :first-child> :first-child {
+    background: url('https://www.thehersheycompany.com/is/image/content/dam/corporate-us/Corporate_international/ko_kr/images/common/banner_recipes.jpg?hei=455&wid=960&fmt=jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .banner> :first-child> :last-child {
+    background: url('https://www.thehersheycompany.com/is/image/content/dam/corporate-us/Corporate_international/ko_kr/images/common/banner_event.jpg?hei=455&wid=960&fmt=jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .banner> :first-child section div {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 38%;
+  }
+
+  .banner> :first-child> :first-child h2,
+  .banner> :first-child> :first-child h3 {
+    color: white;
+    margin: 1rem;
+  }
+
+  .banner> :first-child> :first-child h2 {
+    font-size: 1.7rem;
+  }
+
+  .banner> :first-child> :last-child h2 {
+    color: #4d2e03;
+  }
+
+  .banner> :first-child> :last-child h3 {
+    color: white;
+    margin: 1rem;
+  }
+
+  .banner> :first-child> :first-child span {
+    color: #dea63f;
+  }
+
+  .banner> :first-child> :last-child span {
+    color: #fe7e3a;
+  }
+
+  .brown_banner {
+    width: 100%;
+    height: 50px;
+    background: #4d2e03;
+    padding: 1rem 0;
+  }
+
+  .brown_banner h3 {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    font-size: 3rem;
+    line-height: 1.5rem;
+  }
+
+  /* 푸터 */
+  footer {
+    width: 100%;
+    padding: 3rem;
+    background: #e7e7e7;
+  }
+
+  footer> :nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer> :nth-child(1)> :nth-child(1) {
+    width: 45%;
+    height: 200px;
+  }
+
+  footer> :nth-child(1)> :nth-child(2) {
+    width: 55%;
+    height: 200px;
+    border-bottom: 1px solid #838383;
+  }
+
+  footer> :nth-child(1)> :nth-child(1) p {
+    margin-bottom: 1.2rem;
+    color: #838383;
+  }
+
+  footer> :nth-child(1)> :nth-child(1) p {
+    transition: 0.5s;
+  }
+
+  footer> :nth-child(1)> :nth-child(1) p:hover {
+    color: black;
+  }
+
+  footer> :nth-child(1)> :nth-child(2) p {
+    color: #838383;
+    text-align: right;
+    font-size: 0.7rem;
+  }
+
+  footer> :nth-child(2) {
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer> :nth-child(2) div {
+    width: 60px;
+    height: 60px;
+    margin-left: 0.7rem;
+    background: #e7e1e1;
+    position: relative;
+  }
+
+  footer> :nth-child(2) i {
+    font-size: 2.4rem;
+    color: #7d7d7d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer> :nth-child(2) i:hover {
+    color: black;
+  }
+}
