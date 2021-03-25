@@ -1,0 +1,1777 @@
+/*깔끔 한글 폰트   font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+/* 고오급 영어 폰트  font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+/* 각진 영어 폰트  font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*필기체 영어 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: px solid green;
+}
+
+img {
+  width:100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+ 
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid white;
+  transition: 0.7s;
+}
+
+button:hover {
+  background-: black;
+  color: white;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작(0~639px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (min-width:0px) and (max-width:999px) {
+  body {}
+  .pc_navi {
+    display: none;
+  }
+  /* 헤더 */
+  header {
+    width:100%;
+    height: 100%;
+    padding:1rem 0.6rem;
+    background-color: rgb(0, 0, 0, 0.8);
+    color:white;
+    align-items: center;
+
+
+  }
+
+  header nav {
+    position:relative;
+    transition: 0.5s;
+  }
+
+  header nav> :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  header nav> :first-child img {
+    width:130px;
+    margin-left: 2rem;
+  }
+
+  .mobile_navi a {
+    color:white;
+  }
+
+  .mobile_navi> :first-child {
+   margin-right:1rem ;
+  }
+  .accordian_box {
+    padding:0.5rem 0 0.5rem 1rem;
+  }
+
+  .accordian_box> :nth-child(8) {
+    border-bottom: 1px solid black;
+  }
+  #mobile_navi_ham {
+    cursor: pointer;
+  }
+
+  .mobile_navi> a {
+    transition: 0.7s;  
+  }
+
+  .mobile_navi> a:hover {
+    color:crimson;
+  }
+  #mobile_navi_clo {
+    display: none;
+  }
+  #bottom_navi {
+    width:0%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top:164%;
+    left: -3%;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+    transition: 0.2s;
+  }
+
+  #bottom_navi ul {
+    padding:0.8rem 0;
+  }
+
+  .bottom_ul_navi li  {
+    transition: 0.7s;
+  }
+
+  .bottom_ul_navi li:hover {
+    background:crimson;
+  }
+
+  #bottom_navi ul li span {
+    color:black;
+  }
+  #bottom_navi ul li p {
+    width:100%;
+    transition: 0.7s;
+    margin:0.5rem 0;
+    padding:0.5rem 0.2rem;
+  }
+
+  #bottom_navi ul li p:hover {
+    cursor:pointer;
+    color:#ffffff;
+    background-color: rgb(101, 100, 100);
+  }
+
+  #bottom_navi ul li p::after {
+    content: "〉";
+    position: absolute;
+    right: 10%;
+    color:black;
+  }
+
+  #bottom_navi ul li a {
+    color:black;
+  }
+
+  .con {
+    display: none;
+    padding:0.2rem 0;
+  }
+  
+  p.title {
+    font-size:1rem;
+    color:#e2a520;
+    font-weight: 600;
+  
+  }
+
+  .title_ {
+    font-size: 1.3rem;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+  }
+
+  .bottom_ul_navi li {
+    padding:1rem 0.2rem;
+    font-size: 1.3rem;
+  }
+  
+
+  /* 메인 슬라이더 */
+  main {
+    width:100%;
+    height: 100%;
+  }
+
+  .main_img_01 {
+    width:100%;
+    height: 450px;
+    position: relative;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/hero-teaser-slide/MB_MINI_TROLLEY_2880%20%C3%97%201400.jpg.adapt.1440.700.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .main_img_02 {
+    width:100%;
+    height: 450px;
+    position: relative;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/hero-teaser-slide/bestseller-belts-2880x1400.jpg.adapt.1440.700.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .main_img_03 {
+    width:100%;
+    height: 450px;
+    position: relative;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/magazine-listing-article-module/CTB%20in%20690x400.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .text_move {
+    width:75%;
+    height: 45%;
+    color:#ffffff;
+    /* background: rgba(0, 0, 0, 0.173); */
+    text-shadow: 1px 2px 1px #8e8e8e;
+    padding:2rem 0.2rem;
+    position: absolute;
+    bottom:-10%;
+    left: 5%;
+  }
+
+  .text_move h3 {
+    font-size: 5.5vw;
+    font-weight: 500;
+    line-height: 2vw;
+  }
+
+  .text_move p {
+    font-size: 3.5vw;
+    letter-spacing: 0;
+    line-height: 3vw;
+  }
+
+  .text_move button {
+    width:85%;
+    height: 28%;
+    color:white;
+    text-shadow: 1px 1px 1px #8e8e8e;
+    border:1px solid white;
+    background: none;
+    margin-top: 0.5rem;
+  }
+
+  .text_move button:hover {
+    background: black;
+    color:white;
+  }
+
+  /* 열리는 아티클 */
+
+  .products_{
+    width:100%;
+    height: 100%;
+    margin:3rem 0;
+    transition: 0.7s;
+
+  }
+
+  .pro_container,
+  .pro_container_2,
+  .pro_container_3,
+  .pro_container_4 {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  #pro_imgs,
+  #pro_imgs_2,
+  #pro_imgs_3,
+  #pro_imgs_4 {
+    width:100%;
+    height: 100%;
+    position: relative;
+    transition: 0.7s;
+  }
+
+
+  .pro_move_text,
+  .pro_move_text_2,
+  .pro_move_text_3,
+  .pro_move_text_4 {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    color:white;
+    font-size: 8vw;
+    cursor:pointer;
+  }
+
+  #pro_imgs_text,
+  #pro_imgs_text_2,
+  #pro_imgs_text_3,
+  #pro_imgs_text_4 {
+    width:100%;
+    height: 100%;
+    padding:5rem 0 5rem 5rem;
+    transition: 0.7s;
+    position: absolute;
+    top:0%;
+    display: none;
+    z-index: -1;
+  }
+
+  #pro_close_bt,
+  #pro_close_bt_2,
+  #pro_close_bt_3,
+  #pro_close_bt_4 {
+    display: none;
+  }
+
+  #pro_imgs_text p,
+  #pro_imgs_text_2 p,
+  #pro_imgs_text_3 p,
+  #pro_imgs_text_4 p {
+    margin:5% 0; 
+    font-size: 4vw;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #pro_imgs_text p:hover,
+  #pro_imgs_text_2 p:hover,
+  #pro_imgs_text_3 p:hover,
+  #pro_imgs_text_4 p:hover {
+    color:crimson;
+  }
+
+  /* banner */
+  .banner {
+    width:100%;
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .banner section {
+    width:100%;
+    height: 400px;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/business-card/WatchEtiquette_LandingPage_750x600.jpg.adapt.375.300.jpg') no-repeat;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+  }
+
+  .banner section div {
+    width:100%;
+    height: 60%;
+    padding:2rem 0;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.246);
+  }
+
+  .banner section div h4 {
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: 400;
+    margin-bottom: 5vw;
+    color:#ffffff;
+  }
+
+  .banner section div h3 {
+    margin:0;
+    color:white;
+    font-size: 4vw;
+    font-weight: 600;
+  }
+
+  .banner section div> button {
+    width:35%;
+    margin-top: 4vw;
+    background: none;
+    color:white;
+    font-size: 2vw;
+    font-weight: 600;
+    border: 1px solid white;
+  }
+
+  .banner section div> button:hover {
+    background:black;
+    color:white;
+    border: 1px solid white;
+  }
+
+  /* 몽블랑 3 포스트  */
+  .post_3pics {
+    width:100%;
+    height: 100%;
+    padding:2rem 0;
+    background-color: #e2e2e2;
+    margin-bottom: 3rem;
+  }
+
+  .post_3pics section {
+    width:100%;
+    height: 100%;
+    margin:2rem 0;
+  }
+
+  .post_3pics_fir {
+    width:100%;
+    height: 450px;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/magazine-listing-article-module/MB-Post_LP_690x400.png') no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+
+  .post_3pics_second {
+    width:100%;
+    height: 450px;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/magazine-listing-article-module/Messner_690x400.jpg') no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+
+  .post_3pics_third {
+    width:100%;
+    height: 450px;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/magazine-listing-article-module/CTB%20in%20690x400.jpg') no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+
+  .post_3pics_text {
+    padding:1rem 0.5rem;
+    background-color: white;
+    text-align: right;
+  }
+
+  
+  .post_3pics_text h5 {
+    font-size: 2vw;
+    margin-bottom:1rem;
+    text-align: center;
+  }
+
+  .post_3pics_text h4 {
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 5vw;
+    text-align: center;
+  }
+
+  .post_3pics_text p {
+    font-size: 2.5vw;
+    margin:0 1rem 0.5rem 0;
+    text-decoration: underline; 
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  .post_3pics_text p:hover {
+    color:crimson;
+  }
+
+
+
+  /*제품 슬라이더 + 각인 섹션 */
+  .product_two_slide {
+    width:100%;
+    height: 100%;
+    overflow:hidden;
+  }
+
+ .pro_pp {
+    font-size: 2.5vw;
+    text-align: center;
+    cursor: pointer;
+    padding:0.5rem 0;
+    margin-bottom: 1rem ;
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+
+  
+ .pro_pp:hover {
+   color:crimson;
+}
+
+  .product_two_slide h5 {
+    font-size: 2.5vw;
+    margin-bottom:1rem;
+    text-align: center;
+  }
+
+  .product_two_slide h4 {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom:1rem;
+    text-align: center;
+  }
+
+  .product_two_slide h6 {
+    font-size: 1.8vw;
+    text-align: center;
+    cursor: pointer;
+    padding:0.5rem 0;
+  }
+
+  .product_two_slide_sec {
+    width:100%;
+    height: 100%;
+    padding:0 0.5rem;
+    text-align: center;
+  }
+
+  .product_two_slide_sec p {
+    font-size: 2.5vw;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    padding:0.5rem;
+  }
+
+  .product_two_slide_sec_bg {
+    background-color: #e2e2e2;
+    position: relative;
+  }
+
+  .product_two_slide_sec_bg i {
+    position:absolute;
+    right: 5%;
+    top:5%;
+    color:rgb(48, 48, 48);
+    font-size: 1.5rem;
+  }
+
+  .product_two_slide_sec img {
+    width:90%;
+    margin: 1rem auto;
+  }
+
+    /* banner_2 */
+    .banner_2 {
+      width:100%;
+      height: 100%;
+      margin: 3rem 0;
+    }
+  
+    .banner_2 section {
+      width:100%;
+      height: 250px;
+      background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/business-card/Personalisation-in-1572x880-v2.jpg.adapt.786.440.jpg') no-repeat;
+      background-size:cover;
+      background-position: center center;
+      position: relative;
+    }
+  
+    .banner_2 section div {
+      width:100%;
+      height: 60%;
+      padding:1rem 0;
+      position:absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.246);
+    }
+  
+    .banner_2 section div h4 {
+      font-size: 3vw;
+      line-height: 3vw;
+      font-weight: 400;
+      margin-bottom: 5vw;
+      color:#ffffff;
+    }
+  
+    .banner_2 section div h3 {
+      margin:0;
+      color:white;
+      font-size: 4vw;
+      font-weight: 600;
+    }
+  
+    .banner_2 section div> button {
+      width:35%;
+      margin-top: 4vw;
+      background: none;
+      color:white;
+      font-size: 2vw;
+      font-weight: 600;
+    }
+
+    .banner_2 section div> button:hover {
+      background:black;
+      color:white;
+      border:1px solid white;
+    }
+  
+    /* Swiper_how*/
+    .how_ {
+      padding:2rem 0;
+      margin-bottom: 3rem;
+      background-color: #e2e2e2;
+      overflow:hidden;
+    }
+
+    .how_ .product_two_slide_sec_2 {
+      width:100%;
+    }
+
+    .how_ .product_two_slide_sec_2_bg {
+      background-color: white;
+    }
+
+    
+    .how_ .product_two_slide_sec_2> :nth-child(2) {
+      width:100%;
+      height: 100%;
+      padding:2rem 0.5rem;
+      background-color: white;
+    }
+
+    .how_ .product_two_slide_sec_2> :nth-child(2) h5 {
+      font-size: 5vw;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .how_ .product_two_slide_sec_2> :nth-child(2) p {
+      font-size: 3vw;
+      margin:0.5rem 0;
+    }
+    .how_ .product_two_slide_sec_2> :nth-child(2) h6 {
+      font-size: 3vw;
+      text-decoration: underline;
+      transition: 0.5s;
+    }
+
+    .how_ .product_two_slide_sec_2> :nth-child(2) h6:hover {
+      color:crimson;
+    }
+
+
+    /* 회원가입 */
+    .join_ {
+      width:100%;
+      padding:3rem 0;
+      color:white;
+      background-color: #737373;
+    }
+
+    .join_> div {
+      padding:0 0.5rem;
+      background-color: #272727;
+      text-align: center;
+    }
+
+    .join_> div> section {
+      padding:1rem 0;
+    }
+    .join_> div> :nth-child(2) {
+      border-top: 1px solid white;
+    }
+
+    .join_> div> section h6 {
+      font-size: 1.5vw;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    .join_> div> section h4 {
+      font-size:3vw;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    .join_> div> section p {
+      font-size: 2vw;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .join_> div> :first-child> :nth-child(5):hover {
+        color:crimson;
+    }
+
+    .join_> div> section button {
+      width:80%;
+      font-size: 2vw;
+      font-weight: 300;
+      margin-bottom: 1rem;
+      background: white;
+      color:black;
+      transition: 0.7s;
+      border: 1px solid white;
+    }
+
+    .join_> div> section button:hover {
+      background:black;
+      color:white;
+      border: 1px solid white;
+    }
+
+    .join_> div> section input {
+      width:60%;
+      padding:0.5rem;
+      color:white;
+      background:none;
+      border:1px solid white;
+      margin: 1rem 0;
+    }
+
+    .join_> div> section input::placeholder {
+      color:white;
+      text-align: center;
+    }
+
+    /* 맵 */
+    .map_ {
+      width:100%;
+      margin: 2.8rem 0 3rem 0;
+    }
+
+    .map_> section {
+      width:100%;
+      height: 300px;
+      position: relative;
+      background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/btq-locator/KR_Seoul.jpg.adapt.375.300.jpg') no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .map_ section> div {
+      width:90%;
+      text-align: center;
+      position:absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .map_ section> div h6 {
+      font-size: 2vw;
+      margin-bottom: 1rem;
+    }
+
+
+    .map_ section> div h4 {
+      font-size: 5vw;
+      margin-bottom: 2rem;
+    }
+
+    .map_ section> div button {
+      width:50%;
+      font-size: 2.5vw;
+      margin-bottom: 1rem;
+      background: none;
+      border:1px solid black;
+      color:black;
+    }
+
+    .map_ section> div button:hover {
+      background:black;
+      color:white;
+      border:1px solid white;
+    }
+
+    /* 도움 */
+    .help_ {
+      padding:1rem 0;
+      text-align: center;
+      font-size: 2vw;
+      border-top: 1px solid silver;
+    }
+    
+    /* 푸터 */
+    footer {
+      padding:2rem 0.5rem;
+      background:#242424;
+      color:white;
+      text-align: center;
+    }
+
+    footer> :first-child> :first-child  {
+      margin-bottom: 3rem;
+    }
+
+    footer> :first-child> div> ul > li> span:hover  {
+      color:darkgoldenrod;
+    }
+
+    .con p {
+      transition: 0.5s;  
+    }
+
+    .con p:hover {
+      background-color: crimson;
+    }
+
+    footer ul  {
+      margin:0.5rem 0;
+      border-bottom: 1px solid white;
+
+    }
+
+    footer ul li {
+      margin:1.3rem 0;
+    }
+    footer ul li .title_::after {
+      content: "+";
+    }
+
+    footer ul li div> p {
+      margin:0.5rem 0 0.5rem 0.5rem;
+      cursor: pointer;
+    }
+
+    .mini_menu {
+      text-align: center;
+    }
+
+    .mini_menu h4 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .mini_menu input {
+      width:60%;
+      padding:0.6rem;
+      color:white;
+      background:none;
+      border:1px solid white;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .mini_menu input::placeholder {
+      color:white;
+    }
+
+    .mini_menu> p {
+      font-size: 3vw;
+      margin: 1rem 0;
+    }
+
+    .sns_ico {
+      font-size: 4vw;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .sns_ico i {
+      margin-right:1rem;
+      cursor: pointer;
+      transition: 0.7s;
+    }
+
+    .sns_ico i:hover {
+      color:crimson;
+    }
+
+    footer> :last-child {
+      text-align: center;
+    }
+
+    footer> :last-child> :first-child {
+      margin: 1rem 0;
+    }
+
+    footer> :last-child> :first-child span {
+      display: inline-block;
+      margin:0.2rem 0.5rem;
+      cursor: pointer;
+    }
+
+    footer> :last-child> :first-child span:hover {
+      color:darkgoldenrod
+    }
+
+    footer> :last-child> :last-child {
+      padding:1rem 0;
+
+}
+
+footer> :last-child> :last-child span {
+  display: inline-block;
+  font-size: 1vw;
+  margin:0.1rem;
+
+} 
+
+}
+
+
+/*---------------------- PC(989~px)-------------------------------- 시작 */
+@media (min-width:1000px) {
+
+
+  .mobile_navi {
+   display: none;
+ }
+
+ #mobile_navi_clo,
+ #mobile_navi_ham {
+   display: none;
+ }
+
+/* 헤더 */
+header {
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.725);
+} 
+
+.top_navi {
+  width:1000px;
+  margin:0 auto;
+  padding:0.8rem 0;
+  font-size: 1rem;
+  color:rgb(236, 234, 234);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pc_navi {
+  display: flex;
+}
+
+.pc_navi i {
+  margin:0 1rem;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.pc_navi i:hover {
+  color:crimson
+}
+
+.pc_navi span {
+  font-size: 0.7rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.pc_navi span:hover {
+  color:crimson;
+}
+
+/* 헤더메뉴 */
+.bottom_ul_navi {
+  display: none;
+}
+
+.accordian_box {
+  width:1000px;
+  margin:0 auto;
+  padding:0.7rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid white;
+  
+}
+
+p.title {
+  font-size:1rem;
+  color:#e2a520;
+  font-weight: 600;
+
+}
+.title_ {
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.7s;
+  padding:0 2rem;
+}
+
+.title_:hover {
+  color:crimson;
+}
+
+.title {
+  color:rgb(255, 255, 255);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.con {
+  height: 120%;
+  margin:1rem 0;
+  display: none;
+  text-align: left;
+  color:white;
+  text-align: center;
+}
+
+.con p {
+  margin:0.5rem 0;
+}
+
+.con p:hover {
+  background:crimson;
+  cursor: pointer;
+}
+
+  /* 메인 슬라이더 */
+  main {
+    width:100%;
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .main_img_01 {
+    width:100%;
+    height: 450px;
+    position: relative;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/hero-teaser-slide/MB_MINI_TROLLEY_2880%20%C3%97%201400.jpg.adapt.1440.700.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .main_img_02 {
+    width:100%;
+    height: 450px;
+    position: relative;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/hero-teaser-slide/bestseller-belts-2880x1400.jpg.adapt.1440.700.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .main_img_03 {
+    width:100%;
+    height: 450px;
+    position: relative;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/magazine-listing-article-module/CTB%20in%20690x400.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .text_move {
+    width:70%;
+    height: 45%;
+    color:#ffffff;
+    /* background: rgba(0, 0, 0, 0.173); */
+    text-shadow: 1px 2px 1px #8e8e8e;
+    padding:2rem 0.2rem;
+    position: absolute;
+    bottom:3%;
+    left: 5%;
+  }
+
+  .text_move h3 {
+    font-size: 5.5vw;
+    font-weight: 500;
+    line-height: 5vw;
+  }
+
+  .text_move p {
+    font-size: 3.5vw;
+    letter-spacing: 0;
+    line-height: 3vw;
+  }
+
+  .text_move button {
+    width:55%;
+    height: 35%;
+    color:white;
+    text-shadow: 1px 1px 1px #8e8e8e;
+    border:1px solid white;
+    background: none;
+    margin-top: 0.5rem;
+  }
+
+  .text_move button:hover {
+    background: black;
+    color:white;
+  }
+
+  
+  /* 열리는 아티클 */
+
+  .products_{
+    width:1000px;
+    height: 100%;
+    margin:3rem 0;
+    transition: 0.7s;
+    margin:0 auto;
+    display: flex;
+
+  }
+
+  .pro_container,
+  .pro_container_2,
+  .pro_container_3,
+  .pro_container_4 {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  #pro_imgs,
+  #pro_imgs_2,
+  #pro_imgs_3,
+  #pro_imgs_4 {
+    width:100%;
+    height: 100%;
+    position: relative;
+    transition: 0.7s;
+  }
+
+
+  .pro_move_text,
+  .pro_move_text_2,
+  .pro_move_text_3,
+  .pro_move_text_4 {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    color:white;
+    font-size: 2rem;
+    cursor:pointer;
+  }
+
+  #pro_imgs_text,
+  #pro_imgs_text_2,
+  #pro_imgs_text_3,
+  #pro_imgs_text_4 {
+    width:100%;
+    height: 100%;
+    text-decoration: underline;
+    padding:5rem 0 5rem 5rem;
+    transition: 0.7s;
+    position: absolute;
+    top:-30%;
+    left:-10%;
+    display: none;
+    z-index: -2;
+  }
+
+  #pro_close_bt,
+  #pro_close_bt_2,
+  #pro_close_bt_3,
+  #pro_close_bt_4 {
+    display: none;
+  }
+
+  #pro_imgs_text p,
+  #pro_imgs_text_2 p,
+  #pro_imgs_text_3 p,
+  #pro_imgs_text_4 p {
+    margin:5% 0; 
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  
+  #pro_imgs_text p:hover,
+  #pro_imgs_text_2 p:hover,
+  #pro_imgs_text_3 p:hover,
+  #pro_imgs_text_4 p:hover {
+    color:crimson;
+  }
+
+    /* banner */
+    .banner {
+      width:1000px;
+      height: 100%;
+      margin: 3rem auto;
+    }
+  
+    .banner section {
+      width:100%;
+      height: 400px;
+      background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/business-card/WatchEtiquette_LandingPage_1572x880.jpg.adapt.786.440.jpg') no-repeat;
+      background-size:cover;
+      background-position: center center;
+      position: relative;
+    }
+  
+    .banner section div {
+      width:100%;
+      height: 70%;
+      padding:2rem 0;
+      position:absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.246);
+    }
+  
+    .banner section div h4 {
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      color:#ffffff;
+    }
+  
+    .banner section div h3 {
+      margin:0;
+      color:white;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  
+    .banner section div> button {
+      width:35%;
+      margin-top: 4vw;
+      background: none;
+      color:white;
+      font-size: 2vw;
+      font-weight: 600;
+      border: 1px solid white;
+    }
+
+    .banner section div> button:hover {
+      background-color: black;
+      color:white;
+      border: 1px solid white;
+
+    }
+
+      /* 몽블랑 3 포스트  */
+  .post_3pics {
+    width:1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding:2rem 0.8rem;
+    background-color: #e2e2e2;
+    margin:3rem auto;
+  }
+
+  .post_3pics> section {
+    width:300px;
+    height: 100%;
+    margin:2rem 0;
+  }
+
+  .post_3pics_fir {
+    width:100%;
+    height: 200px;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/magazine-listing-article-module/MB-Post_LP_690x400.png') no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+
+  .post_3pics_second {
+    width:100%;
+    height: 200px;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/magazine-listing-article-module/Messner_690x400.jpg') no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+
+  .post_3pics_third {
+    width:100%;
+    height: 200px;
+    background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/magazine-listing-article-module/CTB%20in%20690x400.jpg') no-repeat;
+    background-size:cover;
+    background-position: center center;
+  }
+
+  .post_3pics_text {
+    height: 200px;
+    padding:1.5rem 0.5rem;
+    background-color: white;
+    text-align: right;
+  }
+
+  
+  .post_3pics_text h5 {
+    font-size: 1rem;
+    margin-bottom:1rem;
+    text-align: center;
+  }
+
+  .post_3pics_text h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom:2rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .post_3pics_text p {
+    font-size: 0.8rem;
+    margin:0 1rem 0.5rem 0;
+    text-decoration: underline; 
+    cursor: pointer;
+  }
+
+  .post_3pics_text p:hover {
+    color:crimson;
+  }
+
+    /*제품 슬라이더 + 각인 섹션 */
+    .product_two_slide {
+      width:100%;
+      height: 100%;
+      overflow:hidden;
+    }
+  
+   .pro_pp {
+      font-size: 0.8rem;
+      text-align: center;
+      cursor: pointer;
+      padding:0.5rem 0;
+      margin:2rem 0;
+      transition: 0.7s;
+      text-decoration: underline;
+    }
+
+    .pro_pp:hover {
+    color:crimson;
+    }
+  
+    .product_two_slide h5 {
+      font-size: 1rem;
+      margin-bottom:1rem;
+      text-align: center;
+    }
+  
+    .product_two_slide h4 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom:1rem;
+      text-align: center;
+    }
+  
+    .product_two_slide h6 {
+      font-size: 1rem;
+      text-align: center;
+      cursor: pointer;
+      padding:0.5rem 0;
+    }
+  
+    .product_two_slide_sec {
+      width:100%;
+      height: 100%;
+      padding:0 0.5rem;
+      text-align: center;
+    }
+  
+    .product_two_slide_sec p {
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+      padding:0.5rem;
+    }
+  
+    .product_two_slide_sec_bg {
+      background-color: #e2e2e2;
+      position: relative;
+    }
+  
+    .product_two_slide_sec_bg i {
+      position:absolute;
+      right: 5%;
+      top:5%;
+      color:rgb(48, 48, 48);
+      font-size: 1.5rem;
+    }
+  
+    .product_two_slide_sec img {
+      width:90%;
+      margin: 1rem auto;
+    }
+  
+
+    
+    /* banner_2 */
+    .banner_2 {
+      width:1000px;
+      height: 100%;
+      margin: 3rem auto;
+    }
+  
+    .banner_2 section {
+      width:100%;
+      height: 400px;
+      background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/business-card/Personalisation-in-1572x880-v2.jpg.adapt.786.440.jpg') no-repeat;
+      background-size:cover;
+      background-position: center center;
+      position: relative;
+    }
+  
+    .banner_2 section div {
+      width:100%;
+      height: 60%;
+      padding:1rem 0;
+      position:absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.246);
+    }
+  
+    .banner_2 section div h4 {
+      font-size: 2rem;
+      line-height: 3vw;
+      font-weight: 400;
+      margin-bottom: 5vw;
+      color:#ffffff;
+    }
+  
+    .banner_2 section div h3 {
+      margin:0;
+      color:white;
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+  
+    .banner_2 section div> button {
+      width:35%;
+      margin-top: 4vw;
+      background: none;
+      color:white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      border:1px solid white;
+    }
+
+    .banner_2 section div> button:hover {
+    background:black;
+    color:white;
+    border:1px solid white;
+  }
+
+  
+
+        /* Swiper_how*/
+        .how_ {
+          width:1000px;
+          padding:1rem;
+          margin: 2rem auto;
+          background-color: #e2e2e2;
+          overflow:hidden;
+        }
+    
+        .how_ .product_two_slide_sec_2 {
+          width:100%;
+        }
+    
+        .how_ .product_two_slide_sec_2_bg {
+          background-color: white;
+        }
+        
+        .how_ .product_two_slide_sec_2> :nth-child(2) {
+          width:100%;
+          height: 100%;
+          padding:2rem 0.5rem;
+          background-color: white;
+        }
+    
+        .how_ .product_two_slide_sec_2> :nth-child(2) h5 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+        .how_ .product_two_slide_sec_2> :nth-child(2) p {
+          font-size: 1rem;
+          margin:0.5rem 0;
+        }
+        .how_ .product_two_slide_sec_2> :nth-child(2) h6 {
+          font-size: 0.9rem;
+          text-decoration: underline;
+          transition: 0.7s;
+        }
+
+        .how_ .product_two_slide_sec_2> :nth-child(2) h6:hover {
+          color:crimson;
+        }
+
+
+            /* 회원가입 */
+    .join_ {
+      width:1000px;
+      margin:0 auto;
+      padding:3rem 0;
+      color:white;
+      background-color: #737373;
+    }
+
+    .join_> div {
+      padding:1rem 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      background-color: #272727;
+      text-align: center;
+    }
+
+    .join_> div> section {
+      width:100%;
+      padding:1rem 0;
+    }
+    .join_> div> :nth-child(2) {
+      border-left: 1px solid white;
+    }
+
+
+    .join_> div> section h6 {
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-bottom: 0.7rem;
+    }
+
+    .join_> div> section h4 {
+      font-size:1.5rem;
+      font-weight: 400;
+      margin-bottom: 0.7rem;
+    }
+
+    .join_> div> section p {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .join_> div> section button {
+      width:80%;
+      font-size: 0.8rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+      background: white;
+      color:black;
+    }
+
+    .join_> div> section button:hover {
+      background-color: black;
+      color:white;
+    }
+
+    .join_> div> :first-child> :nth-child(5):hover {
+      color:crimson;
+  }
+
+    .join_> div> section input {
+      width:60%;
+      padding:0.5rem;
+      color:white;
+      background:none;
+      border:1px solid white;
+      margin: 1rem 0;
+    }
+
+    .join_> div> section input::placeholder {
+      color:white;
+      text-align: center;
+    }
+
+     /* 맵 */
+     .map_ {
+      width:1000px;
+      margin: 2.8rem auto 3rem auto;
+    }
+
+    .map_> section {
+      width:100%;
+      height: 400px;
+      position: relative;
+      background:url('https://www.montblanc.com/content/dam/mtb/assets/redesign/btq-locator/KR_Seoul.jpg.adapt.375.300.jpg') no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .map_ section> div {
+      width:90%;
+      text-align: center;
+      position:absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .map_ section> div h6 {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+
+    .map_ section> div h4 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .map_ section> div button {
+      width:50%;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      background: none;
+      border:1px solid black;
+      color:black;
+    }
+
+    .map_ section> div button:hover {
+      background:black;
+      color:white;
+      border:1px solid white;
+    }
+
+        /* 도움 */
+        .help_ {
+          padding:1.5rem 0;
+          text-align: center;
+          font-size: 2vw;
+          border-top: 1px solid silver;
+        }
+        
+    /* 푸터 */
+    footer {
+      padding:2rem 0.5rem;
+      background:#242424;
+      color:white;
+      text-align: center;
+    }
+
+    footer> :first-child> :first-child  {
+      margin-bottom: 3rem;
+    }
+
+    footer ul  {
+      margin:0.5rem 0;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid white;
+
+    }
+
+    footer ul li {
+      width:30%;
+      font-size: 1.5rem;
+      margin:1.3rem 0;
+    }
+    footer ul li .title_::after {
+      content: "+";
+    }
+
+    footer ul li div> p {
+      font-size: 0.9rem;
+      margin:0.5rem 0 0.5rem 0.5rem;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .mini_menu {
+      text-align: center;
+    }
+
+    .mini_menu h4 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .mini_menu input {
+      width:60%;
+      padding:0.6rem;
+      color:white;
+      background:none;
+      border:1px solid white;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .mini_menu input::placeholder {
+      color:white;
+    }
+
+    .mini_menu> p {
+      font-size: 3vw;
+      margin: 1rem 0;
+    }
+
+    .sns_ico {
+      font-size: 4vw;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .sns_ico i {
+      margin-right:1rem;
+      cursor: pointer;
+    }
+
+    footer> :last-child {
+      text-align: center;
+    }
+
+    footer> :last-child> :first-child {
+      margin: 1rem 0;
+    }
+
+    footer> :last-child> :first-child span {
+      display: inline-block;
+      margin:0.2rem 0.5rem;
+      cursor: pointer;
+    }
+
+    footer> :last-child> :last-child {
+      padding:1rem 0;
+
+}
+
+footer> :last-child> :last-child span {
+  display: inline-block;
+  font-size: 1vw;
+  margin:0.1rem;
+
+} 
+
+footer> :first-child> div> ul > li> span:hover  {
+  color:darkgoldenrod;
+}
+footer> :last-child> :first-child span:hover {
+  color:darkgoldenrod
+}
+
+.sns_ico i {
+  transition: 0.7s;
+}
+.sns_ico i:hover {
+  color:crimson;
+}
+
+
+  
+}

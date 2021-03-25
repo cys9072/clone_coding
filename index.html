@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <meta charset="utf-8">
+  <title>Yoon_HellCoding_몽블랑</title>
+
+  <!--스와이퍼, css 파일-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <!--제이쿼리-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!--스와이퍼 js-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!--일반 내 css파일-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--폰트어썸-->
+  <script src="https://kit.fontawesome.com/684e97b7f2.js" crossorigin="anonymous"></script>
+
+</head>
+<!--아이콘 모음 sns: 
+  유튜브:<i class="fab fa-youtube"></i> 
+  인스타:<i class="fabfa-instagram"></i> 
+  페이스북:<i class="fab fa-facebook"></i> 
+  카카오톡: 
+  화살표 인디케이터 좌:<i
+    class="fas fa-angle-left"></i> 우:<i class="fas fa-angle-right"></i> 화살표
+    인디케이터(백그라운드 원형) 좌:<i class="fas fa-chevron-circle-left"></i> 우:<i class="fas
+    fa-chevron-circle-right"></i> 햄버거 메뉴:<i class="fas fa-bars"></i> 돋보기:<i
+    class="fas fa-search"></i> 눈깔:<i class="fas fa-eye"></i> 카트:<i class="fas
+    fa-shopping-cart"></i> 위치:<i class="fas fa-location-arrow"></i> 장바구니:<i
+    class="fas fa-shopping-bag"></i> 상반신모양: <i class="far fa-user"></i> 상반신모양(색채움):
+    <i class="fas fa-user-alt"></i> 수화기 모양: <i class="fas fa-phone"></i> 하트: <i
+    class="fas fa-heart"></i> 지구본 : <i class="fas fa-globe"></i> z-index 안될때 부모 요소에
+    포지션 릴레티브 주면됨 -->
+
+<body>
+  <!--\\\\\\\\\\\\\\\\\\\\ start\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <!--모바일 헤더-->
+  <header>
+    <nav>
+      <section class="top_navi">
+        <div class="pc_navi">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-location-arrow"></i>
+          <i class="fas fa-phone"></i>
+        </div>
+
+        <div id="mobile_navi_ham" onclick="openNav()">
+          <i class=" fas fa-bars"></i>
+        </div>
+
+        <div id="mobile_navi_clo" onclick="closeNav()" style="cursor: pointer;">
+          <i class="far fa-window-close"></i>
+        </div>
+
+        <div>
+          <img src="https://www.montblanc.com/content/dam/mtb/icons/Logo_MTB.png" alt="" style="cursor: pointer;">
+        </div>
+        <div class="pc_navi">
+
+          <div>
+            <span>로그인 /</span>
+            <span>회원가입</span>
+          </div>
+
+          <div>
+            <i class="fas fa-user-alt"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+
+        <div class="mobile_navi">
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="bottom_navi" style="color:black">
+        <div class="accordian_box">
+
+          <!--선물-->
+          <ul class="list">
+            <li>
+              <span class="title_">선물</span>
+              <div class="con">
+                <p class="title">선물</p>
+                <div class="con">
+                  <p>그를 위한 선택</p>
+                  <p>그녀를 위한 선택
+                  </p>
+                  <p>트렌드세터 및 신기술 매니아를 위해</p>
+                  <p>15만원 이하 최고의 선물</p>
+                  <p>30만원 이하 최고의 선물</p>
+                  <p>50만원 이하 최고의 선물</p>
+                  <p>기프트 세트</p>
+                  <p>인그레이빙/엠보싱 서비스</p>
+                </div>
+                <ul class="list_2">
+                  <li>
+                    <p class="title">특별한 제안</p>
+                    <div class="con">
+                      <p>베스트 셀러 제품</p>
+                      <p>신상품</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">서비스</p>
+                    <div class="con">
+                      <p>기업용 선물</p>
+                      <p>맞춤 선물</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <!--필기구-->
+          <ul class="list">
+            <li>
+              <span class="title_">필기구</span>
+              <div class="con">
+                <ul class="list_2">
+                  <li>
+                    <p class="title">모두보기</p>
+                    <div class="con">
+                      <p>볼펜</p>
+                      <p>만년필</p>
+                      <p>수성펜</p>
+                      <p>파인라이너</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">컬렉션</p>
+                    <div class="con">
+                      <p>마이스터스튁</p>
+                      <p>스타워커</p>
+                      <p>몽블랑 M</p>
+                      <p>픽스</p>
+                      <p>헤리티지</p>
+                      <p>리미티드 에디션</p>
+                      <p>보뇌르</p>
+                      <p>몽블랑 뮤즈</p>
+                      <p>어그멘티드 페이퍼</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">문구 & 리필</p>
+                    <div class="con">
+                      <p>필기구 파우치</p>
+                      <p>노트</p>
+                      <p>잉크</p>
+                      <p>교체품</p>
+                      <p>오거나이저 인레이</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">선물</p>
+                    <div class="con">
+                      <p>15만원 이하 최고의 선물</p>
+                      <p>30만원 이하 최고의 선물</p>
+                      <p>기프트 세트</p>
+                      <p>맞춤 선물 및 선물 세트</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+
+          <!--레더-->
+          <ul class="list">
+            <li>
+              <span class="title_">레더</span>
+              <div class="con">
+                <ul class="list_2">
+                  <li>
+                    <p class="title">기능</p>
+                    <div class="con">
+                      <p>벨트</p>
+                      <p>지갑</p>
+                      <p>카드지갑</p>
+                      <p>가방</p>
+                      <p>백팩</p>
+                      <p>트롤리</p>
+                      <p>여행용 액세서리</p>
+                      <p>테크니컬 디바이스</p>
+                      <p>필기구 파우치</p>
+                      <p>오거나이저 & 아젠다</p>
+                      <p>키링</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">베스트 컬렉션</p>
+                    <div class="con">
+                      <p>몽블랑 사토리얼</p>
+                      <p>마이스터스튁</p>
+                      <p>마이 몽블랑 나이트플라이트</p>
+                      <p>#MY4810</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list_2">
+                  <li>
+                    <p class="title">선물</p>
+                    <div class="con">
+                      <p>15만원 이하 최고의 선물</p>
+                      <p>30만원 이하 최고의 선물</p>
+                      <p>기프트 세트</p>
+                      <p>맞춤 선물 및 선물 세트</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <!--트레블-->
+          <ul class="list">
+            <li>
+              <span class="title_">트레블</span>
+              <div class="con">
+                <ul class="list_2">
+                  <li>
+                    <p class="title">기능</p>
+                    <div class="con">
+                      <p>트롤리</p>
+                      <p>트래블 백</p>
+                      <p>백팩</p>
+                      <p>여권지갑</p>
+                      <p>트래블노트</p>
+                      <p>서밋 스마트워치</p>
+                      <p>여행용 액세서리</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list_2">
+                  <li>
+                    <p class="title">자세히 보기</p>
+                    <div class="con">
+                      <p>여행 추천제품</p>
+                      <p>#MY4810</p>
+                      <p>커스텀 가능 제품</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <!--스마트 디바이스-->
+          <ul class="list">
+            <li>
+              <span class="title_">스마트 디바이스</span>
+              <div class="con">
+                <ul class="list_2">
+                  <li>
+                    <p class="title">사운드</p>
+                    <div class="con">
+                      <p>헤드폰 MB01</p>
+                      <p>발견</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list_2">
+                  <li>
+                    <p class="title">스마트 워치</p>
+                    <div class="con">
+                      <p>서밋 스마트 워치</p>
+                      <p>발견</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">디지털 노트</p>
+                    <div class="con">
+                      <p>어그멘티드 페이퍼</p>
+                      <p>노트 어그멘티드 페이터</p>
+                      <p>기능 확인하기</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <!--시계-->
+          <ul class="list">
+            <li>
+              <span class="title_">시계</span>
+              <div class="con">
+                <ul class="list_2">
+                  <li>
+                    <p class="title">컬렉션</p>
+                    <div class="con">
+                      <p>1858 컬렉션</p>
+                      <p>몽블랑 헤리티지</p>
+                      <p>스타 레거시</p>
+                      <p>서밋 스마트워치</p>
+                      <p>몽블랑 트래디션</p>
+                      <p>몽블랑 타임워커</p>
+                      <p>보헴</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list_2">
+                  <li>
+                    <p class="title">무브먼트</p>
+                    <div class="con">
+                      <p>오토매틱 무브먼트</p>
+                      <p>쿼츠 무브먼트</p>
+                      <p>스마트 워치</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">직경</p>
+                    <div class="con">
+                      <p>30-37mm</p>
+                      <p>38-40mm</p>
+                      <p>41-43mm</p>
+                      <p>44mm 이상</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">스토리</p>
+                    <div class="con">
+                      <p>나에게 딱 맞는 몽블랑 시계 선택</p>
+                      <p>라인홀트 메스너</p>
+                      <p>1858 컬렉션</p>
+                      <p>워치메이킹</p>
+                      <p>Summit2 스마트 워치</p>
+                      <p>타임피스 브로슈어</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <!--액세서리-->
+          <ul class="list">
+            <li>
+              <span class="title_">액세서리</span>
+              <div class="con">
+                <ul class="list_2">
+                  <li>
+                    <p class="title">남성 액세서리</p>
+                    <div class="con">
+                      <p>벨트</p>
+                      <p>커프 링크스</p>
+                      <p>브레이슬릿</p>
+                      <p>머니클립</p>
+                      <p>타이 바</p>
+                      <p>세트</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list_2">
+                  <li>
+                    <p class="title">여성 액세서리</p>
+                    <div class="con">
+                      <p>브레이슬릿</p>
+                      <p>네크리스</p>
+                      <p>이어링</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">프레그런스</p>
+                    <div class="con">
+                      <p>익스플로러</p>
+                      <p>레전드</p>
+                      <p>레이디 엠블럼</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">홈 액세서리</p>
+                    <div class="con">
+                      <p>데스크 및 시가 액세서리</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <!--더보기+-->
+          <ul class="list">
+            <li>
+              <span class="title_">더보기+</span>
+              <div class="con">
+                <ul class="list_2">
+                  <li>
+                    <p class="title">특별한 제안</p>
+                    <div class="con">
+                      <p>베스트셀러 제품</p>
+                      <p>신상품</p>
+                      <p>기프트 가이드</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list_2">
+                  <li>
+                    <p class="title">특별한 현업</p>
+                    <div class="con">
+                      <p>Montblanc X BAPE</p>
+                      <p>Inspr(RED)</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">뉴스스토리</p>
+                    <div class="con">
+                      <p>How To Journal</p>
+                      <p>What Moves You, Make You</p>
+                      <p>M_Gran 4810 컬렉션</p>
+                      <p>캘리그래피 예술</p>
+                      <p>1858 컬렉션</p>
+                      <p>르 쁘띠 프린스 & 플레닛</p>
+                      <p>서밋 2 #STAYAHEAD</p>
+                      <p>키플링(Kipling)</p>
+                      <p>여행용 액세서리</p>
+                      <p>디즈니(Disney)</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="list_2">
+                  <li>
+                    <p class="title">서비스</p>
+                    <div class="con">
+                      <p>기업용 선물</p>
+                      <p>인그레이빙 / 엠보싱 서비스</p>
+                      <p>FAQ</p>
+                      <p>고객서비스 & 수리</p>
+                      <p>인재채용</p>
+                      <p>문의하기</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="bottom_ul_navi">
+            <li>
+              <span>
+                <i class="far fa-user"></i>
+              </span>
+              <a href="#">로그인/회원가입</a>
+            </li>
+            <li>
+              <span>
+                <i class="fas fa-heart"></i>
+              </span>
+              <a href="#">위시리스트</a>
+            </li>
+            <li>
+              <span>
+                <i class="fas fa-location-arrow"></i>
+              </span>
+              <a href="#">부티크검색</a>
+            </li>
+            <li>
+              <span>
+                <i class="fas fa-phone"></i>
+              </span>
+              <a href="#">고객서비스</a>
+            </li>
+            <li>
+              <span>
+                <i class="fas fa-globe"></i>
+              </span>
+              <a href="#">한국 / 국가 변경</a>
+            </li>
+            <li>
+              <a href="#">주문조회</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+  </header>
+
+  <!--메인-->
+  <main>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="main_img_01">
+            <div class="text_move">
+              <h3>For Your New Start</h3>
+              <p>새로운 시작을 몽블랑과 함께</p>
+              <button>자세히 보기</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="main_img_02">
+            <div class="text_move">
+              <h3>Find Ballence</h3>
+              <p>최고급 시계 제작 기술과 첨단 기술의 만남</p>
+              <button>자세히 보기</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="main_img_03">
+            <div class="text_move">
+              <h3>Bset Seller</h3>
+              <p>가장 많이 사랑 받은 베스트 아이템</p>
+              <button>자세히 보기</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+  <!-- 열리는 아티클1 -->
+  <article class="products_">
+    <section class="pro_container">
+      <div id="pro_imgs">
+        <img
+          src="https://www.montblanc.com/content/dam/mtb/assets/campaigns/brand/MO_Brand_Campaign_2020_Tiles_690x400_DE_01_a.jpg.adapt.345.200.jpg"
+          alt="">
+        <div class="pro_move_text">
+          <p id="pro_open_bt" onclick="openArticle();">+</p>
+          <p id="pro_close_bt" onclick="closeArticle();" style="cursor: pointer">X</p>
+        </div>
+
+      </div>
+
+      <div id="pro_imgs_text">
+        <p>모든필기구 보기</p>
+        <p>만년필 보기</p>
+        <p>볼펜 보기</p>
+      </div>
+
+    </section>
+
+    <section class="pro_container_2">
+      <div id="pro_imgs_2">
+        <img
+          src="https://www.montblanc.com/content/dam/mtb/assets/campaigns/brand-campaign/images/category-tiles/MO_Brand_Campaign_2020_Tiles_690x400_DE_01_Belt_Bag.jpg.adapt.345.200.jpg"
+          alt="">
+        <div class="pro_move_text_2">
+          <p id="pro_open_bt_2" onclick="openArticle_2();">+</p>
+          <p id="pro_close_bt_2" onclick="closeArticle_2();" style="cursor: pointer">X</p>
+        </div>
+
+      </div>
+
+      <div id="pro_imgs_text_2">
+        <p>모든 레더 제품 보기</p>
+        <p>백 보기</p>
+        <p>지갑 및 카드홀더 보기</p>
+      </div>
+
+    </section>
+
+    <section class="pro_container_3">
+      <div id="pro_imgs_3">
+        <img
+          src="https://www.montblanc.com/content/dam/mtb/assets/campaigns/brand/MO_Brand_Campaign_2020_Tiles_690x400_DE_01_c.jpg.adapt.345.200.jpg"
+          alt="">
+        <div class="pro_move_text_3">
+          <p id="pro_open_bt_3" onclick="openArticle_3();">+</p>
+          <p id="pro_close_bt_3" onclick="closeArticle_3();" style="cursor: pointer">X</p>
+        </div>
+
+      </div>
+
+      <div id="pro_imgs_text_3">
+        <p>1858 컬렉션</p>
+        <p>컬렉션 별 보기</p>
+        <p>모든 시계 보기</p>
+      </div>
+
+    </section>
+
+    <section class="pro_container_4">
+      <div id="pro_imgs_4">
+        <img
+          src="https://www.montblanc.com/content/dam/mtb/assets/campaigns/brand/MO_Brand_Campaign_2020_Tiles_690x400_DE_01_d.jpg.adapt.345.200.jpg"
+          alt="">
+        <div class="pro_move_text_4">
+          <p id="pro_open_bt_4" onclick="openArticle_4();">+</p>
+          <p id="pro_close_bt_4" onclick="closeArticle_4();" style="cursor: pointer">X</p>
+        </div>
+
+      </div>
+
+      <div id="pro_imgs_text_4">
+        <p>무선 헤드폰 보기</p>
+        <p>스마트 워치 보기</p>
+        <p>어그멘티드 페이퍼 보기</p>
+      </div>
+
+    </section>
+
+
+  </article>
+
+  <!-- 나에게 맞는 몽블랑 -->
+  <article class="banner">
+    <section>
+      <div>
+        <h4>나에게 딱 맞는 몽블랑 시계 선택</h4>
+        <h3>당신이 찾던 바로 그 시계를</h3><br>
+        <h3>만나는 순수한 기쁨</h3>
+        <button>자세히 보기</button>
+      </div>
+    </section>
+  </article>
+
+  <!-- 몽블랑 3 포스트  -->
+  <article class="post_3pics">
+    <section>
+      <div class="post_3pics_fir"></div>
+      <div class="post_3pics_text">
+        <h5>몽블랑 포스트</h5>
+        <h4>특별한 메세지를 선물 하세요</h4><br>
+        <p>자세히보기</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="post_3pics_second"></div>
+      <div class="post_3pics_text">
+        <h5>신의 제왕</h5>
+        <h4>새로운 1858 지오스피어<br> 리미티드 에디션</h4>
+        <p>자세히보기</p>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="post_3pics_third"></div>
+      <div class="post_3pics_text">
+        <h5>INSPIRE WRITING</h5>
+        <h4>몽블랑의 유산과 필기구의<br> 역사에 대한 오마주</h4>
+        <p>자세히보기</p>
+      </div>
+    </section>
+  </article>
+
+  <!-- 제품 슬라이더 -->
+  <article class="product_two_slide">
+    <section>
+      <div>
+        <h5>신제품</h5>
+        <h4>당신을 위한 이달의 제품</h4>
+        <p class="pro_pp">신제품 전체 보기</p>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper1-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/63/23/9/2063239.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>몽블랑 M_Gram 4810 포트폴리오</p>
+                <h6>₩740,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/46/70/9/2046709.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>몽블랑 M_Gram 4810 벨트 백 블루</p>
+                <h6>₩800,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/46/70/6/2046706.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>몽블랑 M_Gram 4810 백팩 플립 블루</p>
+                <h6>₩1,500,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/46/86/0/2046860.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>마이스터스튁 5cc 지퍼 포켓</p>
+                <h6>₩320,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/32/14/6/2032146.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>몽블랑 1858 모노푸셔 크로노그래프</p>
+                <h6>₩7,070,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/45/16/0/2045160.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>마이스터스튁 카드 수납 기능이 있는 명함 지갑</p>
+                <h6>₩290,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/45/11/2/2045112.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>직사각형 스테인리스 스틸 브라운 골드 코딩...</p>
+                <h6>₩470,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/46/85/9/2046859.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>마이스터스튁 6cc 포켓 홀더</p>
+                <h6>₩210,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="product_two_slide_sec" onclick="#" style="cursor: pointer;">
+              <div class="product_two_slide_sec_bg">
+                <img src="https://www.montblanc.com/content/dam/rcq/mtb/20/53/17/5/2053175.png.adapt.382.382.png"
+                  alt="">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>마이스터스튁 셀렉션 1개의 펜보관용 파우치</p>
+                <h6>₩330,000 원</h6>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <!-- 각인 아티클 -->
+  <article class="banner_2">
+    <section>
+      <div>
+        <h4>특별한 선물 제안</h4>
+        <h3>각인과 이니셜을 더할 수 있는 아이템</h3>
+        <button>자세히 보기</button>
+      </div>
+    </section>
+  </article>
+
+  <!-- Swiper_how -->
+  <article class="how_">
+    <div class="swiper2-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="product_two_slide_sec_2" onclick="#" style="cursor: pointer;">
+            <div class="product_two_slide_sec_2_bg">
+              <img
+                src="https://www.montblanc.com/content/dam/mtb/assets/redesign/editors-pick/How-to-Journal-1190x764.png"
+                alt="">
+            </div>
+            <div>
+              <h5>How To Journal</h5>
+              <p>마이스터스튁 6cc 포켓 홀더</p>
+              <h6>자세히보기</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product_two_slide_sec_2" onclick="#" style="cursor: pointer;">
+            <div class="product_two_slide_sec_2_bg">
+              <img src="https://www.montblanc.com/content/dam/mtb/assets/redesign/editors-pick/BTW%20In%201190x764.jpg"
+                alt="">
+            </div>
+            <div>
+              <h5>생산적으로 일하는 방법</h5>
+              <p>New Nomal 시대를 대비하는 6가지 팁과 요령</p>
+              <h6>자세히보기</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+
+  <!-- 회원가입 -->
+  <article class="join_">
+    <div>
+      <section>
+        <h6>몽블랑 가입</h6>
+        <h4>회원 가입</h4>
+        <p>원하는 대로 경험 하세요</p>
+        <button>2분안에 등록하실수 있습니다</button>
+        <p style="text-decoration: underline; cursor: pointer;">로그인</p>
+      </section>
+
+      <section>
+        <h6>어느 것도 놓치지 마세요</h6>
+        <h4>가입 후 1만원 쿠폰 혜택을 만나보세요</h4>
+        <p>신제품 최신 소식과 소식을 가장먼저 받아보세요</p>
+        <input type="text" placeholder="이메일주소를 적어주세요">
+        <h6>구독하시면 몽블랑 개인정보 보호정책에 동의 하시는 것입니다</h6>
+      </section>
+    </div>
+  </article>
+
+  <!-- 맵 -->
+  <article class="map_">
+    <section>
+      <div>
+        <h6>오늘 어디에 계시나요?</h6>
+        <h4>가장 가까운 부티크를 찾으세요</h4>
+        <button>길 찾기</button>
+      </div>
+    </section>
+  </article>
+
+  <!-- 도움이 필요하뉘 -->
+  <article class="help_">
+    <section>
+      <p>도움이 필요하세요? 상담직원과 통화해 보세요 <span style="text-decoration: underline;">0000-0000</span></p>
+    </section>
+  </article>
+
+  <!-- 푸터 -->
+  <footer>
+    <section>
+      <div>
+        <ul>
+          <li>
+            <span class="title_">서비스</span>
+            <div class="con">
+              <p>개인쇼핑</p>
+              <p>인그레이빙 및 엠보싱</p>
+              <p>선물포장</p>
+              <p>운송 및 배송</p>
+              <p>반품 및 보증</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="title_">지원</span>
+            <div class="con">
+              <p>고객서비스</p>
+              <p>자주 묻는 질문</p>
+              <p>시계관리</p>
+              <p>필기구 관리</p>
+              <p>레더 관리</p>
+              <p>주얼리 관리</p>
+              <p>기업 고객을 위한 선물</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="title_">소개</span>
+            <div class="con">
+              <p>회사</p>
+              <p>연락처</p>
+              <p>채용</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mini_menu">
+        <h4>가입 후 1만원 쿠폰 혜택을 만나보세요</h4>
+        <input type="text" placeholder="이메일주소를 적어주세요">
+        <p>팔로우 하기</p>
+        <div class="sns_ico">
+          <i class="fabfa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-snapchat-ghost"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+        <div class="fo_bg">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <span>이용약관 및 법적 고지</span>
+        <span>개인정보 보호정책 및 보안</span><br>
+        <span>
+          <span><i class="fas fa-globe"></i></span>
+          한국 / 국가 변경
+        </span>
+      </div>
+
+      <div>
+        <span>(주) 리치몬트 코리아 |</span>
+        <span>대표이사 : ㅁㅁㅁ |</span>
+        <span>서울 중구 000 000 000 000 000 000 |</span>
+        <span>사업자등록 번호:000 00 000 0000 |</span>
+        <span>통신판매업 신고 번호:0000 0000 000 |<span style="text-decoration: underline; cursor: pointer;">사업자정보확인</span>
+        </span>
+        <span>몽블랑 코리아 고객센터(E-부티크):0000-0000 |</span>
+        <span>몽블랑 코리아 고객센터(백화점 및 아울렛): 0000-0000 |</span>
+        <span>호스팅 서비스:Richemont International SA</span>
+      </div>
+    </section>
+  </footer>
+
+  <script src="montblanc.js"></script>
+  <!-- 
+  <script src="header_nav.js"></script>
+  <script src="header_nav_gift.js"></script>
+  <script src="article_menu_mobile.js"></script>
+  <script src="script_auto.js"></script>
+  <script src="script_pro_slider.js"></script> -->
+
+
+
+</body>
+
+</html>
