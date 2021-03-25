@@ -1,0 +1,1634 @@
+/*깔끔 한글 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: px solid green;
+}
+
+img {
+  width: 100px;
+}
+
+body {
+  padding-top: 3rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid white;
+  transition: 0.7s;
+}
+
+button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작(0~679px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (min-width:0px) and (max-width:679px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .tablet_pc_menu,
+  .tablet_pc_menu2,
+  .tablet_pc_menu3 {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    height: 60px;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    background: #5c3011;
+    z-index: 9999;
+  }
+
+  header nav section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header i {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    color: #cdc9c9;
+  }
+
+  /*헤더아래배너*/
+  .header_banner {
+    width: 100%;
+    height: 20px;
+    font-family: 'Poor Story', cursive;
+    background: #f2dca5;
+    text-align: center;
+    position: sticky;
+  }
+
+  .header_banner h5 {
+    padding: 0.1rem 0 0 0;
+    color: #5c3011;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  /*메인*/
+  main {
+    width: 100%;
+    height: 380px;
+  }
+
+  .pc_main {
+    display: none;
+  }
+
+  .mobile_main img {
+    width: 100%;
+    height: 380px;
+  }
+
+  /*고디바 텍스트 1*/
+  .godiva_text {
+    padding: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .godiva_text h3 {
+    line-height: 1.2rem;
+    margin: 0;
+  }
+
+  /* 고디바 아티클 1*/
+  .godiva {
+    width: 100%;
+    height: 100%;
+  }
+
+  .godiva> :nth-child(1) {
+    width: 100%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2020/202002/4ceac6a5-7c08-4547-be3a-5c16b2442a7d.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(2) {
+    width: 100%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2020/202007/383ae71b-3312-440a-998d-8abfa8de2525.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(3) {
+    width: 100%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/b604f957-e7cc-4dad-9e56-380910d7b065.JPG') no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(1) div {
+    width: 45%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 0%;
+    padding: 8rem 0.2rem 0 1rem;
+  }
+
+  .godiva> :nth-child(2) div {
+    width: 45%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0%;
+    padding: 10rem 1rem 0 0.2rem;
+  }
+
+  .godiva> :nth-child(3) div {
+    width: 45%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 0%;
+    padding: 8rem 1rem 0 0.2rem;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #5c3011;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6c2e2e;
+    text-align: right;
+  }
+
+  .godiva> :nth-child(3) div> :nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #3b4a32;
+    text-align: right;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(2) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #5c3011;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(2) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #943c3c;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: right;
+  }
+
+  .godiva> :nth-child(3) div> :nth-child(2) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #444a41;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: right;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(3) {
+    font-size: 0.8rem;
+    color: #af5a1f;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(3) {
+    font-size: 0.8rem;
+    color: #7d4014;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .godiva> :nth-child(3) div> :nth-child(3) {
+    font-size: 0.8rem;
+    color: #32372f;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  /* 사진2개 아티클*/
+  .godiva_two {
+    width: 100%;
+    height: 95px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .godiva_two section {
+    width: 49%;
+    height: 100%;
+  }
+
+  .godiva_two> :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/b8f57eef-5b90-40e7-911a-3da404e2e397.jpg') no-repeat;
+    background-size: cover;
+    background-position: top top;
+    position: relative;
+  }
+
+  .godiva_two> :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/1afd530a-dfe5-4352-a6ab-a5002b217bd7.jpg') no-repeat;
+    background-size: cover;
+    background-position: top top;
+    position: relative;
+  }
+
+  .godiva_two> :first-child div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_two> :last-child div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_two p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  /* 사진3개 아티클*/
+  .godiva_three_pic {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .godiva_three_pic section {
+    width: 32%;
+    height: 100%;
+  }
+
+  .godiva_three_pic> :nth-child(1) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/ed8292ba-9a62-4f7f-946d-e8f43dff88cf.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(2) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/f104f587-a521-49a3-b6ed-f5666609e3ac.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(3) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/e308353c-318d-454f-8718-b46fbbe36a44.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(1) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic> :nth-child(2) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic> :nth-child(3) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .baner {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    background: url('https://www.godiva.kr/resources/img/event/GDV-special_pc.jpg') no-repeat;
+    background-size: contain;
+  }
+
+  /* 고디바 텍스트 2 */
+  .godiva_sns_text {
+    padding: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .godiva_sns_text h3 {
+    line-height: 1.2rem;
+    margin: 0;
+  }
+
+  .godiva_sns_text h4 {
+    display: none;
+  }
+
+  /*고디바 모델 */
+  .godiva_model {
+    width: 100%;
+    height: 500px;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/cd5eb50b-5ccb-44ac-a9bb-4ef14643aa14.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  /*고디바 모델 4사진 */
+  .godiva_model_pic_four {
+    width: 100%;
+    height: 250px;
+  }
+
+  .godiva_model_pic_four section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+  }
+
+  .godiva_model_pic_four section :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/b604f957-e7cc-4dad-9e56-380910d7b065.JPG') no-repeat;
+    background-size: cover;
+  }
+
+  .godiva_model_pic_four section :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/a4ea22df-3664-4d1e-aa6c-9b50bd2895dc.JPG') no-repeat;
+    background-size: cover;
+  }
+
+  .godiva_model_pic_four_two {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 2%;
+  }
+
+  .godiva_model_pic_four_two section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+  }
+
+  .godiva_model_pic_four_two section :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/e2731045-8d3f-41ce-a848-f33a7ba42baa.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .godiva_model_pic_four_two section :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/8121ee61-768b-4594-aed8-8c161369c1a2.JPG') no-repeat;
+    background-size: cover;
+  }
+
+  footer {
+    width: 100%;
+    height: 400px;
+    background: #5c3011;
+    padding: 0 1rem;
+  }
+
+  footer>:nth-child(1) {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  footer>:nth-child(1) div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #be862b;
+  }
+
+  footer>:nth-child(1) div h5,
+  footer>:nth-child(1) div i {
+    color: #be862b;
+  }
+
+  footer>:nth-child(2) input {
+    width: 100%;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  footer>:nth-child(2) button {
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: 0.8rem;
+    background: #be862b;
+    font-weight: bold;
+    color: #5c3011;
+    border: none;
+  }
+
+  footer>:nth-child(2) i {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 0.4rem 1rem 0;
+  }
+
+  footer>:nth-child(3) {
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid #b4b4b4;
+  }
+
+  footer>:nth-child(3) span {
+    font-size: 0.6rem;
+    color: #e0e0e0;
+  }
+
+    .tpc_foo {
+      display: none;
+    }
+
+  .top_button {
+    position: sticky;
+    margin-top: -40px;
+    margin-right: 1rem;
+    bottom: 20px;
+    text-align: right;
+  }
+
+  .top_button button {
+    padding: 10px;
+  }
+}
+
+/*---------------------- 태블릿(640~989px)-------------------------------- 시작 */
+@media (min-width:680px) and (max-width:1079px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .tablet_pc_menu,
+  .tablet_pc_menu2,
+  .tablet_pc_menu3,
+  .tablet_pc_menu4 {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    height: 60px;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    background: #5c3011;
+    z-index: 9999;
+  }
+
+  header nav section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header i {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    color: #cdc9c9;
+  }
+
+  /*헤더아래배너*/
+  .header_banner {
+    width: 100%;
+    height: 20px;
+    font-family: 'Poor Story', cursive;
+    background: #f2dca5;
+    text-align: center;
+    position: sticky;
+  }
+
+  .header_banner h5 {
+    padding: 0.1rem 0 0 0;
+    color: #5c3011;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  /*메인*/
+  main {
+    display: none;
+  }
+
+  .godiva_text {
+    padding: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .godiva_text h3 {
+    line-height: 1.2rem;
+    margin: 0;
+  }
+
+  /* 고디바 아티클 1*/
+  .godiva {
+    width: 100%;
+    height: 100%;
+  }
+
+  .godiva> :nth-child(1) {
+    width: 100%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/1afd530a-dfe5-4352-a6ab-a5002b217bd7.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(2) {
+    width: 100%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/b8f57eef-5b90-40e7-911a-3da404e2e397.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(3) {
+    width: 100%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2021/202102/07909f48-77ab-4254-964b-f751d867246d.jpg') no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(1) div {
+    width: 45%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 0%;
+    padding: 8rem 0.2rem 0 1rem;
+  }
+
+  .godiva> :nth-child(2) div {
+    width: 45%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0%;
+    padding: 10rem 1rem 0 0.2rem;
+  }
+
+  .godiva> :nth-child(3) div {
+    display: none;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #5c3011;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6c2e2e;
+    text-align: right;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(2) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #5c3011;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(2) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #943c3c;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: right;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(3) {
+    font-size: 0.8rem;
+    color: #af5a1f;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(3) {
+    font-size: 0.8rem;
+    color: #7d4014;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  /* 사진2개 아티클*/
+  .godiva_two {
+    width: 100%;
+    height: 145px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .godiva_two section {
+    width: 49%;
+    height: 100%;
+  }
+
+  .godiva_two> :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/b8f57eef-5b90-40e7-911a-3da404e2e397.jpg') no-repeat;
+    background-size: cover;
+    background-position: top top;
+    position: relative;
+  }
+
+  .godiva_two> :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/1afd530a-dfe5-4352-a6ab-a5002b217bd7.jpg') no-repeat;
+    background-size: cover;
+    background-position: top top;
+    position: relative;
+  }
+
+  .godiva_two> :first-child div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_two> :last-child div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_two p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  /* 사진3개 아티클*/
+  .godiva_three_pic {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .godiva_three_pic section {
+    width: 32%;
+    height: 100%;
+  }
+
+  .godiva_three_pic> :nth-child(1) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/ed8292ba-9a62-4f7f-946d-e8f43dff88cf.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(2) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/f104f587-a521-49a3-b6ed-f5666609e3ac.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(3) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/e308353c-318d-454f-8718-b46fbbe36a44.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(1) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic> :nth-child(2) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic> :nth-child(3) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .baner {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background: url('https://www.godiva.kr/resources/img/event/GDV-special_pc.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  /* 고디바 텍스트 2 */
+  .godiva_sns_text {
+    padding: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .godiva_sns_text h3 {
+    line-height: 1.2rem;
+    margin: 0;
+  }
+
+  .godiva_sns_text h4 {
+    display: none;
+  }
+
+  /*고디바 모델 */
+  .godiva_model {
+    width: 100%;
+    height: 700px;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/cd5eb50b-5ccb-44ac-a9bb-4ef14643aa14.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /*고디바 모델 4사진 */
+  .godiva_model_pic_four {
+    width: 100%;
+    height: 250px;
+  }
+
+  .godiva_model_pic_four section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+  }
+
+  .godiva_model_pic_four section :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/b604f957-e7cc-4dad-9e56-380910d7b065.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .godiva_model_pic_four section :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/a4ea22df-3664-4d1e-aa6c-9b50bd2895dc.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .godiva_model_pic_four_two {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 2%;
+  }
+
+  .godiva_model_pic_four_two section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+  }
+
+  .godiva_model_pic_four_two section :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/e2731045-8d3f-41ce-a848-f33a7ba42baa.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .godiva_model_pic_four_two section :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/8121ee61-768b-4594-aed8-8c161369c1a2.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  footer {
+    width: 100%;
+    height: 400px;
+    background: #5c3011;
+    padding: 0 1rem;
+  }
+
+  footer>:nth-child(1) {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  footer>:nth-child(1) div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #be862b;
+  }
+
+  footer>:nth-child(1) div h5,
+  footer>:nth-child(1) div i {
+    color: #be862b;
+  }
+
+  footer>:nth-child(2) {
+    text-align: center;
+  }
+
+  footer>:nth-child(2) input {
+    width: 100%;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  footer>:nth-child(2) button {
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: 0.8rem;
+    background: #be862b;
+    font-weight: bold;
+    color: #5c3011;
+    border: none;
+  }
+
+  footer>:nth-child(2) i {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 0.4rem 1rem 0;
+    text-align: center;
+  }
+
+  footer>:nth-child(3) {
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid #b4b4b4;
+    text-align: center;
+  }
+
+  footer>:nth-child(3) span {
+    font-size: 0.6rem;
+    color: #e0e0e0;
+  }
+
+    .tpc_foo {
+      display: none;
+    }
+
+  .top_button {
+    position: sticky;
+    margin-top: -40px;
+    margin-right: 1rem;
+    bottom: 20px;
+    text-align: right;
+  }
+
+  .top_button button {
+    padding: 10px;
+  }
+
+
+}
+
+/*---------------------- PC(989~px)-------------------------------- 시작 */
+@media (min-width:1080px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .mobile_menu,
+  .mobile_menu2 {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background: #5c3011;
+    z-index: 9999;
+  }
+
+  header nav {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  header nav section {
+    width: 1000px;
+    position: relative;
+  }
+
+  .tablet_pc_menu {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 15%;
+    color: #cdc9c9;
+  }
+
+  .tablet_pc_menu> :first-child a {
+    color: #ba8c6b;
+    font-weight: 500;
+  }
+
+  .tablet_pc_menu> :last-child a {
+    color: #cdc9c9;
+    font-weight: 500;
+  }
+
+  .tablet_pc_menu> :last-child i {
+    font-size: 0.7rem;
+    margin-right: 0.3rem;
+  }
+
+  .tablet_pc_menu span {
+    font-size: 0.7rem;
+    margin: 0 0.4rem;
+  }
+
+  .tablet_pc_menu2 {
+    width: 1000px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tablet_pc_menu2 a {
+    color: #e8e7e7;
+    margin: 0 0.5rem;
+    font-weight: 500;
+  }
+
+  .tablet_pc_menu3 {
+    width: 200px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+  }
+
+  .tablet_pc_menu3 input {
+    width: 130px;
+    background: none;
+    border: none;
+  }
+
+  .tablet_pc_menu3 i {
+    font-size: 0.9rem;
+  }
+
+  header nav section img {
+    width: 120px;
+    text-align: center;
+  }
+
+  header i {
+    font-size: 1.2rem;
+    color: #cdc9c9;
+  }
+
+  /*헤더아래배너*/
+  .header_banner {
+    width: 100%;
+    height: 20px;
+    font-family: 'Poor Story', cursive;
+    background: #f2dca5;
+    text-align: center;
+    position: sticky;
+  }
+
+  .header_banner h5 {
+    padding: 0.1rem 0 0 0;
+    color: #5c3011;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  /*메인*/
+  main {
+    width: 100%;
+    height: 450px;
+  }
+
+  .mobile_main {
+    display: none;
+  }
+
+  .pc_main {
+    width: 100%;
+    height: 450px;
+    background: url('https://www.godiva.kr/files/public/site/2019/201910/0fe5ec19-e4da-4338-b18c-630d15f27ab1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .godiva_text {
+    padding: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .godiva_text h3 {
+    line-height: 1.2rem;
+    margin: 0;
+  }
+
+  /* 고디바 아티클 1*/
+  .godiva {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .godiva> :nth-child(1) {
+    width: 30%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2020/202002/4ceac6a5-7c08-4547-be3a-5c16b2442a7d.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(2) {
+    width: 31%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2020/202007/383ae71b-3312-440a-998d-8abfa8de2525.jpg') no-repeat;
+    background-size: auto;
+    background-position: right;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(3) {
+    width: 30%;
+    height: 400px;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/b604f957-e7cc-4dad-9e56-380910d7b065.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 0 4rem 0;
+  }
+
+  .godiva> :nth-child(1) div {
+    width: 100%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0%;
+    padding: 1rem 0 0 0.2rem;
+  }
+
+  .godiva> :nth-child(2) div {
+    width: 100%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0%;
+    padding: 1rem 0 0 0.2rem;
+  }
+
+  .godiva> :nth-child(3) div {
+    width: 100%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0%;
+    padding: 1rem 0 0 0.2rem;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #5c3011;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6c2e2e;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(3) div> :nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #3b4a32;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(2) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #5c3011;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(2) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #943c3c;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(3) div> :nth-child(2) {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: #444a41;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(1) div> :nth-child(3) {
+    font-size: 0.8rem;
+    color: #af5a1f;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(2) div> :nth-child(3) {
+    font-size: 0.8rem;
+    color: #7d4014;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .godiva> :nth-child(3) div> :nth-child(3) {
+    font-size: 0.8rem;
+    color: #32372f;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  /* 사진2개 아티클*/
+  .godiva_two {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .godiva_two section {
+    width: 49%;
+    height: 100%;
+  }
+
+  .godiva_two> :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/b8f57eef-5b90-40e7-911a-3da404e2e397.jpg') no-repeat;
+    background-size: cover;
+    background-position: top top;
+    position: relative;
+  }
+
+  .godiva_two> :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/1afd530a-dfe5-4352-a6ab-a5002b217bd7.jpg') no-repeat;
+    background-size: cover;
+    background-position: top top;
+    position: relative;
+  }
+
+  .godiva_two> :first-child div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_two> :last-child div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_two p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  /* 사진3개 아티클*/
+  .godiva_three_pic {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .godiva_three_pic section {
+    width: 32%;
+    height: 100%;
+  }
+
+  .godiva_three_pic> :nth-child(1) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/ed8292ba-9a62-4f7f-946d-e8f43dff88cf.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(2) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/f104f587-a521-49a3-b6ed-f5666609e3ac.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(3) {
+    width: 32%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/e308353c-318d-454f-8718-b46fbbe36a44.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .godiva_three_pic> :nth-child(1) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic> :nth-child(2) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic> :nth-child(3) div {
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+  }
+
+  .godiva_three_pic p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .baner {
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: url('https://www.godiva.kr/resources/img/event/GDV-special_pc.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* 고디바 텍스트 2 */
+  .godiva_sns_text {
+    padding: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .godiva_sns_text h3 {
+    line-height: 1.2rem;
+    font-weight: 700;
+  }
+
+  .godiva_sns_text h4 {
+    line-height: 1rem;
+    margin: 0;
+  }
+
+  /*고디바 모델 */
+  .godiva_model {
+    width: 100%;
+    height: 700px;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/cd5eb50b-5ccb-44ac-a9bb-4ef14643aa14.jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  /*고디바 모델 4사진 */
+  .godiva_model_pic_four {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .godiva_model_pic_four section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+  }
+
+  .godiva_model_pic_four section :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/b604f957-e7cc-4dad-9e56-380910d7b065.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .godiva_model_pic_four section :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/a4ea22df-3664-4d1e-aa6c-9b50bd2895dc.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .godiva_model_pic_four_two {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+
+  .godiva_model_pic_four_two section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+  }
+
+  .godiva_model_pic_four_two section :first-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2018/201810/e2731045-8d3f-41ce-a848-f33a7ba42baa.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .godiva_model_pic_four_two section :last-child {
+    width: 49%;
+    height: 100%;
+    background: url('https://www.godiva.kr/files/public/site/2021/202101/8121ee61-768b-4594-aed8-8c161369c1a2.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .tpc_foo {
+    width: 100%;
+    height: 450px;
+    background: #4e280e;
+    padding: 2rem 3rem;
+  }
+
+  .tpc_foo section {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .tpc_foo> :nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .tpc_foo> :nth-child(1) h4 {
+    margin-bottom: 1.5rem;
+    color: #9c721a;
+  }
+
+  .tpc_foo> :nth-child(1) img {
+    width: 110px;
+    height: 80px;
+  }
+
+  .tpc_foo> :nth-child(1) li {
+    color: #d5d5d9;
+    margin: 0.5rem 0;
+    list-style: none;
+  }
+
+  .tpc_foo> :nth-child(1) :nth-child(4) i {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .tpc_foo> :nth-child(1) :nth-child(5) i {
+    margin-right: 0.5rem;
+  }
+
+  .tpc_foo> :nth-child(1) i {
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  .tpc_foo> :nth-child(2) {
+    width: 670px;
+    margin-bottom: 2rem;
+  }
+
+  .tpc_foo> :nth-child(2) input,
+  .tpc_foo> :nth-child(2) button {
+    height: 40px;
+  }
+
+  .tpc_foo> :nth-child(2) input {
+    width: 200px;
+    margin-right: 0.5rem;
+  }
+
+  .tpc_foo> :nth-child(2) button {
+    padding: 0.5rem 2rem;
+    background: #d6b023;
+    color: #504419;
+    font-weight: bold;
+    border: none;
+  }
+
+  .tpc_foo> :nth-child(3) {
+    width: 100%;
+    border-top: 1px solid #7a7a7a;
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+  }
+
+  .top_button {
+    position: sticky;
+    margin-top: -40px;
+    margin-right: 1rem;
+    bottom: 20px;
+    text-align: right;
+  }
+
+  .top_button button {
+    padding: 10px;
+  }
+}
