@@ -1,0 +1,16 @@
+📕Title
+현대렌탈
+https://www.hyundaiquming.net/?gcl_keyword=%ED%98%84%EB%8C%80%20%EB%A0%8C%ED%83%88&gclid=CjwKCAjwxuuCBhATEiwAIIIz0fWlwUKO11fYC_xHvZRSUOWpm2VimZaarn0cp4PD-nKPFqhJtMDeshoCmIkQAvD_BwE
+
+
+
+-미디워 쿼리를 써봤다. 
+
+@media (min-width:최소 브라우저 픽셀px) and (max-width:최대 브라우저 픽셀~px) {
+  css코드~~
+  }
+
+이때 모바일 태블릿 pc로 나눠서 했는데 
+모바일 pc만 해도 될것 같다는 생각을 했다.
+
+-> 푸터와 바로 위 아티클 사이는 여백이 없는게 깔끔하다.
