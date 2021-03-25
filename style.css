@@ -1,0 +1,1148 @@
+/*깔끔 한글 폰트   font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+/* 고오급 영어 폰트  font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+/* 각진 영어 폰트  font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*필기체 영어 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: px solid green;
+}
+
+img {
+  width:500px;
+}
+
+body {
+  
+  padding: 1.5rem 1.5rem 0 1.5rem ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+ 
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid white;
+  transition: 0.7s;
+}
+
+button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일 시작(0~639px) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media (max-width:999px) {
+  header {
+    width:100%;
+    padding:1rem;
+    background-color: #e0dbdb;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav> :nth-child(1)> span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+
+  header nav> :nth-child(2) {
+    display: none;
+  }
+      /*메인*/
+      main {
+        width:100%;
+        padding:3rem 1.5rem;
+        background-color: #ebebeb;
+      }
+      
+      main img {
+        width:100%;
+      }
+  
+      main> :nth-child(1)> :nth-child(2) {
+        width:100%;
+        padding:2rem 1rem;
+        text-align: center;
+      }
+  
+      main> :nth-child(1)> :nth-child(2) h4 {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+  
+      main> :nth-child(1)> :nth-child(2) p {
+        text-transform: uppercase;
+        margin:0.5rem 0;
+        font-weight: 500;
+      }
+  
+      main> :nth-child(1)> :nth-child(2) span {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+      }
+  
+      main> :nth-child(1)> :nth-child(2)> :nth-child(4) {
+        margin:1rem 0;
+      }
+      main> :nth-child(1)> :nth-child(2)> :nth-child(5) {
+        text-align: center;
+      }
+  
+      main> :nth-child(1)> :nth-child(2)> :nth-child(5)>:nth-child(1) {
+        width:100px;
+        background-color: black;
+        color:white;
+        font-weight: 700;
+        font-size: 0.5rem;
+        padding:10px 15px;
+      }
+  
+      main> :nth-child(1)> :nth-child(2)> :nth-child(5)>:nth-child(2) {
+        width:100px;
+        border:1px solid black;
+        font-size: 0.5rem;
+        padding:10px 15px;
+      }
+      
+    /* how it */
+    .how_it {
+      width:100%;
+      background:#ffeae2;
+      padding:3rem ;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(1) {
+      text-align: center;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(1) h2 {
+      color:#ffa600;
+      font-size:4vw;
+      font-weight: 500;
+      line-height: 1.7rem;
+      margin:0;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(1) h5 {
+      font-weight: 500;
+      margin: 1.5rem 0;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(2) {
+      
+    }
+
+    .how_it> :nth-child(1)> :nth-child(2)> :nth-child(2) {
+      margin: 1rem 0;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(2) div h5 {
+      color:black;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 3vw;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(2) div span {
+      font-size:0.8rem;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(3) {
+      text-align: center;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(3) button {
+      background-color: #000000;
+      color:white;
+      border-radius: 10px;
+    }
+
+        /* 아티클 what */
+        .what_ {
+          width:100%;
+          height: 100%;
+          text-align: center;
+        }
+
+        .what_> :first-child {
+          width:100%;
+          
+        }
+
+        .what_> :first-child> :first-child{
+          width:100%;
+          height: 40%;
+          text-align: center;
+          margin-top: 4rem;
+          margin-bottom: -2rem;
+        }
+        .what_> :first-child> :first-child img {
+          width:50%;
+        }
+
+        .what_> :first-child> :last-child{
+          width:100%;
+          padding:3rem;
+          background-color: #e0e0e0;
+        }
+
+        
+    .what_ >:first-child> :last-child h4 {
+      font-size: 3.2vw;
+      font-weight: 700;
+    }
+
+    .what_ >:first-child> :last-child p {
+      margin:0.5rem 0;
+      font-size: 2.5vw;
+    }
+
+    .what_ >:first-child> :last-child span {
+      font-size: 1.9vw;
+      font-weight: 400;
+      line-height: 1rem;
+      color:#5f5f5f;
+    }
+
+    .what_ >:first-child> :last-child> :nth-child(4) {
+      display: flex;
+    }
+
+    .what_ >:first-child> :last-child> :nth-child(4) ul {
+      width:130px;
+      margin-top: 0.5rem;
+      margin:1rem auto 1.5rem auto;
+    }
+
+    .what_ >:first-child> :last-child> :nth-child(4) ul li {
+      text-align: left;
+      font-size: 3vw;
+    }
+
+    .what_ >:first-child> :last-child> :nth-child(5) {
+      text-align: center;
+    }
+
+    .what_ >:first-child> :last-child> :nth-child(5) button {
+      width:240px;
+      background-color: #1f1e1e;
+      color:white;
+      margin: 1rem auto 0 auto;
+    }
+
+        /* exclusive */
+        .exclusive_ {
+          width:100%;
+          background:#e3f0f0;
+          padding:4rem 1.3rem 2rem 1.3rem;
+        }
+        .exclusive_> :nth-child(1) {
+          width:100%;
+          margin:0 auto;
+        }
+        .exclusive_> :nth-child(1)> :nth-child(1) {
+          text-align: center;
+        }
+    
+        .exclusive_> :nth-child(1)> :nth-child(1) h2 {
+          color:#f09494;
+          font-size:2rem;
+          font-weight: 500;
+          line-height: 1.7rem;
+          margin-bottom: 0;
+        }
+    
+        .exclusive_> :nth-child(1)> :nth-child(1) h5 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+        }
+    
+        .exclusive_> :nth-child(1)> :nth-child(2) {
+          padding:1rem;
+        }
+    
+        .exclusive_> :nth-child(1)> :nth-child(2) div {
+          padding-bottom:1rem;
+          margin-bottom: 1rem;
+          text-align: left;
+        }
+    
+        .exclusive_> :nth-child(1)> :nth-child(2) div h5 {
+          color:black;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 1rem;
+          font-size: 2.5vw;
+        }
+    
+        .exclusive_ button {
+          display: none;
+        }
+
+            /* design_*/
+    .design_ {
+      width:100%;
+      background-color: #000000;
+    }
+
+    .design_ img {
+      margin:0
+    }
+
+
+    .design_ section {
+      width:100%;
+    }
+
+    .design_> :first-child > :first-child {
+      padding:3rem 2rem 0 2rem;
+      text-align: center;
+    }
+
+    .design_> :first-child > :last-child {
+      padding:1rem 2rem;
+      text-align: center;
+    }
+
+    .design_ img {
+      width:100%;
+    }
+
+    .design_> :first-child > :first-child> :first-child p {
+      font-family: 'Pacifico', cursive;
+      font-size: 8vw;
+      color:#97d374;
+    }
+
+    .design_> :first-child > :first-child> :first-child span {
+      font-size: 4vw;
+      font-weight: bold;
+      color:white;
+      line-height: 4rem;
+    }
+
+    .design_> :first-child> :last-child {
+      font-size: 9vw;
+    }
+    .design_> :first-child> :last-child> :last-child {
+      margin:0 auto;
+      padding:3rem 0;
+      
+    }
+
+    .design_> :first-child > :last-child> :last-child> :nth-child(1) {
+      color:#f7bcff;
+
+    }
+    .design_> :first-child > :last-child> :last-child> :nth-child(2) {
+      color:#98abff
+      
+    }
+    .design_> :first-child > :last-child> :last-child> :nth-child(3) {
+      color:#b2ffa8
+      
+    }
+    .design_> :first-child > :last-child> :last-child> :nth-child(4) {
+      color:#ffd1d7
+      
+    }
+    .design_> :first-child > :last-child> :last-child> :nth-child(5) {
+      color:#ffb77c
+      
+    }
+    .design_> :first-child > :last-child p {
+      text-align: center;
+      margin:0.8rem 0;
+      font-size: 7vw;
+      line-height: 2rem;
+      
+      text-shadow: 1px 1px 1px white;
+    }
+            /* feature*/
+            .feature_ {
+              width:100%;
+              background:#eaf0e3;
+              padding:4rem 1.3rem 2rem 1.3rem;
+              text-align: center;
+            }
+            .feature_> :nth-child(1) {
+              width:100%;
+              margin:0 auto;
+            }
+        
+            .feature_ h2 {
+              color:#a994f0;
+              font-size:2.5rem;
+              font-weight: 500;
+              line-height: 1.7rem;
+              margin-bottom: 0;
+            }
+        
+            .feature_> :nth-child(1)> :nth-child(1) h5 {
+              font-size: 1.5rem;
+              font-weight: 600;
+              margin: 1.5rem 0;
+            }
+        
+            .feature_> :nth-child(1)> :nth-child(2) div,
+            .feature_> :nth-child(1)> :nth-child(3) div {
+              width:100%;
+              padding:0 2rem;
+              text-align: left;
+              margin:1rem 0;
+              padding:1rem 0;
+            }
+        
+            .feature_> :nth-child(1)> :nth-child(2) div h5,
+            .feature_> :nth-child(1)> :nth-child(3) div h5 {
+              color:black;
+              font-size: 1rem;
+              font-weight: 600;
+              text-align: center;
+              margin-bottom: 1rem;
+            }
+    
+            .feature_> :nth-child(1)> :nth-child(2) div span,
+            .feature_> :nth-child(1)> :nth-child(3) div span {
+              line-height: 1.2rem;
+            }
+        
+            .feature_ button {
+              display: none;
+            }
+
+                       /* dream*/
+           .dream {
+            width:100%;
+            background:#f0ede3;
+            padding:4rem 0;
+            text-align: center;
+          }
+
+          .dream h2 {
+            width:100%;
+            background:#ffffff;
+            color:#ff82bc;
+            font-size: 4.5vw;
+            text-align: center;
+          }
+
+          .dream p {
+            font-weight: 500;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+          }
+
+          .dream button {
+            background: #ff82bc;
+            color:white;
+          }
+
+                    /* collection*/
+                    .collection {
+                      width:100%;
+                      padding:3rem;
+                      margin:0 auto;
+                      text-align: center;
+                    }
+          
+                    .collection> :first-child {
+                      width:100%;
+                      margin:0 auto 3rem auto;
+                    }
+          
+                    .collection> :first-child section {
+                      width:100%;
+                      text-align: center;
+                      margin-bottom: 3rem;
+                    }
+          
+                    .collection> :first-child section h4 {
+                      color:black;
+                      font-weight: 600;
+                      margin-top: 2rem;
+                    }
+          
+                    .collection section div {
+                      position: relative;
+                    }
+          
+                    .collection section div> img {
+                      width:100%;
+                    }
+          
+                    .collection section div> :last-child {
+                      position: absolute;
+                      top:0%;
+                      left:0%;
+                      opacity: 0;
+                      transition:0.7s;
+                      cursor: pointer;
+                    }
+          
+                    .collection section div> :last-child:hover {
+                      opacity: 1;
+                    }
+          
+                    .collection> :last-child {
+                      text-align: center;
+                    }
+          
+                    .collection> :last-child button {
+                      width:100%;
+                      background-color: #8e8e8e;
+                      color:white;
+                      margin:0 auto;
+                    }
+
+/*푸터*/
+          footer {
+            width:100%;
+            padding:3rem 2rem 3rem 2rem;
+            margin:0 auto;
+            background:#e6e4e4;
+            text-align: center;
+          }
+
+          footer ul {
+            width:100%;
+            margin:0 auto 1rem auto;
+          }
+
+          footer ul li {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          footer p {
+            font-weight: 600;
+            margin: 0.5rem 0;
+          }
+
+          footer span {
+            font-size: 0.7rem;
+          }
+          
+  
+}
+
+
+  /*---------------------- PC(989~px)-------------------------------- 시작 */
+@media (min-width:1000px) {
+  /*헤더*/
+    header {
+      width:100%;
+      padding:1.5rem 1rem;
+      background-color: #e0dbdb;
+    }
+    header nav {
+      width:1000px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin:0 auto;
+    }
+    header nav> :nth-child(1)> span {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    header nav> :nth-child(2)> span {
+      margin:0 0.3rem;
+    }
+    
+
+    header nav> :nth-child(3) {
+      display: none;
+    }
+
+    /*메인*/
+    main {
+      width:100%;
+      padding:3rem 0;
+      background-color: #ebebeb;
+    }
+    main> :nth-child(1) {
+      width:1000px;
+      display: flex;
+      justify-content: space-between;
+      margin:0 auto;
+    }
+    main img {
+      width:100%;
+    }
+
+    main> :nth-child(1)> :nth-child(1) {
+      width:490px;
+    }
+
+    main> :nth-child(1)> :nth-child(2) {
+      width:500px;
+      padding:8rem 1.5rem;
+    }
+
+    main> :nth-child(1)> :nth-child(2) h4 {
+      font-size: 2.4rem;
+      line-height: 2rem;
+      width:100%;
+    }
+
+    main> :nth-child(1)> :nth-child(2) p {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      margin:2rem 0;
+      font-weight: 500;
+      width:100%;
+    }
+
+    main> :nth-child(1)> :nth-child(2) span {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      width:100%;
+    }
+
+    main> :nth-child(1)> :nth-child(2)> :nth-child(4) {
+      margin:1rem 0;
+    }
+    main> :nth-child(1)> :nth-child(2)> :nth-child(5) {
+      text-align: center;
+    }
+
+    main> :nth-child(1)> :nth-child(2)> :nth-child(5)>:nth-child(1) {
+      background-color: black;
+      color:white;
+      font-weight: 700;
+    }
+
+    main> :nth-child(1)> :nth-child(2)> :nth-child(5)>:nth-child(2) {
+      border:1px solid black;
+    }
+
+    /* how it */
+    .how_it {
+      width:100%;
+      background:#ffeae2;
+      padding:3rem 8rem;
+    }
+    .how_it> :nth-child(1) {
+      width:1000px;
+      margin:0 auto;
+    }
+    .how_it> :nth-child(1)> :nth-child(1) {
+      text-align: center;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(1) h2 {
+      color:#ffa600;
+      font-size:2.4rem;
+      font-weight: 600;
+      line-height: 1.7rem;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(1) h5 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+      margin:0 auto;
+      vertical-align: middle;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(2) div {
+      padding:2rem;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(2) div h5 {
+      font-size: 1.2rem;
+      color:black;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .how_it> :nth-child(1)> :nth-child(2) div span {
+      font-size: 1rem;
+      font-size: 500;
+    }
+
+    .how_it button {
+      display: none;
+    }
+    /* 아티클 what */
+    .what_ {
+      width:100%;
+      margin:0 auto;
+    }
+
+    .what_ >:first-child {
+      width:100%;
+      height: 500px;
+      display: flex;
+      margin:0 auto;
+    }
+
+    .what_ >:first-child> :first-child {
+      width:40%;
+      position: relative;
+    }
+
+    .what_ >:first-child> :first-child img {
+      width:280px;
+      height: 350px;
+      position: absolute;
+      right: -10%;
+      top:15%;
+
+    }
+
+    .what_ >:first-child> :last-child {
+      width:60%;
+      background-color: #e0e0e0;
+      padding:6rem 20rem 6rem 6rem;
+    }
+
+    .what_ >:first-child> :last-child h4 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-top: 2rem;
+    }
+
+    .what_ >:first-child> :last-child p {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin:1rem 0;
+    }
+
+    .what_ >:first-child> :last-child span {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+
+    .what_ >:first-child> :last-child> :nth-child(4) {
+      display: flex;
+    }
+
+    .what_ >:first-child> :last-child> :nth-child(4) ul {
+      width:120px;
+      margin-top: 1rem;
+    }
+    
+    .what_ >:first-child> :last-child> :nth-child(4) ul li{
+      font-size: 1rem;
+    }
+    .what_ >:first-child> :last-child> :nth-child(5) button {
+      width:240px;
+      background-color: #1f1e1e;
+      color:white;
+      margin-top: 0.5rem;
+    }
+
+    
+    /* exclusive*/
+    .exclusive_ {
+      width:100%;
+      background:#e3f0f0;
+      padding:3rem 8rem;
+    }
+    .exclusive_> :nth-child(1) {
+      width:1000px;
+      margin:0 auto;
+    }
+    .exclusive_> :nth-child(1)> :nth-child(1) {
+      text-align: center;
+    }
+
+    .exclusive_> :nth-child(1)> :nth-child(1) h2 {
+      color:#f09494;
+      font-size:2.4rem;
+      font-weight: 500;
+      line-height: 1.7rem;
+      margin-bottom: 0;
+    }
+
+    .exclusive_> :nth-child(1)> :nth-child(1) h5 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 2rem 0 1.2rem 0;
+    }
+
+    .exclusive_> :nth-child(1)> :nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+      padding:1rem 0;
+    }
+
+    .exclusive_> :nth-child(1)> :nth-child(2) div {
+      width:33%;
+      padding:0 2rem;
+      text-align: center;
+    }
+
+    .exclusive_> :nth-child(1)> :nth-child(2) div span {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+
+    .exclusive_> :nth-child(1)> :nth-child(2) div h5 {
+      color:black;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .exclusive_ button {
+      display: none;
+    }
+
+    /* design_*/
+    .design_ {
+      width:100%;
+      background-color: #000000;
+    }
+
+    .design_ img {
+      width:100%;
+      font-size: 0;
+      letter-spacing: 0;
+      line-height: 0;
+    }
+
+    .design_ > :first-child {
+      display: flex;
+    }
+
+ 
+
+    .design_> :first-child > :first-child {
+      text-align: center;
+      width:50%;
+      position: relative;
+    }
+
+    .design_> :first-child > :first-child> :first-child  {
+      width:100%;
+      position: absolute;
+      top:40%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .design_> :first-child > :first-child> :first-child p {
+      font-family: 'Pacifico', cursive;
+      font-size: 5vw;
+      line-height: 4rem;
+      color:#97d374;
+    }
+
+    .design_> :first-child > :first-child> :first-child span {
+      font-size: 2vw;
+      font-weight: bold;
+      color:white;
+      line-height: 6rem;
+    }
+
+    .design_> :first-child> :last-child {
+      width:59%;
+      display: flex;
+      position: relative;
+      line-height: 0;
+    }
+    .design_> :first-child> :last-child> :first-child {
+      width:60%;
+    }
+    .design_> :first-child> :last-child> :last-child {
+     width:40%;
+     position: absolute;
+     right: 0%;
+     top:15%;
+     transform: translate(0, 20%);
+     
+    }
+
+    .design_> :first-child> :last-child> :last-child p {
+      font-size: 3.2vw;
+      line-height: 2vw;
+    }
+
+    .design_> :first-child > :last-child> :last-child> :nth-child(1) {
+      color:#f7bcff;
+
+    }
+    .design_> :first-child > :last-child> :last-child> :nth-child(2) {
+      color:#98abff
+      
+    }
+    .design_> :first-child > :last-child> :last-child> :nth-child(3) {
+      color:#b2ffa8
+      
+    }
+    .design_> :first-child > :last-child> :last-child> :nth-child(4) {
+      color:#ffd1d7
+      
+    }
+    .design_> :first-child > :last-child> :last-child> :nth-child(5) {
+      color:#ffb77c
+      
+    }
+    .design_> :first-child > :last-child p {
+      color:white;
+      text-align: center;
+      margin:0.8rem 0;
+      font-size: 2rem;
+    }
+
+        /* feature*/
+        .feature_ {
+          width:100%;
+          background:#eaf0e3;
+          padding:3rem 8rem;
+          text-align: center;
+        }
+        .feature_> :nth-child(1) {
+          width:1000px;
+          margin:0 auto;
+        }
+    
+        .feature_ h2 {
+          color:#a994f0;
+          font-size:2.5rem;
+          font-weight: 500;
+          line-height: 1.7rem;
+          margin-bottom: 0;
+        }
+    
+        .feature_> :nth-child(1)> :nth-child(1) h5 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin:2rem 0 1.5rem 0;
+        }
+    
+        .feature_> :nth-child(1)> :nth-child(2),
+        .feature_> :nth-child(1)> :nth-child(3) {
+          display: flex;
+          justify-content: space-between;
+          padding:1rem 0;
+        }
+    
+        .feature_> :nth-child(1)> :nth-child(2) div,
+        .feature_> :nth-child(1)> :nth-child(3) div {
+          width:33%;
+          padding:0 2rem;
+          text-align: center;
+        }
+    
+        .feature_> :nth-child(1)> :nth-child(2) div h5,
+        .feature_> :nth-child(1)> :nth-child(3) div h5 {
+          color:black;
+          font-size: 1.2rem;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        .feature_> :nth-child(1)> :nth-child(2) div span,
+        .feature_> :nth-child(1)> :nth-child(3) div span {
+          line-height: 1.2rem;
+        }
+    
+        .feature_ button {
+          display: none;
+        }
+
+           /* dream*/
+           .dream {
+            width:100%;
+            background:#f0ede3;
+            padding:8rem;
+            text-align: center;
+          }
+
+          .dream h2 {
+            width:100%;
+            background:#ffffff;
+            color:#ff82bc;
+            font-size: 4vw;
+            text-align: center;
+          }
+
+          .dream p {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+          }
+
+          .dream button {
+            font-size: 1rem;
+            background: #ff82bc;
+            color:white;
+          }
+          /* collection*/
+          .collection {
+            width:100%;
+            padding:3rem;
+          }
+
+          .collection> :first-child {
+            width:1000px;
+            display: flex;
+            justify-content: space-between;
+            margin:0 auto 3rem auto;
+          }
+
+          .collection> :first-child section {
+            width:48%;
+            text-align: center;
+            
+          }
+
+          .collection> :first-child section h4 {
+            color:black;
+            font-weight: 600;
+            margin-top: 1rem;
+          }
+
+          .collection section div {
+            position: relative;
+          }
+
+          .collection section div> img {
+            width:100%;
+            box-shadow: 5px 5px 5px black;
+          }
+
+          .collection section div> :last-child {
+            position: absolute;
+            top:0%;
+            left:0%;
+            opacity: 0;
+            transition:0.7s;
+            cursor: pointer;
+          }
+
+          .collection section div> :last-child:hover {
+            opacity: 1;
+          }
+
+          .collection> :last-child {
+            text-align: center;
+          }
+
+          .collection> :last-child button {
+            background-color: #8e8e8e;
+            color:white;
+            font-size: 1rem;
+          }
+         
+          /*푸터*/
+          footer {
+            width:1000px;
+            padding:5rem 3rem 2rem 3rem;
+            margin:0 auto;
+            background:#e6e4e4;
+            text-align: center;
+          }
+
+          footer ul {
+            width:70%;
+            display: flex;
+            justify-content: space-between;
+            margin:0 auto 1rem auto;
+          }
+
+          footer ul li a {
+            transition:0.7s;
+          }
+
+          footer ul li a:hover {
+            color:#beffa0;
+          }
+
+          footer p {
+            font-weight: 500;
+          }
+
+          footer span {
+            font-size: 0.7rem;
+          }
+
+        
+          
+  }
