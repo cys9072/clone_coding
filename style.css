@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: px solid green;
+  box-sizing: border-box;
+  font-family: 'Potta One', 'cursive', sans-serif;
+}
+
+body {}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3 {
+  color: red;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+button {
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 6px 8px;
+  line-height: 1rem;
+}
+
+/* start*/
+.logo {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+
+}
+
+
+
+.par {
+  width: 1000px;
+  margin: 0 auto;
+  line-height:
+}
+
+.par img {
+  width:20px;
+  height: 20px;
+  line-height: 2rem;
+}
+
+.top_right {
+  width: 1000px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top_right :nth-child(1),
+.top_right :nth-child(3) {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.top_right :nth-child(1):hover,
+.top_right :nth-child(3):hover {
+  color: #a63f3f;
+}
+
+.top_right div {
+  margin-left: 20px;
+}
+header {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+nav div {
+  width: 150px;
+  height: 30px;
+  line-height: 2rem;
+  text-align: center;
+}
+
+nav div a {
+  text-decoration: none;
+  color: black;
+  transition: 1s;
+  padding: 10px;
+}
+
+nav div a:hover {
+  background: #fbcaea;
+  border-radius: 20px 0 20px 0;
+}
+
+main {
+  height: 400px;
+  background: url('https://images.unsplash.com/photo-1611521216627-0ac730716c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.main_pic button {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.main_pic button:hover {
+  background: red;
+  color: white;
+  border: 3px solid white;
+}
+
+.move_yg {
+  display: flex;
+  position: absolute;
+  right: 4%;
+  top: 92%;
+}
+
+.yellow,
+.green {
+  width: 200px;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.yellow:hover,
+.green:hover{
+  font-size: 1.3rem
+}
+
+
+.yellow {
+  background: #f5d20f;
+  border-radius: 20px 0 0 0;
+}
+
+.green {
+  background: #59a125;
+  border-radius: 0 0 20px 0;
+  color: white;
+}
+
+.fir_arti {
+  width: 1000px;
+  margin: 100px auto;
+}
+
+.fir_arti>div {
+  width: 1000px;
+}
+
+.fir_head {
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.fir_head>h3 {
+  color: black;
+}
+
+.fir_head>div {
+  display: flex;
+}
+
+.fir_head>div div {
+  margin-left: 40px;
+}
+
+.fir_head>div div a {
+    padding:10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.fir_head>div div a:hover {
+  color:white;
+  background: black;
+  border-radius: 20px 0 20px 0;
+}
+
+.fir_content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fir_content div {
+  width: 210px;
+  height: 190px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.fir_content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: 1s;
+}
+
+.fir_content img:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+}
+
+.sec_arti {
+  width: 100%;
+  background: silver;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.sec_arti>div {
+  width: 1000px;
+  margin: 40px auto;
+}
+
+.sec_arti>div> :first-child :first-child p {
+  color:#6bf3c6;
+}
+
+.sec_arti>div> :first-child {
+  position: relative;
+}
+
+.sec_arti>div> :last-child {
+  position: relative;
+}
+
+.sec_arti>div> :first-child,
+.sec_arti>div> :last-child {
+  width: 1000px;
+  display: flex;
+}
+
+.sec_arti>div> :first-child div,
+.sec_arti>div> :last-child div {
+  width: 325px;
+  height: 250px;
+  padding: 20px;
+}
+
+.sec_arti>div> :first-child button {
+  position: absolute;
+  bottom: 10%;
+  border:1px solid #6bf3c6;
+  color:#6bf3c6;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.sec_arti>div> :first-child button:hover {
+  color:#f2febd;
+  background:#a24dfe;
+  border:1px solid #a24dfe;
+  border-radius:0px;
+}
+
+.sec_arti>div> :first-child> :nth-child(1) {
+  background: #b3b3b1;
+  color: white;
+  margin-right: 25px;
+  font-size: 2rem;
+  border-radius: 30px 0 0 0;
+}
+
+.sec_arti>div> :first-child> :nth-child(2) {
+  background: url('https://images.unsplash.com/photo-1512626120412-faf41adb4874?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80') no-repeat;
+  background-size: cover;
+  background-position: right center;
+  filter: grayscale(80%);
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.sec_arti>div> :first-child> :nth-child(2):hover {
+  filter: grayscale(0%);
+}
+
+.sec_arti>div> :first-child> :nth-child(3) {
+  background: #e5e5e5;
+  border-radius: 0 30px 0 0;
+}
+
+.sec_arti>div> :first-child> :nth-child(3) button {
+  color: black;
+  border: 1px solid black;
+    cursor: pointer;
+      transition: 0.8s;
+}
+.sec_arti>div> :first-child> :nth-child(3) button:hover {
+  color:white;
+  background: black;
+  border:1px solid black;
+  border-radius: 0px;
+}
+.sec_arti>div> :last-child> :nth-child(1) {
+  background: #b3b3b1;
+  border-radius: 0 0 0 30px;
+  color: #cd7dc3;
+  font-size: 2rem;
+}
+
+.sec_arti>div> :last-child> :nth-child(2) {
+  background: #b3b3b1;
+  width: 395px;
+  margin-right: 25px;
+  color: #6f3939;
+}
+
+.sec_arti>div> :last-child> :nth-child(2) button {
+  position: absolute;
+  right:30%;
+  bottom: 10%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.sec_arti>div> :last-child> :nth-child(2) button:hover {
+  color:white;
+  background: black;
+  border-radius: 0px;
+}
+
+.sec_arti>div> :last-child> :nth-child(3) {
+  width: 250px;
+  height: 250px;
+  border-radius: 0 0 30px 0;
+  background: url('https://images.unsplash.com/photo-1512626120412-faf41adb4874?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80') no-repeat;
+  background-size: cover;
+  background-position: right center;
+  filter: grayscale(80%);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.sec_arti>div> :last-child> :nth-child(3):hover {
+    filter: grayscale(0%);
+}
+
+footer {
+  padding: 40px 0;
+  background: white;
+}
+
+footer span {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+footer span:hover {
+    transform: scale(1.2);
+}
+
+footer h4, p {
+  line-height: 2.4rem;
+}
+
+footer h4 {
+  font-size: 1.3rem;
+}
+
+footer p {
+  color: #5c5c55
+}
+
+footer article>div>div {
+  display: flex;
+}
+
+footer article>div>div>div {
+  padding: 10px 0;
+}
+
+footer article>div {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.infor, address {
+  font-family: 'Cute Font', 'cursive';
+}
+
+.infor {
+  padding: 20px 0;
+  background: #9b9696;
+  border-bottom: 5px solid #949489;
+}
+
+.infor section {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.infor section div {
+  margin-right: 30px;
+}
+
+address {
+  padding: 20px 0;
+  background: #9b9696;
+}
+
+address section {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+address img {
+  width: 30px;
+  height: 30px;
+}
